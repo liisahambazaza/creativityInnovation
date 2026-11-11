@@ -76,6 +76,19 @@
       if (synth.addEventListener) { synth.addEventListener('voiceschanged', loadVoices); }
     }
 
+    // Named voices to use when installed, by language family. macOS lists the
+    // same voice as "Ava", "Ava (Enhanced)" or "Ava (Premium)"; the better one wins.
+    var PREFERRED = { en: 'ava' };
+
+    function preferredBonus(voice, family) {
+      var want = PREFERRED[family];
+      var name = (voice.name || '').toLowerCase();
+      if (!want || !(name === want || name.indexOf(want + ' ') === 0)) { return 0; }
+      if (name.indexOf('premium') !== -1) { return 10.2; }
+      if (name.indexOf('enhanced') !== -1) { return 10.1; }
+      return 10;
+    }
+
     function voiceFor(lang) {
       var wanted = lang.toLowerCase();
       var family = wanted.split('-')[0];
@@ -88,6 +101,7 @@
         else if (family === 'zh' && (tag === 'zh' || tag.indexOf('zh-hans') === 0 || tag === 'cmn-cn')) { score = 3; }
         else if (family === 'zh' && (tag === 'zh-sg' || tag === 'zh-tw')) { score = 2; }   // Mandarin; never Cantonese (zh-HK)
         else if (family === 'en' && tag.split('-')[0] === 'en') { score = 2; }
+        if (score) { score += preferredBonus(voice, family); }
         if (score && voice.localService) { score += 0.5; }
         if (score > bestScore) { best = voice; bestScore = score; }
       });
