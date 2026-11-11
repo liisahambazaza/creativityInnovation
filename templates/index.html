@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block main %}
+<h1 class="home-title"><span lang="zh-CN">看见</span> Kànjiàn</h1>
+<p class="lede">{{ t('tagline') }}</p>
+
+<section class="panel" aria-labelledby="find-h">
+  <h2 id="find-h">{{ t('find_heading') }}</h2>
+  <form class="code-form" action="{{ url_for('go') }}" method="get">
+    <label for="code">{{ t('code_label') }}</label>
+    <p class="hint" id="code-hint">{{ t('code_hint') }}</p>
+    {% if error %}<p class="form-error" id="code-error" role="alert">{{ error }}</p>{% endif %}
+    <div class="code-row">
+      <input id="code" name="code" type="text" inputmode="numeric" autocomplete="off" maxlength="4"
+             value="{{ entered }}" required
+             aria-describedby="code-hint{% if error %} code-error{% endif %}"{% if error %} aria-invalid="true"{% endif %}>
+      <button type="submit" class="button button--primary">{{ t('code_go') }}</button>
+    </div>
+  </form>
+</section>
+
+<section aria-labelledby="works-h">
+  <h2 id="works-h">{{ t('works_heading') }}</h2>
+  <ul class="work-list">
+    {% for work in works %}
+    <li>
+      <a class="work-card" href="{{ url_for('work', code=work.code) }}">
+        <span class="work-card-code">{{ t('work_number', code=work.code) }}</span>
+        <span class="work-card-title">{{ work.title[lang] }}</span>
+        <span class="work-card-meta">{{ work.artist[lang] }} · {{ work.date[lang] }} · {{ t('format_' + work.format) }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="how-h">
+  <h2 id="how-h">{{ t('how_heading') }}</h2>
+  <p>{{ t('how_two_kinds') }}</p>
+  <ul class="legend">
+    <li class="seg seg--verified">
+      <span class="tag tag--verified">{{ t('tag_verified') }}<span class="vh">.</span></span>
+      <span class="seg-text">{{ t('how_verified') }}</span>
+      <button type="button" class="button button--small" data-cue="verified" hidden>{{ t('hear_verified') }}</button>
+    </li>
+    <li class="seg seg--inferred">
+      <span class="tag tag--inferred">{{ t('tag_inferred') }}<span class="vh">.</span></span>
+      <span class="seg-text">{{ t('how_inferred') }}</span>
+      <button type="button" class="button button--small" data-cue="inferred" hidden>{{ t('hear_inferred') }}</button>
+    </li>
+  </ul>
+  <p>{{ t('how_sound') }}</p>
+  <p>{{ t('how_layers') }}</p>
+</section>
+{% endblock %}

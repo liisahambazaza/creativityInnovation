@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Run the app", "type": "shell", "command": "make run", "isBackground": true, "problemMatcher": [] },
+    { "label": "Run the app for phones (same Wi-Fi)", "type": "shell", "command": "make phone", "isBackground": true, "problemMatcher": [] },
+    { "label": "Check everything", "type": "shell", "command": "make check", "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] },
+    { "label": "Quick check (no browser tests)", "type": "shell", "command": "make fast", "problemMatcher": [] }
+  ]
+}

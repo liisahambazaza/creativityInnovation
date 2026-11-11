@@ -1,0 +1,261 @@
+{
+  "id": "woods-and-valleys-of-mount-yu",
+  "code": "02",
+  "format": "hanging_scroll",
+  "title": {"zh": "虞山林壑图", "en": "Woods and Valleys of Mount Yu"},
+  "artist": {"zh": "倪瓒", "en": "Ni Zan"},
+  "date": {"zh": "1372年", "en": "dated 1372"},
+
+  "sources": [
+    {
+      "id": "met",
+      "kind": "catalogue",
+      "title": {
+        "zh": "大都会艺术博物馆开放数据，藏品记录 1973.120.8",
+        "en": "The Metropolitan Museum of Art, Open Access record for object 1973.120.8"
+      },
+      "note": {
+        "zh": "原始记录为英文，中文为本项目的翻译。",
+        "en": "The record is in English; the Chinese is this project's translation."
+      },
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/45636",
+      "accessed": "2026-11-11",
+      "license": "CC0 1.0"
+    }
+  ],
+
+  "catalogue": {
+    "source": "met",
+    "fields": [
+      {"key": "artist", "zh": "倪瓒（中国，1306–1374）", "en": "Ni Zan (Chinese, 1306–1374)"},
+      {"key": "period", "zh": "元代（1271–1368）", "en": "Yuan dynasty (1271–1368)"},
+      {"key": "date", "zh": "1372年（有纪年）", "en": "dated 1372"},
+      {"key": "medium", "zh": "立轴；纸本水墨", "en": "Hanging scroll; ink on paper"},
+      {"key": "dimensions", "zh": "画心 94.6 × 35.9 厘米；连装裱 208.3 × 52.4 厘米", "en": "Painting 94.6 × 35.9 cm; with mounting 208.3 × 52.4 cm"},
+      {"key": "collection", "zh": "纽约大都会艺术博物馆", "en": "The Metropolitan Museum of Art, New York"},
+      {"key": "credit", "zh": "C. C. Wang 家族旧藏；狄龙基金（The Dillon Fund）捐赠，1973年", "en": "Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973"},
+      {"key": "accession", "zh": "1973.120.8", "en": "1973.120.8"}
+    ]
+  },
+
+  "images": {
+    "main": {
+      "src": "img/works/nizan.jpg",
+      "alt": {"zh": "《虞山林壑图》画心的照片", "en": "Photograph of the painting Woods and Valleys of Mount Yu"},
+      "credit": {
+        "zh": "图像：大都会艺术博物馆开放数据（CC0）。已裁去装裱。",
+        "en": "Image: The Metropolitan Museum of Art, Open Access (CC0). Cropped to the painting."
+      }
+    }
+  },
+
+  "layers": [
+    {
+      "key": "orientation",
+      "stops": [
+        {
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "这是一件立轴，纸本水墨。",
+             "en": "This is a hanging scroll, painted in ink on paper."},
+            {"status": "verified", "source": "met",
+             "zh": "作品名为《虞山林壑图》，有1372年的纪年，作者倪瓒，生于1306年，卒于1374年。",
+             "en": "It is titled Woods and Valleys of Mount Yu. It is dated 1372 and is by Ni Zan, who lived from 1306 to 1374."},
+            {"status": "verified", "source": "met",
+             "zh": "画心窄而高：高94.6厘米，宽35.9厘米。连同装裱，全轴高208.3厘米。",
+             "en": "The painting is tall and narrow: 94.6 centimetres high and 35.9 centimetres wide. With its mounting, the scroll is 208.3 centimetres high."},
+            {"status": "inferred",
+             "zh": "也就是将近一米高，约两拃宽。",
+             "en": "That is nearly a metre tall and about two hand-spans wide."},
+            {"status": "inferred",
+             "zh": "画的是一片安静的江景，全用灰色的墨画成：近岸几棵瘦树，中间一大片空白的水，远处是圆浑的山。画中没有人，没有房屋，也没有船。",
+             "en": "It is a quiet river landscape in grey ink: a few thin trees on a near bank, a wide stretch of empty water, and rounded mountains beyond. There are no people, no houses and no boats."},
+            {"status": "inferred",
+             "zh": "下一层不按从一个固定视点看到的前景、中景、远景来描述，而是沿着观者视线被引导的路径，从画的底部走到顶部。",
+             "en": "The next layer does not describe it as foreground, middle ground and background seen from one fixed spot. It follows the path a viewer's eye is led along, from the bottom of the scroll to the top."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "composition",
+      "mode": "reading_path",
+      "stops": [
+        {
+          "label": {"zh": "脚下：近岸的石坡", "en": "Underfoot: the near bank"},
+          "region": [0, 0.74, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "从底部开始，这是观者站立的地方。一道低矮的岸坡从左边斜向右下方，由一层层平顶的石头叠成，像一块块石板。",
+             "en": "Start at the bottom, where the viewer stands. A low bank slopes down from the left edge toward the lower right. It is built from flat-topped rocks stacked in layers, like slabs."},
+            {"status": "inferred",
+             "zh": "石头上散落着短而黑的横点，像苔藓或低矮的草木。这是画面这一部分里最深的墨色。",
+             "en": "Short, dark horizontal dabs are scattered over the rocks, like tufts of moss or low plants. They are the darkest marks in this part of the painting."},
+            {"status": "inferred",
+             "zh": "右边，岸坡伸入水中，水就是空白的纸面。左边缘自上而下有一列小红印，右下角还有两方。",
+             "en": "To the right the bank breaks into the water, which is simply bare paper. A column of small red seals runs down the left edge, and two more sit in the lower right corner."}
+          ]
+        },
+        {
+          "label": {"zh": "向上：五棵树", "en": "Upward: five trees"},
+          "region": [0, 0.5, 1, 0.88],
+          "segments": [
+            {"status": "inferred",
+             "zh": "五棵又高又瘦的树从岸坡上长起来，位置在画面中间偏左。它们是画中唯一直立的形体，把视线向上引。",
+             "en": "Five tall, thin trees rise from the bank, a little left of centre. They are the only upright forms in the painting, and they lead the eye upward."},
+            {"status": "inferred",
+             "zh": "五棵树分成三组：左边单独一棵，枝上垂着一簇簇像藤萝的叶；中间紧挨着两棵；右边又是两棵。",
+             "en": "They stand in three groups: one tree alone on the left, with drooping tufts like hanging vines; a close pair in the middle; and another pair on the right."},
+            {"status": "inferred",
+             "zh": "每棵树的叶子画法都不一样，有的是短短的横点，有的是圆些的叶簇；树顶都是光秃分叉的细枝。树干颜色很淡，是用近乎干的笔画出来的。",
+             "en": "Each tree has different leaves, some short flat dabs, some rounder clusters, and all of them end in bare forked twigs at the top. The trunks are pale, drawn with a nearly dry brush."},
+            {"status": "inferred",
+             "zh": "树梢越过水面，伸向对岸，于是这几棵树把近岸和远方连了起来。",
+             "en": "Their tops reach across the water toward the far shore, so the trees join the near bank to the distance."}
+          ]
+        },
+        {
+          "label": {"zh": "越过：空白的水", "en": "Across: the empty water"},
+          "region": [0, 0.4, 1, 0.76],
+          "segments": [
+            {"status": "inferred",
+             "zh": "树的后面和上方，是画中最大的一片空白：一条横贯整个画面的留白。这是水。",
+             "en": "Behind and above the trees is the widest empty area in the painting: a band of bare paper that crosses the whole width. It is water."},
+            {"status": "inferred",
+             "zh": "空白里浮着几道细长的横线，是低平的沙渚。一道从左边伸进来，上面有一小块隆起的石头；另几道从右边伸来，连着一排低矮的山丘。",
+             "en": "A few long, thin horizontal strokes float in it: low spits of land. One reaches in from the left with a small rocky rise on it. Others come from the right, with a line of low hills."},
+            {"status": "inferred",
+             "zh": "这里没有向一个消失点缩小的透视。远，就是在画面上更高；视线是向上移动来渡过这片水的。",
+             "en": "Nothing here shrinks toward a single vanishing point. Farther simply means higher on the scroll, and the eye crosses the water by moving up."},
+            {"status": "inferred",
+             "zh": "左边缘的沙渚上，立着一小丛竹子或小树，比那五棵树小得多。",
+             "en": "At the left edge, on the middle spit, stands a small clump of bamboo or saplings, much smaller than the five trees."}
+          ]
+        },
+        {
+          "label": {"zh": "对岸：远山", "en": "The far shore: mountains"},
+          "region": [0, 0.1, 1, 0.46],
+          "segments": [
+            {"status": "inferred",
+             "zh": "水的对岸，一座山从左边升起，占了画面大半的宽度。它不是尖峭的山峰，而是一团圆浑的山体，像几块巨石堆在一起，山顶是钝的。",
+             "en": "Across the water a mountain rises on the left and fills most of the width. It is not a sharp peak but a rounded mass, like several boulders piled together, with a blunt summit."},
+            {"status": "inferred",
+             "zh": "山的表面用柔和、浅淡的干笔画成。一排排短而黑的横点沿着山脊分布，和底部石头上的点是同一种笔法。",
+             "en": "Its surface is drawn with soft, pale, dry strokes. Rows of short dark horizontal dabs follow the ridges, the same marks as on the rocks at the bottom."},
+            {"status": "inferred",
+             "zh": "右边稍远处有一座较矮的尖山，后面更矮的山影渐渐淡去。山脚下，几道长长的横线画出对岸的水边。",
+             "en": "To the right a lower, pointed hill stands farther back, and behind it the outlines of still lower hills fade out. Along the mountain's foot, long horizontal strokes mark the far shoreline."},
+            {"status": "inferred",
+             "zh": "远山画得和近岸一样清楚、一样肯定；距离并没有让它变得模糊。",
+             "en": "The far mountain is drawn as firmly as the near bank. Distance has not made it hazy."}
+          ]
+        },
+        {
+          "label": {"zh": "顶部：题字", "en": "At the top: writing"},
+          "region": [0, 0, 1, 0.27],
+          "segments": [
+            {"status": "inferred",
+             "zh": "西方绘画里画天空的地方，这里是字。右上方，画家写了六行工整的小字：先是一首诗，然后是一段题记，写明日期和他的名字“倪瓒”。",
+             "en": "Where a Western painting would have sky, there is writing. In the upper right the painter wrote six columns of small, neat characters: a poem, then a note giving the date and his name, Ni Zan."},
+            {"status": "inferred",
+             "zh": "左上方还有一段题字，八行短短的字，笔画更松、更圆，是后来另一个人加上去的。",
+             "en": "In the upper left is a second inscription, eight short columns in a looser, rounder hand. It was added later by someone else."},
+            {"status": "inferred",
+             "zh": "左上角和山的左侧聚集着许多红印，最顶端、画家题字的上方，还有一方很大的椭圆印。",
+             "en": "Red seals cluster in the top left corner and down the left side of the mountain, and one large oval seal sits at the very top, above the painter's inscription."},
+            {"status": "inferred",
+             "zh": "诗、画、印本来就是要放在一起读的，所以视线的路径最后落在阅读上。",
+             "en": "Poem, picture and seals are meant to be read together, so the eye's path ends in reading."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "material",
+      "stops": [
+        {
+          "label": {"zh": "干笔淡墨", "en": "Dry brush, pale ink"},
+          "region": [0.08, 0.7, 0.98, 0.98],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "此画为纸本水墨。",
+             "en": "The painting is in ink on paper."},
+            {"status": "inferred",
+             "zh": "几乎所有的形体都是用含墨很少的笔画出来的。笔侧着在纸上拖过，留下浅淡、断续、略带颗粒感的笔痕，更像炭笔，而不像湿润的水墨晕染。",
+             "en": "Almost everything is drawn with a brush holding very little ink. Dragged sideways over the paper, it leaves pale, broken, slightly grainy strokes, more like charcoal than like a wet wash."},
+            {"status": "inferred",
+             "zh": "石头的轮廓有棱角：一笔横拖，然后突然折而向下，像一条折叠的带子。画家把这种笔法叫作“折带皴”，它和倪瓒的名字联系得最紧。",
+             "en": "The rocks have angular outlines: a stroke runs sideways, then turns sharply down, like a folded ribbon. Painters call this the folded-belt stroke, 折带皴, and it is closely associated with Ni Zan."},
+            {"status": "inferred",
+             "zh": "在这一片灰色之中，真正浓黑的只有石头和山脊上的小横点，以及一部分树叶。这些点用得很省，画面的节奏就来自它们。",
+             "en": "Against all this grey, the only truly black marks are the small horizontal dabs on rocks and ridges and some of the leaves. They are used sparingly, and they give the picture its rhythm."},
+            {"status": "inferred",
+             "zh": "纸张年久已成灰褐色，印章的红是画面上唯一的颜色。",
+             "en": "The paper has aged to a grey-brown, and the red of the seals is the only colour."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "context",
+      "mode": "provenance",
+      "stops": [
+        {
+          "label": {"zh": "画家：倪瓒", "en": "The painter: Ni Zan"},
+          "region": [0, 0.5, 1, 0.9],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "倪瓒生于1306年，卒于1374年。此画有1372年的纪年，作于他去世前两年。",
+             "en": "Ni Zan lived from 1306 to 1374. This painting is dated 1372, two years before his death."},
+            {"status": "inferred",
+             "zh": "他被列为“元四家”之一。他出生在无锡附近的富裕人家，中年散尽家产，多年乘船往来于这一带的江湖之间。",
+             "en": "He is counted among the Four Masters of the Yuan dynasty. He was born to a wealthy family near Wuxi, and in middle age gave up his estate and spent years travelling by boat among the lakes and rivers of the region."},
+            {"status": "inferred",
+             "zh": "他一再画同一种构图：近岸几棵树，中间空白的水，远处的山，没有人。后世画家把这种空与淡看作画家品格的标尺。",
+             "en": "Again and again he painted this same arrangement: a near bank with a few trees, empty water, far hills, and no people. Later painters treated its bareness as a measure of a painter's character."},
+            {"status": "verified", "source": "met",
+             "zh": "馆方记录将此画归入元代，并注明元代为1271至1368年；而画上的纪年1372年，已在这个年限之后四年。",
+             "en": "The museum's record places the work in the Yuan dynasty, which it dates from 1271 to 1368, although the painting's own date, 1372, falls four years after that span."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：1372年，画家的题记", "en": "Seals and writing: 1372, the painter's note"},
+          "region": [0.46, 0.03, 1, 0.27],
+          "segments": [
+            {"status": "inferred",
+             "zh": "右上方画家的题字，先是一首五言八句的诗，然后是一段题记。题记说：辛亥年十二月十三日，他拜访友人“伯琬高士”，于是画了这幅《虞山林壑》，并题五言诗记下这次来游。",
+             "en": "The painter's inscription in the upper right begins with a poem of eight five-character lines and ends with a note. The note says that on the thirteenth day of the twelfth month of the xinhai year he visited a friend he calls the lofty scholar Bowan, painted Woods and Valleys of Mount Yu, and wrote the poem to record the visit."},
+            {"status": "inferred",
+             "zh": "辛亥年的十二月按公历已是1372年初，与馆方的纪年一致。",
+             "en": "The twelfth month of the xinhai year falls in early 1372 by the Western calendar, which agrees with the museum's date."},
+            {"status": "inferred",
+             "zh": "诗的最后两句是“此日交欢意，依依去后思”：今日相聚的欢喜，别后仍会依依不舍地想起。",
+             "en": "The poem ends with the lines 此日交欢意，依依去后思: the pleasure of this day's meeting will linger in thought after parting."},
+            {"status": "inferred",
+             "zh": "虞山在今天江苏省常熟城边。",
+             "en": "Mount Yu is a hill beside the town of Changshu, in today's Jiangsu province."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：十八世纪，皇帝的题诗和印", "en": "Seals and writing: 18th century, an emperor's poem and seals"},
+          "region": [0, 0, 0.86, 0.34],
+          "segments": [
+            {"status": "inferred",
+             "zh": "左上方的题字落款为“御题”，即皇帝所题，纪年是干支“己卯”春月。结合画上的乾隆印，应是1759年。",
+             "en": "The inscription in the upper left is signed 御题, inscribed by the emperor, and dated to spring of the cyclical year jimao, 己卯. With the Qianlong seals on the painting, that points to 1759."},
+            {"status": "inferred",
+             "zh": "顶端的大椭圆印文为“乾隆御览之宝”；树旁的一方圆印文为“乾隆鉴赏”。",
+             "en": "The large oval seal at the top reads 乾隆御览之宝, treasure viewed by the Qianlong emperor. A round seal beside the trees reads 乾隆鉴赏, appreciated by Qianlong."},
+            {"status": "inferred",
+             "zh": "边缘的其他印章属于此画入宫前后的私人收藏者。本原型尚未逐一辨认。",
+             "en": "Other seals along the edges belong to private collectors from before and after the painting's time at court. They have not been identified one by one for this prototype."},
+            {"status": "verified", "source": "met",
+             "zh": "馆方的来源说明记载：此画曾为 C. C. Wang 家族收藏，1973年由狄龙基金（The Dillon Fund）捐赠。",
+             "en": "The museum's credit line records that the painting came from the C. C. Wang family collection and was given by The Dillon Fund in 1973."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Everything needed to run the checks and tests
+-r requirements.txt
+pytest>=8,<9
+playwright>=1.45,<2
+ruff>=0.5

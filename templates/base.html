@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="{{ html_lang }}" data-lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}{{ t('app_name_full') }}{% endblock %}</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/kanjian.css') }}">
+  {# prefs.js runs before the page is drawn so saved text size applies at once #}
+  <script src="{{ url_for('static', filename='js/prefs.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/kanjian.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ t('skip') }}</a>
+
+  <header class="site-header">
+    <a class="brand" href="{{ url_for('home') }}" aria-label="看见 Kànjiàn, {{ t('home') }}">
+      <span class="brand-zh" lang="zh-CN">看见</span>
+      <span class="brand-en">Kànjiàn</span>
+    </a>
+    <nav class="lang-switch" aria-label="{{ t('language') }}">
+      <ul>
+        <li><a href="{{ lang_url('zh') }}" lang="zh-CN" hreflang="zh-CN"{% if lang == 'zh' %} aria-current="true"{% endif %}>中文</a></li>
+        <li><a href="{{ lang_url('en') }}" lang="en" hreflang="en"{% if lang == 'en' %} aria-current="true"{% endif %}>English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <details class="settings" id="settings">
+    <summary>{{ t('settings') }}</summary>
+    <form class="settings-form" id="settings-form">
+      <fieldset>
+        <legend>{{ t('set_voice') }}</legend>
+        <label><input type="radio" name="voice" value="on" checked> {{ t('set_voice_on') }}</label>
+        <label><input type="radio" name="voice" value="off"> {{ t('set_voice_off') }}</label>
+      </fieldset>
+      <fieldset>
+        <legend>{{ t('set_speed') }}</legend>
+        <label><input type="radio" name="rate" value="slow"> {{ t('speed_slow') }}</label>
+        <label><input type="radio" name="rate" value="normal" checked> {{ t('speed_normal') }}</label>
+        <label><input type="radio" name="rate" value="fast"> {{ t('speed_fast') }}</label>
+      </fieldset>
+      <fieldset>
+        <legend>{{ t('set_content') }}</legend>
+        <label><input type="checkbox" name="verifiedOnly"> {{ t('set_verified_only') }}</label>
+        <label><input type="checkbox" name="auto" checked> {{ t('set_auto') }}</label>
+      </fieldset>
+      <fieldset>
+        <legend>{{ t('set_text') }}</legend>
+        <label><input type="radio" name="text" value="standard" checked> {{ t('text_standard') }}</label>
+        <label><input type="radio" name="text" value="large"> {{ t('text_large') }}</label>
+        <label><input type="radio" name="text" value="xlarge"> {{ t('text_xlarge') }}</label>
+      </fieldset>
+      <p class="settings-note">{{ t('settings_note') }}</p>
+    </form>
+  </details>
+
+  <main id="main" tabindex="-1">
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <p>{{ t('prototype_note') }}</p>
+    <nav aria-label="{{ t('footer_nav') }}">
+      <ul>
+        <li><a href="{{ url_for('labels') }}">{{ t('footer_labels') }}</a></li>
+        <li><a href="{{ url_for('corpus_status') }}">{{ t('footer_corpus') }}</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script type="application/json" id="kj-strings">{{ js_strings|tojson }}</script>
+  {% block data %}{% endblock %}
+</body>
+</html>

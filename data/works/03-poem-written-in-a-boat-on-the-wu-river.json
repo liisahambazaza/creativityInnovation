@@ -1,0 +1,323 @@
+{
+  "id": "poem-written-in-a-boat-on-the-wu-river",
+  "code": "03",
+  "format": "calligraphy",
+  "title": {"zh": "吴江舟中诗", "en": "Poem Written in a Boat on the Wu River"},
+  "artist": {"zh": "米芾", "en": "Mi Fu"},
+  "date": {"zh": "约1095年", "en": "about 1095"},
+
+  "sources": [
+    {
+      "id": "met",
+      "kind": "catalogue",
+      "title": {
+        "zh": "大都会艺术博物馆开放数据，藏品记录 1984.174",
+        "en": "The Metropolitan Museum of Art, Open Access record for object 1984.174"
+      },
+      "note": {
+        "zh": "原始记录为英文，中文为本项目的翻译。",
+        "en": "The record is in English; the Chinese is this project's translation."
+      },
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/39919",
+      "accessed": "2026-11-11",
+      "license": "CC0 1.0"
+    }
+  ],
+
+  "catalogue": {
+    "source": "met",
+    "fields": [
+      {"key": "artist", "zh": "米芾（中国，1051–1107），书者", "en": "Mi Fu (Chinese, 1051–1107), calligrapher"},
+      {"key": "period", "zh": "北宋（960–1127）", "en": "Northern Song dynasty (960–1127)"},
+      {"key": "date", "zh": "约1095年", "en": "about 1095"},
+      {"key": "medium", "zh": "手卷；纸本墨书", "en": "Handscroll; ink on paper"},
+      {"key": "dimensions", "zh": "31.1 × 556.9 厘米", "en": "31.1 × 556.9 cm"},
+      {"key": "collection", "zh": "纽约大都会艺术博物馆", "en": "The Metropolitan Museum of Art, New York"},
+      {"key": "credit", "zh": "John M. Crawford Jr. 捐赠，以向 Wen Fong 教授致敬，1984年", "en": "Gift of John M. Crawford Jr., in honor of Professor Wen Fong, 1984"},
+      {"key": "accession", "zh": "1984.174", "en": "1984.174"}
+    ]
+  },
+
+  "images": {
+    "opening": {
+      "src": "img/works/mifu-001.jpg",
+      "alt": {"zh": "《吴江舟中诗》卷首一段的照片", "en": "Photograph of the opening section of the scroll"},
+      "credit": {"zh": "图像：大都会艺术博物馆开放数据（CC0）。", "en": "Image: The Metropolitan Museum of Art, Open Access (CC0)."}
+    },
+    "cart": {
+      "src": "img/works/mifu-003.jpg",
+      "alt": {"zh": "《吴江舟中诗》前段的照片，中间一行是一个长竖的字", "en": "Photograph of an early section of the scroll, with one long vertical stroke in the middle"},
+      "credit": {"zh": "图像：大都会艺术博物馆开放数据（CC0）。", "en": "Image: The Metropolitan Museum of Art, Open Access (CC0)."}
+    },
+    "battle": {
+      "src": "img/works/mifu-005.jpg",
+      "alt": {"zh": "《吴江舟中诗》中段的照片，左边是全卷最大的一个字", "en": "Photograph of the middle section of the scroll, with the largest character at the left"},
+      "credit": {"zh": "图像：大都会艺术博物馆开放数据（CC0）。", "en": "Image: The Metropolitan Museum of Art, Open Access (CC0)."}
+    },
+    "river": {
+      "src": "img/works/mifu-007.jpg",
+      "alt": {"zh": "《吴江舟中诗》后段的照片", "en": "Photograph of a later section of the scroll"},
+      "credit": {"zh": "图像：大都会艺术博物馆开放数据（CC0）。", "en": "Image: The Metropolitan Museum of Art, Open Access (CC0)."}
+    },
+    "signature": {
+      "src": "img/works/mifu-010.jpg",
+      "alt": {"zh": "《吴江舟中诗》卷尾的照片，有落款和后人的题跋", "en": "Photograph of the end of the scroll, with the signature and a later comment"},
+      "credit": {"zh": "图像：大都会艺术博物馆开放数据（CC0）。", "en": "Image: The Metropolitan Museum of Art, Open Access (CC0)."}
+    }
+  },
+
+  "layers": [
+    {
+      "key": "orientation",
+      "stops": [
+        {
+          "image": "opening",
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "这是一件书法手卷，纸本墨书。",
+             "en": "This is a handscroll of calligraphy, written in ink on paper."},
+            {"status": "verified", "source": "met",
+             "zh": "作品名为《吴江舟中诗》，约书于1095年，北宋，书者米芾，生于1051年，卒于1107年。",
+             "en": "It is titled Poem Written in a Boat on the Wu River. It was written about 1095, in the Northern Song dynasty, by Mi Fu, who lived from 1051 to 1107."},
+            {"status": "verified", "source": "met",
+             "zh": "此卷高31.1厘米，长556.9厘米，超过五米半。",
+             "en": "The scroll is 31.1 centimetres high and 556.9 centimetres long, more than five and a half metres."},
+            {"status": "inferred",
+             "zh": "对手卷来说，字非常大。每行只有一到四个字，一个字就可能有一只张开的手掌那么大。",
+             "en": "The characters are very large for a handscroll. Each column holds only one to four of them, so a single character can be as big as an open hand."},
+            {"status": "inferred",
+             "zh": "全卷约四十四行，自上而下、自右向左读。一般的描述会把诗念一遍就结束；第三层则跟着笔走：下笔多重，行笔多快，墨在什么时候用干。",
+             "en": "There are about forty-four columns, read from top to bottom and from right to left. A generic description would read the poem aloud and stop. Layer three follows the brush instead: how hard it pressed, how fast it moved, and when the ink ran dry."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "composition",
+      "stops": [
+        {
+          "label": {"zh": "卷首：从右端读起", "en": "The opening: start at the right"},
+          "image": "opening",
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "手卷从右端展开，先是一条窄窄的洒金黄纸，上面写着几行小字。这是后人的题记，不属于这首诗。",
+             "en": "The scroll opens at its right end with a narrow strip of yellow paper flecked with gold, covered in several columns of small writing. This is a later note, not part of the poem."},
+            {"status": "inferred",
+             "zh": "接着诗开始了，字一下子变大。第一行四个字“昨风起西”，第四个字“西”挤在最下面，写得很小，好像纸不够用了。",
+             "en": "Then the poem begins, and the scale jumps. The first column has four characters, 昨风起西. The fourth is squeezed small at the bottom, as if the writer had run out of room."},
+            {"status": "inferred",
+             "zh": "诗是五言，每句五个字，但每行只写两、三或四个字。句子的断处和行的断处很少重合，所以视线总被带向下一行。",
+             "en": "The lines of the poem are five characters long, but the columns hold two, three or four. Line breaks and column breaks rarely match, so the eye is always carried on to the next column."},
+            {"status": "inferred",
+             "zh": "行与行之间的空隙里盖着红印，是后来的收藏者加上的。",
+             "en": "Red seals sit in the gaps between columns. They were added by later owners."}
+          ]
+        },
+        {
+          "label": {"zh": "卷中：一个字占一行", "en": "The middle: one character fills a column"},
+          "image": "battle",
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "手卷走到一半，行不再整齐。有一行只有两个字，下一行只有一个字。",
+             "en": "Halfway along the scroll the columns stop being regular. One column holds just two characters. The next holds one."},
+            {"status": "inferred",
+             "zh": "这一个字是“战”。它比旁边的字大好几倍，高度几乎占满整张纸，宽度相当于两行普通的字。",
+             "en": "That single character is 战, battle. It is several times the size of its neighbours, nearly as tall as the paper and as wide as two ordinary columns."},
+            {"status": "inferred",
+             "zh": "它出现在全诗的高潮：船工们大喊着拉船，“如临战”。字的布局也跟着喊了出来。",
+             "en": "It comes at the climax of the poem, where the boatmen haul with a shout as if going into battle. The layout shouts with them."}
+          ]
+        },
+        {
+          "label": {"zh": "卷尾：落款", "en": "The end: the signature"},
+          "image": "signature",
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "诗后有一句说明书写地点的话，然后是落款“米元章”，元章是米芾的字。最后一个“章”字独占一行，一笔长竖直拖下来。",
+             "en": "The poem ends with a note on where it was written and the signature 米元章, Mi Yuanzhang, which is Mi Fu's courtesy name. The last character, 章, stands alone in its own column with a long downward stroke."},
+            {"status": "inferred",
+             "zh": "落款左边，依次是一条黄色的花绫、一条素净的褐色纸，然后是另一张纸，上面是一行行小得多、也工整得多的字。那是后来一位收藏者写的题跋。",
+             "en": "To the left of the signature come a strip of yellow patterned silk, a strip of plain brown paper, and then a separate sheet with columns of much smaller, tidier writing. That sheet is a comment written by a later owner."},
+            {"status": "inferred",
+             "zh": "这种对比正是结尾的意味：五米长的狂放大字之后，手卷在安静的小字中收束。",
+             "en": "The contrast marks the ending: after five metres of huge, wild characters, the scroll closes in a small, quiet hand."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "material",
+      "mode": "brushwork",
+      "stops": [
+        {
+          "label": {"zh": "浓墨起笔：“昨风起”", "en": "A loaded brush: the first three characters"},
+          "image": "opening",
+          "region": [0.4, 0, 0.82, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "此作为纸本墨书。",
+             "en": "The work is written in ink on paper."},
+            {"status": "inferred",
+             "zh": "先看第一行。笔里蘸饱了墨。“昨”“风”“起”三个字的笔画又粗又黑，边缘湿润；每一笔收尾时，笔被按下去、停住，留下钝而重的笔端。",
+             "en": "Start with the first column. The brush is full of ink. The strokes of 昨, 风 and 起 are thick, black and wet at the edges, and where a stroke ends the brush is pressed down and held, leaving a blunt, heavy tip."},
+            {"status": "inferred",
+             "zh": "行笔缓慢而沉着。“起”字的最后一笔向右长长地平推出去。",
+             "en": "The pace is slow and deliberate. The last stroke of 起 pushes far out to the right in one long, level sweep."},
+            {"status": "inferred",
+             "zh": "到了第二行，墨开始不够了。“万”和“艘”的笔画变灰、起了丝，笔也走得更快，笔画之间几乎不提起来。",
+             "en": "In the second column the ink begins to run out. The strokes of 万 and 艘 turn grey and streaky, and the brush moves faster, barely lifting between strokes."},
+            {"status": "inferred",
+             "zh": "第三行开头，笔重新蘸了墨：“乘”字又变得又黑又实。蘸墨、写到干、再蘸墨，这个循环就是全卷的节奏。",
+             "en": "At the top of the third column the brush has been dipped again: 乘 is black and solid once more. Loading the brush, writing until it is dry, and loading again sets the rhythm of the whole scroll."}
+          ]
+        },
+        {
+          "label": {"zh": "飞白：“车”字的长竖", "en": "Flying white: the long stroke of 车"},
+          "image": "cart",
+          "region": [0.17, 0, 0.6, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "这里一个字占了一整行。这是“车”字。字的上部是一小团缠绕的圈，然后中间一竖直直地拉下来，几乎贯穿整张纸的高度。",
+             "en": "Here one character takes a whole column. It is 车, a cart or wheel. Its top is a small tangle of loops. Then its central stroke is pulled straight down, almost the full height of the paper."},
+            {"status": "inferred",
+             "zh": "笔往下走，墨渐渐用尽。这一竖开头是黑的，然后变灰，最后分成一丝一丝，丝与丝之间露出白纸。",
+             "en": "As the brush travels, the ink gives out. The stroke starts black, turns grey, and then splits into separate hair-thin streaks with bare paper showing between them."},
+            {"status": "inferred",
+             "zh": "这种效果叫“飞白”。笔快干时走得快，笔毛散开，每一根毛各画一条线。从中可以读出手的速度。",
+             "en": "This effect is called flying white, 飞白. It happens when a nearly dry brush moves fast: the hairs spread, and each one draws its own line. You can read the speed of the hand in it."},
+            {"status": "inferred",
+             "zh": "两旁的字紧凑而浓黑，所以这一道又长又淡的笔画格外醒目，像在一个音上长长地停住。",
+             "en": "The characters on either side are compact and black, so the long pale stroke stands out like one note held."}
+          ]
+        },
+        {
+          "label": {"zh": "全卷最大的字：“战”", "en": "The largest character: 战"},
+          "image": "battle",
+          "region": [0.05, 0, 0.5, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "这是“战”字，全卷最大的一个字。它同时用了两种写法。",
+             "en": "This is the character 战, battle, the largest in the scroll. It was written in two different ways at once."},
+            {"status": "inferred",
+             "zh": "左半边又慢又重：粗黑的笔画用力按下去，在左下方交叉成一个紧密的结。",
+             "en": "The left half is slow and heavy: thick black strokes pressed hard, crossing in a tight knot at the lower left."},
+            {"status": "inferred",
+             "zh": "右半边是一个很快的动作。笔向上一甩，绕出一个高高的圈，快得让笔画在顶部散成淡淡的飞白，然后长长地斜拉到右下方。",
+             "en": "The right half is one fast gesture. The brush swings up and around in a tall loop, so quickly that the stroke breaks into pale streaks of flying white at the top, then drops in a long diagonal to the lower right."},
+            {"status": "inferred",
+             "zh": "右边一行是它的铺垫。“噉如临”三个字越写越干，然后重新蘸墨，写下“战”。",
+             "en": "The column to its right builds up to it. The three characters 噉如临 grow drier one after another, and then the brush is loaded again for 战."},
+            {"status": "inferred",
+             "zh": "轻重、快慢、墨的多少，都在一个字之内变化。如果只是把诗念出来，听的人恰恰会错过这些。",
+             "en": "Pressure, speed and the amount of ink all change inside a single character. That is what a listener misses if the poem is only read aloud."}
+          ]
+        },
+        {
+          "label": {"zh": "长尾：“江远”", "en": "A long tail: 江远"},
+          "image": "river",
+          "region": [0.33, 0, 0.76, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "两个字：“江远”。第一个字“江”写得小而平实。第二个字“远”却以极大的一笔收尾。",
+             "en": "Two characters, 江远, the river is far. The first, 江, is small and plain. The second, 远, ends in one enormous stroke."},
+            {"status": "inferred",
+             "zh": "这最后一笔沿着字的底部走，向右荡开，然后沿着侧边向上卷回来，像一只钩子把字兜住。",
+             "en": "That last stroke runs along the bottom of the character, swings out to the right, and then curls back up the side, holding the character like a hook."},
+            {"status": "inferred",
+             "zh": "这一笔匀而实，没有飞白：笔走得平稳，墨是足的。",
+             "en": "The stroke is even and solid, with no flying white: the brush was moving steadily, with enough ink."},
+            {"status": "inferred",
+             "zh": "左边一行又变了：字是用细而有弹性的连笔写成的，笔几乎没有离开纸面。",
+             "en": "The column to the left changes again. Its characters are written in a thin, wiry, continuous line, almost without lifting the brush."}
+          ]
+        },
+        {
+          "label": {"zh": "收笔：落款“米元章”", "en": "Closing: the signature"},
+          "image": "signature",
+          "region": [0.58, 0, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "落款的字和诗一样大。“米”“元”两字同在一行：“米”字一竖很坚实，“元”字的末笔向右长长地扫出去。",
+             "en": "The signature is written at the same large scale as the poem. 米 and 元 share a column: 米 has a firm vertical stroke, and 元 ends in a long sweep to the right."},
+            {"status": "inferred",
+             "zh": "“章”字独占一行。最后一竖长而直地拉下来，起笔粗，渐渐收成尖：一个缓慢而有控制的结束。",
+             "en": "章 stands alone. Its final vertical stroke is drawn down long and straight, thick at the start and tapering to a point: a slow, controlled ending."},
+            {"status": "inferred",
+             "zh": "落款旁边和纸的接缝处盖着几方红印。",
+             "en": "Red seals have been pressed beside the signature and along the join of the paper."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "context",
+      "mode": "provenance",
+      "stops": [
+        {
+          "label": {"zh": "诗说了什么", "en": "What the poem says"},
+          "image": "opening",
+          "region": [0.08, 0, 0.82, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "馆方记录的作品名是《吴江舟中诗》。",
+             "en": "The museum's title is Poem Written in a Boat on the Wu River."},
+            {"status": "inferred",
+             "zh": "这首诗讲的是旅途中的一件小事。昨天刮西北风，所有的船都乘风而行；今天风转向东，写诗人的船只好靠十五个纤夫在岸上拉。",
+             "en": "The poem tells a small story from a journey by boat. Yesterday the wind blew from the northwest and every boat made use of it. Today it has turned east, and the writer's boat must be hauled by fifteen men pulling ropes from the bank."},
+            {"status": "inferred",
+             "zh": "纤夫累了，又添雇人手，还嫌工钱少。船陷在泥里，一动不动。加了钱，气氛变了，众人齐拉，喊声像上战场一样，船才被拉动。",
+             "en": "The men tire, more are hired, and they complain about the pay. The boat sticks in the mud and will not move. More money is offered, the mood changes, and with one heave and a shout like men going into battle the boat is pulled free."},
+            {"status": "inferred",
+             "zh": "诗的结尾把这件事引向一句感慨：万事都要趁时机。",
+             "en": "The closing lines turn the episode into a remark about timing: everything depends on catching the right moment."},
+            {"status": "inferred",
+             "zh": "以上大意是根据照片辨读字迹得出的，尚未与已发表的释文核对。",
+             "en": "This summary follows a reading of the characters from photographs. It has not been checked against a published transcription."}
+          ]
+        },
+        {
+          "label": {"zh": "书者：米芾", "en": "The writer: Mi Fu"},
+          "image": "signature",
+          "region": [0.58, 0, 1, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "米芾生于1051年，卒于1107年。馆方将此卷定为约1095年，北宋。",
+             "en": "Mi Fu lived from 1051 to 1107. The museum dates this scroll to about 1095, in the Northern Song dynasty."},
+            {"status": "inferred",
+             "zh": "他被列为“宋四家”之一，同时也是画家、收藏家，评论别人的字时言辞很尖刻。",
+             "en": "He is counted among the four great calligraphers of the Song dynasty, and was also a painter, a collector and a sharp critic of other people's handwriting."},
+            {"status": "inferred",
+             "zh": "他说自己写字是“刷字”。这件手卷正说明了这句话：笔是推、拖、甩出来的，而不是一笔一笔摆上去的。",
+             "en": "He described his own way of writing as brushing characters, and this scroll shows what he meant: the brush is pushed, dragged and flicked, not placed."},
+            {"status": "inferred",
+             "zh": "落款前的一句话说，这首诗是在吴江的船上写的，用的是一位朋友寄来的纸。",
+             "en": "The note before the signature says the poem was written in a boat on the Wu River, on paper that a friend had sent."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：后人的印和题跋", "en": "Seals and writing: later owners"},
+          "image": "signature",
+          "region": [0, 0, 0.66, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "行间的红印有几方是皇家的。卷首附近一方椭圆印文为“乾隆御览之宝”，卷尾附近有圆形的“嘉庆鉴赏”印，可见此卷十八世纪至十九世纪初曾在清宫。",
+             "en": "Several of the red seals between the columns are imperial. An oval seal near the opening reads 乾隆御览之宝, treasure viewed by the Qianlong emperor, and round seals near the end read 嘉庆鉴赏, appreciated by Jiaqing. So the scroll was in the Qing court in the eighteenth and early nineteenth centuries."},
+            {"status": "inferred",
+             "zh": "落款之后，后来的一位收藏者在另一张纸上用工整的小字写了一段题跋。开头说，一位朋友告诉他某人藏有米芾的几十个字，写得很好，他便请求一观。",
+             "en": "After the signature a later owner added a comment in small, neat characters on a separate sheet. It begins by saying that a friend had told him of several dozen fine characters by Mi Fu in another man's collection, and that he asked to see them."},
+            {"status": "verified", "source": "met",
+             "zh": "馆方的来源说明记载：此卷由 John M. Crawford Jr. 于1984年捐赠，以向 Wen Fong 教授致敬。",
+             "en": "The museum's credit line records that the scroll was given by John M. Crawford Jr. in honor of Professor Wen Fong in 1984."},
+            {"status": "inferred",
+             "zh": "卷首题记和卷尾题跋的作者，本原型尚未辨认。",
+             "en": "The writers of the opening note and the closing comment have not been identified for this prototype."}
+          ]
+        }
+      ]
+    }
+  ]
+}

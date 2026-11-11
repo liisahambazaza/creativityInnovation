@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}{{ t('corpus_title') }} · {{ t('app_name_full') }}{% endblock %}
+{% block main %}
+<h1>{{ t('corpus_title') }}</h1>
+<p>{{ t('corpus_intro', target=target) }}</p>
+
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="corpus-caption">
+  <table class="corpus-table">
+    <caption id="corpus-caption">{{ t('corpus_caption') }}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{{ t('col_work') }}</th>
+        <th scope="col">{{ t('col_format') }}</th>
+        <th scope="col" class="num">{{ t('col_segments') }}</th>
+        <th scope="col" class="num">{{ t('col_verified') }}</th>
+        <th scope="col" class="num">{{ t('col_share') }}</th>
+        <th scope="col" class="num">{{ t('col_sources') }}</th>
+        <th scope="col">{{ t('col_target') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for work in corpus.works %}
+      <tr>
+        <th scope="row"><a href="{{ url_for('work', code=work.code) }}">{{ work.code }} {{ work.title[lang] }}</a></th>
+        <td>{{ t('format_' + work.format) }}</td>
+        <td class="num">{{ work.stats.segments }}</td>
+        <td class="num">{{ work.stats.verified }}</td>
+        <td class="num">{{ '%d%%'|format(work.stats.share * 100) }}</td>
+        <td class="num">{{ work.stats.sources }}</td>
+        <td>{{ t('target_met') if work.stats.meets_target else t('target_below') }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">{{ t('corpus_total') }}</th>
+        <td></td>
+        <td class="num">{{ totals.segments }}</td>
+        <td class="num">{{ totals.verified }}</td>
+        <td class="num">{{ '%d%%'|format(totals.share * 100) }}</td>
+        <td></td>
+        <td>{{ t('target_met') if totals.share >= totals.target else t('target_below') }}</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<h2>{{ t('problems_heading') }}</h2>
+{% if corpus.problems %}
+<ul class="problem-list">
+  {% for problem in corpus.problems %}
+  <li><strong>{{ t('level_' + problem.level) }}</strong> · <code>{{ problem.work }}</code> · <code>{{ problem.where }}</code>: <span lang="en">{{ problem.message }}</span></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>{{ t('problems_none') }}</p>
+{% endif %}
+{% endblock %}
