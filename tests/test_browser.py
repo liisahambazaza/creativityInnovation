@@ -26,12 +26,12 @@ FAKE_SPEECH = """
   class Utterance { constructor(text) { this.text = text; this.lang = ''; this.pitch = 1; this.rate = 1; } }
   const synth = {
     speaking: false,
-    getVoices: () => [],
+    getVoices: () => window.__voices || [],
     addEventListener: () => {},
     cancel: () => { synth._queue = []; },
     _queue: [],
     speak(u) {
-      if (u.text.trim()) window.__spoken.push({ text: u.text, lang: u.lang, pitch: u.pitch });
+      if (u.text.trim()) window.__spoken.push({ text: u.text, lang: u.lang, pitch: u.pitch, voice: u.voice ? u.voice.name : null });
       setTimeout(() => { u.onstart && u.onstart(); setTimeout(() => u.onend && u.onend(), 5); }, 5);
     },
   };
@@ -262,6 +262,27 @@ def test_chinese_inside_english_gets_a_mandarin_voice(make_page, base_url):
     page.wait_for_function("window.__spoken.some(s => s.lang === 'zh-CN')", timeout=15_000)
     zh = [s for s in page.evaluate("window.__spoken") if s["lang"] == "zh-CN"]
     assert all(any("一" <= ch <= "鿿" for ch in s["text"]) for s in zh)
+
+
+VOICES_WITH_AVA = """
+window.__voices = [
+  { name: 'Samantha', lang: 'en-US', localService: true },
+  { name: 'Ava', lang: 'en-US', localService: true },
+  { name: 'Ava (Premium)', lang: 'en-US', localService: true },
+  { name: 'Avani', lang: 'en-IN', localService: true },
+  { name: 'Tingting', lang: 'zh-CN', localService: true },
+];
+"""
+
+
+def test_english_prefers_the_best_installed_ava_voice(make_page, base_url):
+    page = make_page("en", init=[VOICES_WITH_AVA, FAKE_SPEECH, prefs_script(voice="on", auto=True)])
+    open_work(page, base_url, "01")
+    page.click("#btn-next")
+    page.wait_for_function("window.__spoken.some(s => s.lang === 'zh-CN')", timeout=15_000)
+    spoken = page.evaluate("window.__spoken")
+    assert {s["voice"] for s in spoken if s["lang"] == "en-US"} == {"Ava (Premium)"}
+    assert {s["voice"] for s in spoken if s["lang"] == "zh-CN"} == {"Tingting"}
 
 
 def test_verified_only_skips_ai_descriptions(make_page, base_url):
