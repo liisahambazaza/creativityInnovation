@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}{{ work.title[lang] }} · {{ t('app_name_full') }}{% endblock %}
+{% block main %}
+<article class="work" data-work="{{ work.code }}" data-format="{{ work.format }}">
+  <header class="work-header">
+    <p class="work-kicker">{{ t('work_number', code=work.code) }} · {{ t('format_' + work.format) }}</p>
+    <h1>{{ work.title[lang] }}</h1>
+    <p class="work-byline">{{ work.artist[lang] }} · {{ work.date[lang] }}</p>
+  </header>
+
+  {% if view.first_image %}
+  <div class="viewer" data-viewer>
+    <div class="viewer-frame">
+      <img class="viewer-image" src="{{ view.first_image.src }}" alt="{{ view.first_image.alt }}"
+           width="{{ view.first_image.width }}" height="{{ view.first_image.height }}">
+    </div>
+  </div>
+  {% endif %}
+
+  {# The player is switched on by the script; without it the whole text below is still readable. #}
+  <section class="player" id="player" aria-label="{{ t('player_label') }}" hidden>
+    <p class="player-status" id="player-status">{{ t('status_ready') }}</p>
+    <div class="player-progress" aria-hidden="true"><span id="player-progress-bar"></span></div>
+    <div class="player-buttons">
+      <button type="button" class="button player-button" id="btn-prev">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M6 5v14M19 5l-9 7 9 7z"/></svg>
+        <span>{{ t('btn_prev') }}</span>
+      </button>
+      <button type="button" class="button button--primary player-button" id="btn-play">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path class="icon-play" d="M7 4l13 8-13 8z"/><path class="icon-pause" d="M7 4h4v16H7zM14 4h4v16h-4z"/></svg>
+        <span id="btn-play-text">{{ t('btn_play') }}</span>
+      </button>
+      <button type="button" class="button player-button" id="btn-next">
+        <span>{{ t('btn_next') }}</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M18 5v14M5 5l9 7-9 7z"/></svg>
+      </button>
+    </div>
+    <p class="player-notice" id="player-notice" role="status" hidden></p>
+  </section>
+
+  <div class="layers">
+    {% for layer in view.layers %}
+    <section class="layer" id="layer-{{ layer.n }}" data-layer="{{ layer.n }}"
+             data-status="{{ layer.status }}" data-announce="{{ layer.announce }}" data-ending="{{ layer.ending }}"
+             aria-labelledby="layer-{{ layer.n }}-h">
+      <h2 class="layer-heading" id="layer-{{ layer.n }}-h"><span class="layer-n">{{ layer.n }}</span> <span class="layer-title">{{ layer.title }}</span></h2>
+      <div class="layer-body" id="layer-{{ layer.n }}-body">
+        {% for stop in layer.stops %}
+        <div class="stop" id="stop-{{ layer.n }}-{{ stop.n }}" data-stop
+             {%- if stop.image %} data-image="{{ stop.image }}"{% endif %}
+             {%- if stop.region %} data-region="{{ stop.region|join(',') }}"{% endif %}>
+          {% if stop.label %}
+          <h3 class="stop-heading" tabindex="-1">
+            {%- if stop.position %}<span class="stop-pos">{{ stop.position }}</span> {% endif -%}
+            <span class="stop-label">{{ stop.label|cjk }}</span>
+          </h3>
+          {% endif %}
+          {% for seg in stop.segments %}
+          <p class="seg seg--{{ seg.status }}" data-status="{{ seg.status }}">
+            <span class="tag tag--{{ seg.status }}">{{ t('tag_' + seg.status) }}<span class="vh">.</span></span>
+            <span class="seg-text">{{ seg.text[lang]|cjk }}</span>
+            {% if seg.source -%}
+            <a class="seg-source" href="#source-{{ seg.source.n }}" aria-label="{{ t('source_ref', n=seg.source.n, title=seg.source.title[lang]) }}">[{{ seg.source.n }}]</a>
+            {%- endif %}
+          </p>
+          {% endfor %}
+          <p class="stop-empty" hidden>{{ t('none_verified_note') }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  {% if work.catalogue %}
+  <section class="catalogue" aria-labelledby="catalogue-h">
+    <h2 id="catalogue-h">{{ t('catalogue_heading') }}</h2>
+    <dl>
+      {% for field in work.catalogue.fields %}
+      <div><dt>{{ t('cat_' + field.key) }}</dt><dd>{{ field.value[lang] }}</dd></div>
+      {% endfor %}
+    </dl>
+    {% if work.catalogue.source %}
+    <p class="catalogue-note">
+      <span class="tag tag--verified">{{ t('tag_verified') }}<span class="vh">.</span></span>
+      {{ t('catalogue_verified') }}
+      <a href="#source-{{ work.catalogue.source.n }}">{{ work.catalogue.source.title[lang] }}</a>
+    </p>
+    {% else %}
+    <p class="catalogue-note">
+      <span class="tag tag--inferred">{{ t('tag_inferred') }}<span class="vh">.</span></span>
+      {{ t('catalogue_unverified') }}
+    </p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section class="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h">{{ t('sources_heading') }}</h2>
+    {% if work.sources %}
+    <ol>
+      {% for source in work.sources %}
+      <li id="source-{{ source.n }}" tabindex="-1">
+        <span class="source-kind">{{ t('kind_' + source.kind) }}.</span>
+        {{ source.title[lang] }}{% if source.accessed %}, {{ t('source_accessed', date=source.accessed) }}{% endif %}{% if source.license %}, {{ t('source_license', license=source.license) }}{% endif %}.
+        {% if source.note %}{{ source.note[lang] }}{% endif %}
+        {% if source.url %}<a href="{{ source.url }}" rel="noopener">{{ t('source_link') }}</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <p>{{ t('sources_none') }}</p>
+    {% endif %}
+    {% for credit in view.credits %}
+    <p class="image-credit">{{ credit }}</p>
+    {% endfor %}
+    <p class="share-note">{{ t('verified_share', verified=work.stats.verified, segments=work.stats.segments, pct='%d%%'|format(work.stats.share * 100)) }}</p>
+    <p class="demo-note">{{ t('demo_note') }}</p>
+  </section>
+
+  <p class="back"><a href="{{ url_for('home') }}">{{ t('back_to_list') }}</a></p>
+</article>
+{% endblock %}
+{% block data %}
+<script type="application/json" id="kj-work">{{ {'images': view.images}|tojson }}</script>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ t('labels_title') }} · {{ t('app_name_full') }}{% endblock %}
+{% block main %}
+<h1>{{ t('labels_title') }}</h1>
+<p class="no-print">{{ t('labels_intro') }}</p>
+<p class="no-print">{{ t('labels_base') }} <code>{{ base }}</code></p>
+{% if local_only %}<p class="form-error no-print" role="alert">{{ t('labels_local_warning') }}</p>{% endif %}
+{% if not has_qr %}<p class="form-error no-print" role="alert">{{ t('labels_no_qr') }}</p>{% endif %}
+<p class="no-print"><button type="button" class="button" data-action="print" hidden>{{ t('print') }}</button></p>
+
+<ul class="label-sheet">
+  {% for card in cards %}
+  <li class="label-card">
+    {% if card.svg %}
+    <div class="label-qr" role="img" aria-label="{{ t('labels_qr_alt', code=card.work.code) }}">{{ card.svg }}</div>
+    {% endif %}
+    <div class="label-text">
+      <p class="label-code">{{ card.work.code }}</p>
+      <p class="label-title" lang="zh-CN">{{ card.work.title.zh }}</p>
+      <p class="label-title" lang="en">{{ card.work.title.en }}</p>
+      <p class="label-url">{{ card.url }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

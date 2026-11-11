@@ -1,0 +1,312 @@
+{
+  "id": "wang-xizhi-watching-geese",
+  "code": "01",
+  "format": "handscroll",
+  "title": {"zh": "王羲之观鹅图", "en": "Wang Xizhi Watching Geese"},
+  "artist": {"zh": "钱选", "en": "Qian Xuan"},
+  "date": {"zh": "约1295年", "en": "about 1295"},
+
+  "sources": [
+    {
+      "id": "met",
+      "kind": "catalogue",
+      "title": {
+        "zh": "大都会艺术博物馆开放数据，藏品记录 1973.120.6",
+        "en": "The Metropolitan Museum of Art, Open Access record for object 1973.120.6"
+      },
+      "note": {
+        "zh": "原始记录为英文，中文为本项目的翻译。",
+        "en": "The record is in English; the Chinese is this project's translation."
+      },
+      "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/40081",
+      "accessed": "2026-11-11",
+      "license": "CC0 1.0"
+    }
+  ],
+
+  "catalogue": {
+    "source": "met",
+    "fields": [
+      {"key": "artist", "zh": "钱选（中国，1239–1301）", "en": "Qian Xuan (Chinese, 1239–1301)"},
+      {"key": "period", "zh": "元代（1271–1368）", "en": "Yuan dynasty (1271–1368)"},
+      {"key": "date", "zh": "约1295年", "en": "about 1295"},
+      {"key": "medium", "zh": "手卷；纸本，墨、设色、金", "en": "Handscroll; ink, color and gold on paper"},
+      {"key": "dimensions", "zh": "画心 23.2 × 92.7 厘米；连装裱 27.9 × 1063.8 厘米", "en": "Painting 23.2 × 92.7 cm; with mounting 27.9 × 1063.8 cm"},
+      {"key": "collection", "zh": "纽约大都会艺术博物馆", "en": "The Metropolitan Museum of Art, New York"},
+      {"key": "credit", "zh": "C. C. Wang 家族旧藏；狄龙基金（The Dillon Fund）捐赠，1973年", "en": "Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973"},
+      {"key": "accession", "zh": "1973.120.6", "en": "1973.120.6"}
+    ]
+  },
+
+  "images": {
+    "main": {
+      "src": "img/works/geese.jpg",
+      "alt": {"zh": "《王羲之观鹅图》画心的照片", "en": "Photograph of the painting Wang Xizhi Watching Geese"},
+      "credit": {
+        "zh": "图像：大都会艺术博物馆开放数据（CC0）。由两张分段照片拼接，并裁去装裱。",
+        "en": "Image: The Metropolitan Museum of Art, Open Access (CC0). Stitched from two section photographs and cropped to the painting."
+      }
+    }
+  },
+
+  "layers": [
+    {
+      "key": "orientation",
+      "stops": [
+        {
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "这是一件手卷，纸本，以墨、颜色和金绘成。",
+             "en": "This is a handscroll, painted in ink, color and gold on paper."},
+            {"status": "inferred",
+             "zh": "手卷放在桌上自右向左展开，一次只看一臂宽的一段，而不是一眼看全。",
+             "en": "A handscroll is unrolled on a table from right to left and looked at one arm's length at a time, never all at once."},
+            {"status": "verified", "source": "met",
+             "zh": "作品名为《王羲之观鹅图》，约作于1295年，元代，作者钱选，生于1239年，卒于1301年。",
+             "en": "It is titled Wang Xizhi Watching Geese. It was painted about 1295, in the Yuan dynasty, by Qian Xuan, who lived from 1239 to 1301."},
+            {"status": "verified", "source": "met",
+             "zh": "画心高23.2厘米，长92.7厘米。连同装裱，整卷高27.9厘米，长1063.8厘米，超过十米。",
+             "en": "The painted section is 23.2 centimetres high and 92.7 centimetres long. With its mounting, the whole scroll is 27.9 centimetres high and 1,063.8 centimetres long, more than ten metres."},
+            {"status": "inferred",
+             "zh": "也就是说，画心约一拃高，不到一米长；全卷的大部分长度，是画前的引首和画后历代的题跋。",
+             "en": "So the painting is about a hand-span high and just under a metre long. Most of the scroll's length is the title sheet before the painting and the pages of later writing after it."},
+            {"status": "inferred",
+             "zh": "画面是一处水边景色，用鲜明的青绿颜色画成。下一层将按展卷的顺序，自右向左分五段带您走过全画。",
+             "en": "It shows a lakeside scene in bright blue and green. The next layer takes you through it from right to left in five sections, the way it is unrolled."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "composition",
+      "mode": "traversal",
+      "stops": [
+        {
+          "label": {"zh": "卷首：对岸的山", "en": "Opening: the far shore"},
+          "region": [0.72, 0, 1, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "画卷从湖的对岸开始。这一段的上半部是一列山：两座陡峭的主峰用浓重的石青色画成，旁边和中间是圆润的翠绿山丘，后面还有几座淡灰色的远峰渐渐隐去。",
+             "en": "The scroll opens on the far side of a lake. A range of hills fills the upper half of this section: two steep peaks in strong mineral blue, rounded bright-green hills between and beside them, and pale grey summits fading behind."},
+            {"status": "inferred",
+             "zh": "每道山脊上都点着一排小黑点，像远处的树。山脚下低平的沙岸上，几间土黄色的茅屋掩在小绿树丛中。",
+             "en": "Small black dots run along every ridge like distant trees. At the foot of the hills, on a low sandy shore, a few thatched roofs in yellow ochre sit among small green trees."},
+            {"status": "inferred",
+             "zh": "几道细细的褐色横线从岸边伸进水里，像沙洲。再往下，纸面留白，这片空白就是湖水。",
+             "en": "Thin brown streaks reach out from the shore into the water, like sandbars. Below them the paper is left bare. That blankness is the lake."},
+            {"status": "inferred",
+             "zh": "右下角密密地盖着十来方红色印章，有方有圆，也有椭圆，是后来的收藏者留下的。",
+             "en": "The lower right corner is crowded with about a dozen red seals, square, round and oval, pressed here by later owners."}
+          ]
+        },
+        {
+          "label": {"zh": "开阔的水面", "en": "Open water"},
+          "region": [0.48, 0, 0.76, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "向左展开，山势渐低，画面上几乎什么也没有画。大约四分之一的画幅只是空白的纸面：一片开阔的湖水，没有画一丝波纹。",
+             "en": "Moving left, the hills sink away and almost nothing is painted. For about a quarter of the painting there is only bare paper: open water, with no waves drawn."},
+            {"status": "inferred",
+             "zh": "在中国画里，这样的留白读作水或雾，而不是空无一物。后来的收藏者却没有让它空着：水面正中自上而下盖了三方大红印，一方圆的，一方窄长的，一方方的。",
+             "en": "In Chinese painting an unpainted stretch like this reads as water or mist, not as nothing. Later owners did not leave it empty: three large red seals are stamped one above another in the middle of the water, one round, one tall and narrow, one square."},
+            {"status": "inferred",
+             "zh": "这一段的左边缘，近岸开始出现：上方露出竹林的梢头，下方是长着芦苇的草坡和几块小青石。",
+             "en": "At the left edge of this section the near shore begins to appear: the tips of a bamboo grove above, and a grassy bank with reeds and small blue rocks below."}
+          ]
+        },
+        {
+          "label": {"zh": "水边的亭子", "en": "The pavilion"},
+          "region": [0.33, 0, 0.56, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "现在到了近岸。一座方亭立在石砌的台基上，台基直接从水里升起。亭顶铺灰瓦，檐角上翘，柱子深色，四周围着绿色的栏杆。",
+             "en": "Now the near shore. A square pavilion stands on a stone platform that rises straight out of the water. Its roof is grey tile with upturned corners, its pillars are dark, and a green railing runs around it."},
+            {"status": "inferred",
+             "zh": "一个人站在栏杆边，双手扶栏，向右望着我们刚刚越过的水面。他身穿白色长袍，头戴黑色的冠。这就是王羲之。",
+             "en": "A man stands at the railing, leaning on it with both hands and looking out to the right, over the water we have just crossed. He wears a long white robe and a black cap. This is Wang Xizhi."},
+            {"status": "inferred",
+             "zh": "他身后站着一个穿灰蓝色衣服的小童，约有他一半高。",
+             "en": "Behind him stands a boy attendant in a grey-blue robe, about half his height."},
+            {"status": "inferred",
+             "zh": "顺着他的目光向右下方看：台基外的水面上游着两只白鹅。鹅画得很小，每只大约只有人的头那么大，用几笔淡淡的白色勾出。",
+             "en": "Follow his gaze down and to the right: two white geese are swimming on the bare water just beyond the platform. They are small, each about the size of the man's head, and drawn with a few pale strokes."},
+            {"status": "inferred",
+             "zh": "亭子后面是一片茂密的竹林，细细的竹叶用深绿色一笔一笔画成。台基脚下卧着几块大石，颜色和对岸的山一样，是浓重的石青。",
+             "en": "A thick grove of bamboo rises behind the pavilion, its fine leaves painted stroke by stroke in dark green. Large rocks in the same strong blue as the far hills sit at the foot of the platform."}
+          ]
+        },
+        {
+          "label": {"zh": "树林", "en": "The grove"},
+          "region": [0.19, 0, 0.4, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "亭子左边，岸坡展开成一片树林，约有十来棵树。褐色的树干或斜或分叉；树叶不是一片片画出来的，而是用成千上万的小点堆成，有的一团是绿色，有的一团是锈橙色。",
+             "en": "Left of the pavilion the bank widens into a grove of about ten trees. Their brown trunks lean and fork. Their leaves are not drawn one by one but built from thousands of tiny dots, some masses green, some a rusty orange."},
+            {"status": "inferred",
+             "zh": "树梢上方露出另一座建筑翘起的屋角，半隐半现。",
+             "en": "The upturned roof corner of a second building shows above the treetops, half hidden."},
+            {"status": "inferred",
+             "zh": "草坡染成淡绿色，用赭色勾边，坡边又是几块青色的石头。",
+             "en": "More blue rocks edge the grassy bank, which is washed in pale green and outlined in ochre."},
+            {"status": "inferred",
+             "zh": "树林上方的天空里，有人用墨添了十来行短短的小字，写得很快。这不是画家写的，落款是“御题”，即皇帝的题诗。第四层里有更多说明。",
+             "en": "In the sky above the trees, about a dozen short columns of small, quick writing have been added in black ink. It is not by the painter: it is signed as an emperor's inscription. Layer four says more about it."}
+          ]
+        },
+        {
+          "label": {"zh": "卷尾：画家的题诗", "en": "Closing: the painter's poem"},
+          "region": [0, 0, 0.22, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "画的结尾不是画，而是字。最左端，画家亲笔题了一首诗，四行大字，墨色浓而匀，自上而下、自右向左读。",
+             "en": "The painting ends not with a picture but with writing. At the far left the painter wrote a poem in four tall columns of dark, even characters, read from top to bottom and from right to left."},
+            {"status": "inferred",
+             "zh": "最后一行是他的落款：“吴兴钱选舜举”，即吴兴人钱选，字舜举。",
+             "en": "The last column is his signature. It reads 吴兴钱选舜举: Qian Xuan of Wuxing, also known as Shunju."},
+            {"status": "inferred",
+             "zh": "题诗四周盖满了红印，仅这一段就有二十多方，上方还有两方很大的椭圆形印。",
+             "en": "Red seals surround the poem on every side, more than twenty in this section alone, including two large oval ones at the top."},
+            {"status": "inferred",
+             "zh": "画、诗、印同在一张纸上，当时的观者是把三者放在一起看的。",
+             "en": "Painting, poem and seals share one sheet of paper. A viewer of the time would have read all three together."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "material",
+      "stops": [
+        {
+          "label": {"zh": "青绿设色", "en": "Blue-and-green colour"},
+          "region": [0.62, 0, 0.99, 0.56],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "此画为纸本，用墨、颜色和金绘成。",
+             "en": "The painting is on paper, in ink, color and gold."},
+            {"status": "inferred",
+             "zh": "山峰和石头的蓝、山丘的绿，是厚而不透明的矿物颜料，盖在墨线勾出的轮廓上，这种画法叫“青绿山水”。在钱选的时代，这已经是一种古老的风格，令人想起几百年前的绘画。",
+             "en": "The blue of the peaks and rocks and the green of the hills are thick, opaque mineral colours laid over ink outlines, a manner known as blue-and-green landscape, 青绿山水. By Qian Xuan's time it was already an old style that recalled painting of centuries earlier."},
+            {"status": "inferred",
+             "zh": "形体简单而平，几乎像剪纸：山是光滑的锥形，很少用明暗来表现立体感。",
+             "en": "Shapes are simple and flat, almost like cut paper: the hills are smooth cones, with little shading to make them look solid."},
+            {"status": "inferred",
+             "zh": "馆方记录的材质中有金，但在这里所用的照片上，看不出金用在何处。",
+             "en": "The museum's record lists gold among the materials, but where it was applied cannot be made out in the photograph used here."}
+          ]
+        },
+        {
+          "label": {"zh": "线条与点", "en": "Line and dot"},
+          "region": [0.2, 0.04, 0.52, 0.96],
+          "segments": [
+            {"status": "inferred",
+             "zh": "亭子用细而直、粗细均匀的墨线画成，像用界尺画的一样：瓦垄、栏杆、屋檐都一一交代清楚。",
+             "en": "The pavilion is drawn with fine, straight, even ink lines, as if ruled: every row of tiles, railing post and eave is spelled out."},
+            {"status": "inferred",
+             "zh": "树则相反。树叶用笔尖一点一点点出来，点挨着点，所以每个树冠看上去都柔和而略带朦胧。",
+             "en": "The trees are the opposite. Their foliage is stippled with the tip of the brush, dot beside dot, so each crown looks soft and slightly blurred."},
+            {"status": "inferred",
+             "zh": "竹子又是另一种笔法：每片竹叶是一笔短而尖的撇，几百笔层层叠叠。",
+             "en": "The bamboo is a third kind of mark: each leaf is one short tapering stroke, hundreds of them, overlapping."},
+            {"status": "inferred",
+             "zh": "纸张年久变成温暖的浅褐色。青色的山峰上有几道细细的竖向折痕，像是反复卷起、展开留下的。",
+             "en": "The paper has darkened with age to a warm tan. Fine vertical creases cross the blue peaks, the kind left by rolling and unrolling."}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "context",
+      "mode": "provenance",
+      "stops": [
+        {
+          "label": {"zh": "故事：王羲之与鹅", "en": "The story: Wang Xizhi and the geese"},
+          "region": [0.34, 0.14, 0.54, 0.9],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "馆方记录的作品名是《王羲之观鹅图》。",
+             "en": "The museum's title for the work is Wang Xizhi Watching Geese."},
+            {"status": "inferred",
+             "zh": "王羲之是四世纪东晋人，被尊为“书圣”，是中国历史上最受推崇的书法家。",
+             "en": "Wang Xizhi lived in the fourth century and is honoured as the Sage of Calligraphy, 书圣, the most admired calligrapher in Chinese history."},
+            {"status": "inferred",
+             "zh": "相传他爱鹅，并从鹅颈的转动中悟出运腕的道理。还有一个故事说，他为一位道士抄写了一部道家经典，换回一群鹅。",
+             "en": "He is said to have loved geese, and to have learned something about turning the wrist from watching how they move their necks. One story tells that he copied out a Daoist classic for a priest in exchange for a flock of geese."},
+            {"status": "inferred",
+             "zh": "画中表现的是凝望的那一刻，而不是由此而来的书写。",
+             "en": "The painting shows that moment of looking, not the writing that came from it."}
+          ]
+        },
+        {
+          "label": {"zh": "画家：钱选", "en": "The painter: Qian Xuan"},
+          "region": [0, 0, 0.18, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "钱选生于1239年，卒于1301年。馆方将此画定为约1295年，元代。",
+             "en": "Qian Xuan lived from 1239 to 1301. The museum dates the painting to about 1295, in the Yuan dynasty."},
+            {"status": "inferred",
+             "zh": "他是吴兴人，即今天的浙江湖州，画上的落款也这样写。",
+             "en": "He came from Wuxing, today's Huzhou in Zhejiang province, as his signature on the scroll says."},
+            {"status": "inferred",
+             "zh": "他在宋朝长大，1279年宋亡于蒙古时约四十岁。后人记得他是一位不肯在元朝做官、以卖画为生的文人。",
+             "en": "He grew up under the Song dynasty and was about forty when it fell to the Mongols in 1279. He is remembered as a scholar who did not take office under the new Yuan dynasty and lived by his painting."},
+            {"status": "inferred",
+             "zh": "这样看来，古意的青绿画法，以及画中这位前代名士在园中悠然自得的题材，或许都是在回望一个逝去的世界。这一解读有待策展人确认。",
+             "en": "Seen that way, the old blue-and-green style and the subject, a famous man of an earlier age at ease in his garden, may both look back to a lost world. That reading needs a curator's confirmation."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：约1295年，画家的题诗", "en": "Seals and writing: about 1295, the painter's poem"},
+          "region": [0.02, 0, 0.18, 1],
+          "segments": [
+            {"status": "inferred",
+             "zh": "卷上最早的文字，是最左端画家自己的题诗：“修竹林间爽致多，闲亭坦腹意如何。为书道德遗方士，留得风流一爱鹅。”",
+             "en": "The earliest writing on the scroll is the painter's own poem at the far left. In Chinese it reads: 修竹林间爽致多，闲亭坦腹意如何。为书道德遗方士，留得风流一爱鹅。"},
+            {"status": "inferred",
+             "zh": "大意是：修长的竹林间多么清爽，他在闲亭里敞着衣襟，心里在想什么？他为道士抄写了《道德经》，留下了“爱鹅”这段风雅的佳话。",
+             "en": "In plain words: among tall bamboo, so much cool delight. In the quiet pavilion, robe open, what is on his mind? He wrote out the Classic of the Way and its Power for a Daoist, and left us the charming tale of a man who loved geese."},
+            {"status": "inferred",
+             "zh": "落款旁有一方小红印，应是画家自己的印。",
+             "en": "Beside the signature is a small red seal that appears to be the painter's own."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：十八世纪，皇帝的题诗和印", "en": "Seals and writing: 18th century, an emperor's poem and seals"},
+          "region": [0.19, 0, 0.63, 0.74],
+          "segments": [
+            {"status": "inferred",
+             "zh": "作画约四个半世纪之后，这卷画进入了清宫收藏。树林上方那段短短的题字落款为“御题”，纪年是干支“丙寅”，在乾隆朝即1746年。",
+             "en": "About four and a half centuries after it was painted, the scroll was in the Qing imperial collection. The short inscription above the trees is signed as written by the emperor and dated with the cyclical year bingyin, 丙寅, which in the Qianlong reign is 1746."},
+            {"status": "inferred",
+             "zh": "水面上的三方大印，以及画家题诗旁的两方椭圆印，都是皇家的印。其中一方椭圆印文为“乾隆御览之宝”，另一方是其子嘉庆朝的“嘉庆御览之宝”。",
+             "en": "The three large seals in the open water, and the two oval seals near the painter's poem, are imperial seals. One of the ovals reads 乾隆御览之宝, treasure viewed by the Qianlong emperor. The other names the reign of his son, Jiaqing."},
+            {"status": "inferred",
+             "zh": "水面上那方圆印文为“古稀天子”，是皇帝七十岁以后所用；下面的方印“八徵耄念之宝”则是他八十岁时的印。可见这些印是在题诗几十年之后陆续盖上的。",
+             "en": "The round seal in the water reads 古稀天子, Son of Heaven at seventy. The square one below it, 八徵耄念之宝, marks his eightieth year. So these seals were added decades after the poem."},
+            {"status": "inferred",
+             "zh": "在今天看来，这些印打断了空白的水面；对皇帝来说，它们记录的是四十多年间一次又一次的观看。",
+             "en": "To a modern eye the seals interrupt the empty water. For the emperor they recorded that he had looked at the scroll again and again over more than forty years."}
+          ]
+        },
+        {
+          "label": {"zh": "题跋与印章：画外的长卷", "en": "Seals and writing: the scroll beyond the painting"},
+          "region": [0, 0, 1, 1],
+          "segments": [
+            {"status": "verified", "source": "met",
+             "zh": "整卷长1063.8厘米，而画心只有92.7厘米，还不到全卷的十分之一。",
+             "en": "The whole scroll is 1,063.8 centimetres long and the painting is 92.7, less than a tenth of it."},
+            {"status": "inferred",
+             "zh": "画前有引首，写着四个大字“山阴逸兴”；画后接着多张纸，是后人陆续写下的诗和题跋。",
+             "en": "Before the painting comes a title sheet with four large characters, 山阴逸兴. After it come many sheets of poems and comments written by later hands."},
+            {"status": "verified", "source": "met",
+             "zh": "馆方的来源说明记载：此卷曾为 C. C. Wang 家族收藏，1973年由狄龙基金（The Dillon Fund）捐赠。",
+             "en": "The museum's credit line records that the scroll came from the C. C. Wang family collection and was given by The Dillon Fund in 1973."},
+            {"status": "inferred",
+             "zh": "本原型尚未逐一描述引首和画后的题跋，这需要依据馆方的释文。",
+             "en": "This prototype does not yet describe the title sheet or the later writings one by one. That needs the museum's own transcriptions."}
+          ]
+        }
+      ]
+    }
+  ]
+}
