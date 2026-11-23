@@ -1,0 +1,837 @@
+{
+ "data": {
+  "id": 130361,
+  "accession_number": "1953.126",
+  "share_license_status": "CC0",
+  "tombstone": "Streams and Mountains without End (溪山無盡), 1100–1150. China, late Northern Song dynasty (960-1127) - Jin dynasty (1115-1234). Handscroll; ink and slight color on silk; image: 35.1 x 213 cm (13 13/16 x 83 7/8 in.); overall: 35.1 x 1103.8 cm (13 13/16 x 434 9/16 in.). The Cleveland Museum of Art, Gift of the Hanna Fund, 1953.126",
+  "current_location": null,
+  "title": "Streams and Mountains without End",
+  "title_in_original_language": "溪山無盡",
+  "creation_date": "1100–1150",
+  "creation_date_earliest": 1100,
+  "creation_date_latest": 1150,
+  "artists_tags": [],
+  "culture": [
+   "China, late Northern Song dynasty (960-1127) - Jin dynasty (1115-1234)"
+  ],
+  "technique": "handscroll; ink and slight color on silk",
+  "support_materials": [],
+  "department": "Chinese Art",
+  "collection": "ASIAN - Handscroll",
+  "type": "Painting",
+  "measurements": "Image: 35.1 x 213 cm (13 13/16 x 83 7/8 in.); Overall: 35.1 x 1103.8 cm (13 13/16 x 434 9/16 in.)",
+  "dimensions": {
+   "image": {
+    "height": 0.351,
+    "height_inch": 13,
+    "height_inch_fraction": 0.8125,
+    "width": 2.13,
+    "width_inch": 83,
+    "width_inch_fraction": 0.875
+   },
+   "overall": {
+    "height": 0.351,
+    "height_inch": 13,
+    "height_inch_fraction": 0.8125,
+    "width": 11.038,
+    "width_inch": 434,
+    "width_inch_fraction": 0.5625
+   }
+  },
+  "state_of_the_work": null,
+  "edition_of_the_work": null,
+  "copyright": null,
+  "inscriptions": [
+   {
+    "inscription": "9 colophons and 48 seals: \n\n1 colophon, dated 1205, of Wang Wenwei 王文蔚 (dates unknown); \n\n1 colophon, dated 1205, of Li Hui 李惠 (dates unknown); \n\n1 colophon of Weiluo Tian Xie 蔚羅田獬 (dates unknown); \n\n1 colophon, dated 1214, of He Yan 何言 (dates unknown); \n\n1 colophon, dated 1326, of Cao Yuanyong 曹元用 (d. 1329)\n\n1 colophon, dated 1332, of Kangli Zishan 康里子山 (Naonao; 1295–1345); \n\n1 colophon, dated 1336, of Liu Zai 劉載. (dates unknown); \n\n1 colophon, dated 1380, and 4 seals of Yang Mao 楊懋 (1300–after 1380); \n\n4 seals of the Hou family (ca. 1340); \n\n1 colophon of Wang Duo 王鐸 (1592–1652); \n\n4 seals of Zhang Bingqian 張秉乾 (juren of 1729); \n\n8 seals of Liang Qingbiao 梁清標 (1620–1691); \n\n2 seals of the Qianlong emperor (r. 1736–95); \n\n4 seals of the Jiaqing emperor (r. 1796-1820); \n\n3 seals of the Xuantong emperor (r. 1909–11); \n\n2 seals of Ye Gongchuo 葉恭綽 (1881–1968); \n\n17 seals of Zhang Yuan 張爰 (Zhang Daqian 張大千, 1899–1983)",
+    "inscription_translation": null,
+    "inscription_remark": null,
+    "sortorder": 1
+   },
+   {
+    "inscription": "Colophon 1. Wang Wenwei 王文蔚. Dated third month and third day, 1205, under the reign of Zhangzong of the Jin dynasty.\n\n造物元無心，山川秀氣聚。畫手亦無盡，各出新意度。\n誰將妙林泉，淡墨寫縑素。重巒疊嶂間，三兩人家住。\n茅舍隔素籬，小橋通細路。溪上數葉舟，雅有物外趣。\n嵓崦藏招提，依稀認窗戶。山色四時宜，雲煙自朝暮。\n不知塵世中，此景在何處。收拾買山錢，投老好歸去。\n\n泰和乙丑三月三日平原王文蔚謹再拜，書于河東縣署之野趣堂。",
+    "inscription_translation": "The creator has no intentions,\nMaking mountains and streams from pure air.\nThe painters too are also innumerable;\nEvery one of them has some new ideas.\nWho has picked these tasteful forests and springs,\nAnd laid them on this white piece of silk with light ink?\nIn the midst of layers of peaks and piles of overhangs,\nTwo or three families have found dwellings.\nThe thatched huts are separated by sparse fences.\nA little bridge leads to several narrow paths.\nOn the river boats float like leaves.\nThe tranquility gives a flavor that is beyond this world.\nBehind a rock, a monastery is hidden,\nDoors and windows of some buildings are faintly recognizable.\nThe appearance of the mountain is proper for all four seasons,\nCloudy and misty from dawn to dusk.\nI wonder where in this dust-filled world Can scenes like this be found!\nGather your pension money;\nWhen old, this is a good place to go.\n\nThe third day, third month, the year of yichou in the Taihe reign (1205), Wang Wenwei of Pingyuan wrote this at Yequ Tang in the magisterial office of Hedong.",
+    "inscription_remark": null,
+    "sortorder": 2
+   },
+   {
+    "inscription": "Colophon 2. Li Hui 李惠. The colophon was written three days before the Qingming Festival in 1205. \n\n畫師慣在山中居，含毫吮墨聊自娛。\n閑將一段冰霜絹，寫出千里江山圖。\n前山後山互出沒，山腰林樾相縈紆。\n危橋澗溜瀉鳴玉，山根一匯為平湖。\n波平短艇快漁釣，雲深細徑來樵蘇。\n僊宮梵宇占幽勝，雕欄複閣森蓬壺。\n往來行客煙靄外，飄飄野店青帘孤。\n人家雞犬聲相接，熙熙化日安唐宇。\n嗟余嗜好何其迂，膏肓泉石真吾徒。\n一行作吏墮世網，薄書汨沒勞奔趨。\n千巖萬壑但夢想，故園三徑應將蕪。\n披圖暫洗黃塵眼，拊膺三嘆空踟躕。\n\n泰和乙丑清明前三日絳臺李惠書于舜城府署之九思堂。",
+    "inscription_translation": "A master painter is used to mountain dwelling,\nHe amuses himself with brush and ink.\nLeisurely he took up a piece of icy white silk,\nAnd drew a picture of rivers and mountains for thousands of miles:\nFront hills and back hills mutually run into each other,\nAnd at their waist level forests meet and tangle.\nA dangerous bridge hangs over a rapid stream that roars like rattling jades.\nWhere the roots of mountains sink in union, there is the flat surface of the lake.\nThe waves are calm, and the fishing is easy in a short boat;\nThe clouds are thick, and along the small paths one gathers firewood.\nImmortal palaces and Buddhist temples are found in quiet and beautiful regions;\nCarved railings and complex of pavilions are situated deep in Penghu.\nComing and going, the travelers are seen outside the mist;\nFluttering is the blue banner of a shop alone in the wilderness.\nOther people living with the noise of chickens and dogs\nAre happily at peace under a good government.\nWhy then is my taste so foolish?\nSo I crave the company of rocks and streams.\nOnce I became a clerk I fell into the net of worldly affairs.\nMy humble books are buried in tears and I am exhausted by the race of life.\nThe thousand precipices and ten thousand valleys have since become only a dream.\nThe three paths of my old family garden are now covered with weeds.\nWhile opening the scroll I seem to wash my dustfilled eyes,\nWith hand on chest, I sigh three times, in vain.\n\nOn the third day before the Qingming Festival, in the year of yichou of the Taihe era (1205), I, Li Hui of Jiangtai, wrote this at Jiusi Tang of the prefecture office of Shuncheng.",
+    "inscription_remark": null,
+    "sortorder": 3
+   },
+   {
+    "inscription": "Colophon 3. Weiluo Tian Xie 蔚羅田獬. \n\n畫工紛紛不可紀，擺脫俗流幾人耳。\n夫誰援筆掃鵝溪，一段風煙且千里。\n白波青嶂渺無窮，水接山兮山插水。\n小橋野店相勾連，古寺樓臺突兀起。\n飄然氣象與神俱，但患未明孰姓氏。\n郭熙雖老典型存，為問主公無乃是。\n此畫世希當寶藏，無與碌碌同一視。\n更看卷首數公詩，奇絕清新相表裏。\n\n蔚羅田獬",
+    "inscription_translation": "Painters are innumerable,\nBut how few of them have escaped mediocrity.\nWho has swept over this river with a painting brush\nForming a picture of wind and mist that stretches over a thousand miles?\nThe white waves and blue peaks are far and endless,\nWhile the water joins the mountains, the mountains are actually planted in the water.\nA little bridge leads to a wilderness shop,\nBehind which terraces of an old temple suddenly rise.\nThe atmosphere is free, and the appearance is comparable to those that are divine.\nOnly the anonymity of the painter is rather worrisome.\nGuo Xi may be old, but his likeness is here,\nI wonder if the master [owner] would agree with me.\nThis painting, a true rarity, should be carefully treasured;\nIt must not be treated as an ordinary thing.\nIn addition, we also look at the several poems at the beginning of the scroll written by several eminent or elderly gentlemen.\nTheir fresh insights are worthy compliments to the painting.\n\nWeiluo Tian Xie",
+    "inscription_remark": "The writer's name is foreign.",
+    "sortorder": 4
+   },
+   {
+    "inscription": "Colophon 4. He Yan 何言. Written in 1214.\n\n萬有來自無，一真歸所託。畫師得三昧，胸中幻丘壑。\n百態逐墨破，群形隨筆落。地近迹分明，天遙痕隱約。\n雲物自吐吞，峯巒非斧鑿。江鄉閴無市，谷關常不鑰。\n中有野夫閑，童琴而歩鶴。酒斾出籬懸，漁舟臨岸泊。\n澗樹蔽橋樑，巖松迷殿閣。岑疊宿霧重，野曠林煙薄。\n危棧接縈紆，亂泉通脈絡。途中人往來，僕馬何羸弱。\n怪石虎踡跼，古木龍蟠錯。一幅宜好收，千金非易博。\n玉堂閑卷舒，眼界增寥廓。視險尚寛平，見危除慘虐。\n氣象溢國華，川澤資廟略。功名業已書，歸去鞭先著。\n但知色即空，何是今非昨。飽乎仁智心，箇中無限樂。\n\n貞祐甲戌秋暮，東營何言題。",
+    "inscription_translation": "The ten thousand objects came from nothingness,\nEverything goes back to the one true essence.\nThe painting master is in accord with samadhi.\nHe creates hills and valleys out of his bosom.\nHundreds of apparitions appear after the spread ink;\nVarieties of shapes follow the application of the brush.\nWhere things are near, they are made clear.\nIn the distant sky the traces become obscured.\nViews exist by themselves,\nPrecipices and peaks are not artificially chiseled.\nThe village by the river is quiet with no market.\nThe mountain gateway is often left unlocked.\nAmid this there are a few leisurely men,\nWatching a boy carrying a qin, and another walking a crane.\nOver the fence the wine shop banners are hanging;\nNear the shore the fishing boats are anchored.\nThe trees over the streams partly cover the bridge.\nThe pavilions are shaded by tall pines from the cliffs.\nBehind the multiple peaks, the moisture is heavy;\nOver the wild plain, the mist that covers the trees is light.\nDangerous paths are lined by winding bushes.\nThe meandering rapids link with mountains’ veins.\nComing and going travelers go on their journeys;\nHow the attendants and the horses look wearied.\nThere are strange peaks that look like crouching tigers,\nThe ancient trees resemble tangled dragons.\nThis painting deserves to be cherished.\nEven a thousand pieces of gold may not obtain it.\nSitting in the Hanlin Academy I leisurely open the scroll,\nMy mind is being broadened.\nAware of pitfalls I am happy that I am safe,\nFacing the dangerous, I would still have to destroy the wicked.\nA grand atmosphere fills the nation.\nThe rich mountains and waters feed the high designs.\nWhen the deeds are done and one’s name is in the book of merits,\nIn my home-bound journey I will put the whip to good use.\nKnowing that all forms are but empty.\nWhy must I insist that yesterday was wrong and today is right?\nBe nourished by a heart of benevolence and wisdom,\nIn which we will find the bliss that is eternal.\n\nIn late autumn, the year of jiaxu during the Zhenyou era (1214), I, He Yan of Eastern Encampment, wrote this.",
+    "inscription_remark": null,
+    "sortorder": 5
+   },
+   {
+    "inscription": "Colophon 5. Cao Yuanyong 曹元用 (d. 1329). Dated 1326. \n\n岸擁危橋斷，溪浮小艇斜。\n萬山最深處，依約兩三家。\n\n泰定丙寅秋，曹元用題。",
+    "inscription_translation": "Shores carry a dangling bridge,\nStreams float slender boats;\nIn the depth of ten thousand hills\nTwo or three families are thinly placed.\n\nIn autumn, the year of bingyin in the Taiding era (1326), I, Cao Yuanyong, wrote this.",
+    "inscription_remark": "The colophon is the first among those by Yuan writers.",
+    "sortorder": 6
+   },
+   {
+    "inscription": "Colophon 6. Kangli Zishan 康里子山 (i.e., Kangli Naonao). The colophon bears a date of 1332.\n\n右溪山圖，意韻蕭灑。一見使人有烟霞之想，真可珍藏。又有□金諸名勝題詩其左。兵火之餘，\n殊不易得也。\n\n至順三年暮春之月，康里子山跋。",
+    "inscription_translation": "On the right is the painting [known as] Xi shan tu [Streams and Mountains], which is imbued with a free and leisurely air. The sight of it provokes unworldly thoughts. It is truly a painting that deserves meticulous care. To the left, there are poetic colophons by famous men from the [Song] and Jin periods. That the scroll survived the vicissitude of wars is quite fortunate indeed.",
+    "inscription_remark": "Kangli Naonao called the painting simply Streams and Mountains. Was that the real title of the painting? Or did he simplify it just for the occasion? Zhang Daqian added the two characters “without End,” in the twentieth century. Further, Kangli may also have suggested the presence of Song colophons at the end of the scroll, prior to Wang Wenwei’s. The unfortunate damage in that segment erased the character “Song”; thus it requires the later corroboration from Yang Mao.",
+    "sortorder": 7
+   },
+   {
+    "inscription": "Colophon 7. Liu Zai 劉載.\n\n雲拂埜田閑種玉，雨餘巖溜碎傾金。\n幾時也結團茆去，麟閤恬然不挂心。\n\n至元二年正月，長安劉載載之謹錄上。",
+    "inscription_translation": "Clouds sweep over the open fields where time passes leisurely in “jade” planting.\nAfter the rain, [glistening] rivulets run over the cliff like scattered gold.\nSomeday I wish I could build a thatched hut there.\nThe ambition in the Unicorn Halls will not weigh on my heart.\n\nIn the first month, the second year of zhiyuan (1336), I, Liu Zai, [also known as] Zaizhi of Chang’an, respectfully wrote this.",
+    "inscription_remark": "Liu Zai is the last among the Yuan writers to inscribe on this painting.",
+    "sortorder": 8
+   },
+   {
+    "inscription": "Colophon 8. Yang Mao 楊懋 (1300–after 1380). \n\n觀此圖，經營位置，筆法高古，山明石潤。其橋梁、路道、樹林、人物、遠近；一一誠得真山水之深趣。非當時名筆有大才者不能至此。不必問其誰何，可為神品。况宋金元三朝名公所跋，尚不能記，想其來尤遠矣。然而物經累變而尚存，是物之有壽者也。余不復再論。文顯其保之。洪武庚申春，八十翁楊懋觀。",
+    "inscription_translation": "I have studied the composition and the design of this painting and have noticed its brushwork in the ancient manner. The mountains are bright and the rocks are moist. Far and near, the bridges, paths, trees, human figures, and other objects are clear and give the flavor of real landscape. None but the greatly talented hands of that time could have achieved this. There is no need to ask the name of the painter; the work itself can be classed in the divine order. Considering the fact that the writers of the colophons of three dynasties, Song, Jin, and Yuan, have not been able to trace the source of the painting, its origin must indeed be ancient. A work that survives age and crisis is a work with the virtue of longevity. It is not for me to make further speculations, but only to hope that Wenxian will treasure this with great care. In the spring of the gengshen year, the Hongwu era (1380), I, Yang Mao, at eighty sui [have seen this].",
+    "inscription_remark": null,
+    "sortorder": 9
+   },
+   {
+    "inscription": "Colophon 9. Wang Duo 王鐸 (1592–1652).\n\n文蓀親翁博雅，文詩鴻暢。舍弟持此喜觀，遂抽管題數語：\n山勢委折，筆墨無痕。宋人中如此不多見也。譬之兵家，當是韓白。王鐸。",
+    "inscription_translation": "My brother’s relative by marriage, Wensun, is learned and has good taste. He writes good prose and poetry. My brother brought over this painting of his to show me, so I pick up a brush and write these few words:\nThe posture of the mountains is bent and complex. The brush and ink have no artificial marks. This degree of excellence is not often seen in Song paintings. Speaking in military terms, the achievement is comparable to that of the great generals Han [Xin 韓信 (d. 196 BC)] and Bai [Qi 白起 (d. 257 BC)].",
+    "inscription_remark": "Wensun 文蓀 is the hao [literary name] of Wang Changheng.",
+    "sortorder": 10
+   }
+  ],
+  "exhibitions": {
+   "current": [
+    {
+     "id": 300427,
+     "title": "Chinese Landscape Painting",
+     "description": "<i>Chinese Landscape Painting</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 5-December 26, 1954).",
+     "opening_date": "1954-11-05T04:00:00"
+    },
+    {
+     "id": 301477,
+     "title": "In Memoriam: Leonard C. Hanna, Jr.",
+     "description": "<i>In Memoriam: Leonard C. Hanna, Jr.</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (March 4-April 7, 1958).",
+     "opening_date": "1958-03-04T05:00:00"
+    },
+    {
+     "id": 377849,
+     "title": "1000 Jahre Chinesische Malerei",
+     "description": "<i>1000 Jahre Chinesische Malerei</i>. Haus der Kunst, Munich, Mùnich, Germany (organizer) (October 16-December 13, 1959).",
+     "opening_date": "1959-10-16T04:00:00"
+    },
+    {
+     "id": 443907,
+     "title": "Summer Mountains: the Timeless Landscape",
+     "description": "<i>Summer Mountains: the Timeless Landscape</i>. The Metropolitan Museum of Art, New York, NY (organizer) (April 9-October 3, 1976).",
+     "opening_date": "1976-04-09T05:00:00"
+    },
+    {
+     "id": 304517,
+     "title": "Eight Dynasties of Chinese Painting",
+     "description": "<i>Eight Dynasties of Chinese Painting</i>. The Nelson-Atkins Museum of Art (November 7, 1980-January 4, 1981); The Cleveland Museum of Art (February 11-March 29, 1981); Tokyo National Museum (October 4-November 17, 1982).",
+     "opening_date": "1981-02-11T05:00:00"
+    },
+    {
+     "id": 304561,
+     "title": "Visions of Landscape: East and West",
+     "description": "<i>Visions of Landscape: East and West</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 17-March 21, 1982).",
+     "opening_date": "1982-02-17T05:00:00"
+    },
+    {
+     "id": 311446,
+     "title": "Asian Autumn: Masterpieces from the Collection",
+     "description": "<i>Asian Autumn: Masterpieces from the Collection</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (September 17, 1991-January 5, 1992).",
+     "opening_date": "1991-09-17T04:00:00"
+    },
+    {
+     "id": 196054,
+     "title": "Streams and Mountains Without End: Asian Art and the Legacy of Sherman E. Lee at the Cleveland Museum of Art",
+     "description": "<i>Streams and Mountains Without End: Asian Art and the Legacy of Sherman E. Lee at the Cleveland Museum of Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 27-August 23, 2009).",
+     "opening_date": "2009-06-27T04:00:00"
+    },
+    {
+     "id": 202572,
+     "title": "Silent Poetry: Masterworks of Chinese Painting",
+     "description": "<i>Silent Poetry: Masterworks of Chinese Painting</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 14, 2015-April 24, 2016).",
+     "opening_date": "2015-11-14T00:00:00"
+    }
+   ],
+   "legacy": [
+    {
+     "description": "<em>Chinese Landscape Painting</em>. Cleveland Museum of Art, Cleveland, OH (1954). cat. no.16.",
+     "opening_date": "1954-01-01T00:00:00"
+    },
+    {
+     "description": "<em>La Chinese des Song. </em>Musée Cernushi, Paris, France (1956).",
+     "opening_date": "1956-01-01T00:00:00"
+    },
+    {
+     "description": "<em>Chinese Paintings</em>. The Cleveland Museum of Art, Cleveland, OH (1960).",
+     "opening_date": "1960-01-01T00:00:00"
+    },
+    {
+     "description": "<em>Summer Mountains: The Timeless Landscape</em>. Metropolitan Museum of Art, New York, NY (1976).",
+     "opening_date": "1976-01-01T00:00:00"
+    }
+   ]
+  },
+  "provenance": [
+   {
+    "description": "Chen Ming 陳明 [active mid-1300s]",
+    "citations": [],
+    "footnotes": null,
+    "date": "Mid-1300s",
+    "sortorder": 1
+   },
+   {
+    "description": "Wang Changheng 王長恒 [active 1600s]",
+    "citations": [],
+    "footnotes": null,
+    "date": "1600s",
+    "sortorder": 2
+   },
+   {
+    "description": "Liang Qingbiao 梁清標 [1620–1691]",
+    "citations": [],
+    "footnotes": null,
+    "date": "1600s",
+    "sortorder": 3
+   },
+   {
+    "description": "Zhang Bingqian 張秉乾 [juren of 1729]",
+    "citations": [],
+    "footnotes": null,
+    "date": "1700s",
+    "sortorder": 4
+   },
+   {
+    "description": "Qing imperial collection (seals of Emperors Qianlong, r. 1736–1795, Jiaqing, r. 1796–1820, and Xuantong, r. 1909–1911)",
+    "citations": [],
+    "footnotes": null,
+    "date": "by 1736–1911?",
+    "sortorder": 5
+   },
+   {
+    "description": "Ye Gongchuo 葉恭綽 [1881–1968]",
+    "citations": [],
+    "footnotes": null,
+    "date": "early 1900s?",
+    "sortorder": 6
+   },
+   {
+    "description": "Zhang Daqian 張大千 [1899–1983]",
+    "citations": [],
+    "footnotes": null,
+    "date": "early 1900s–before 1950",
+    "sortorder": 7
+   },
+   {
+    "description": "(A dealer, Hong Kong, sold to Walter Hochstadter)",
+    "citations": [],
+    "footnotes": [
+     "<div><!--block-->Giuffrida (2018), p. 203, note 33. \"Hochstadter acquired the painting from a dealer rather than directly fro Chang Dai-chien, whose seals were the most recent to be added to the painting. Surviving 1950 receipts from Hong Kong dealers J. D. Chen [Chen Rentao] 陳仁濤 (1906-68), Wah Tung Co., and Chuen Koo Chai list sales of ink-on-silk handscrolls reputedly from the Song period that could be <em>Streams and Mountains</em> (priced at $2,500, $4,000, and $6,000, respectively).</div>"
+    ],
+    "date": "?–1950",
+    "sortorder": 8
+   },
+   {
+    "description": "(Walter Hochstadter [1914–2007], New York, NY, sold to the Cleveland Museum of Art)",
+    "citations": [],
+    "footnotes": null,
+    "date": "1950–1953",
+    "sortorder": 9
+   },
+   {
+    "description": "The Cleveland Museum of Art, Cleveland, OH",
+    "citations": [],
+    "footnotes": null,
+    "date": "1953–",
+    "sortorder": 10
+   }
+  ],
+  "find_spot": null,
+  "related_works": [],
+  "former_accession_numbers": [],
+  "did_you_know": "The portrayal of the distant lands is rich with details like pavilions, villages, and human activities.",
+  "early_education_description": null,
+  "artlens_description": null,
+  "description": "Streams and Mountains without End was a landmark acquisition of 1953, made just a year after Sherman Lee had returned to Cleveland as curator of Oriental art. He acquired it with the intention to provide \"a more than adequate foundation for a fine collection of Chinese landscape painting.\" This impressive work demonstrates the culmination of stylistic developments in Chinese monumental landscape painting following the Northern Song tradition. It represents a journey through a landscape, making it a fitting metaphor for Lee’s journey of discovery and achievement over a lifetime.",
+  "external_resources": {
+   "wikidata": [
+    "https://www.wikidata.org/wiki/Q60516241"
+   ],
+   "internet_archive": [
+    "https://archive.org/details/clevelandart-1953.126-streams-and-mountain"
+   ]
+  },
+  "citations": [
+   {
+    "citation": "Lee, Sherman. \"Chinese Landscape Painting.\" <em>The Bulletin of the Cleveland Museum of Art </em>41, no. 9 (November 1954): 199–201.",
+    "page_number": "Reproduced: cover; Mentioned: p. 199",
+    "url": "https://www.jstor.org/stable/25141989"
+   },
+   {
+    "citation": "Lee, Sherman E. <em>Chinese Landscape Painting</em>. Cleveland, OH: The Cleveland Museum of Art, 1954.",
+    "page_number": "Mentioned: p. 145, cat. 14; Reproduced: p. 27",
+    "url": "https://archive.org/details/ChineseLandscape"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>The Cleveland Museum of Art Handbook.</em> Cleveland, OH: The Cleveland Museum of Art, 1958.",
+    "page_number": "Mentioned and Reproduced: cat. no. 853",
+    "url": "https://archive.org/details/CMAHandbook1958/page/n151"
+   },
+   {
+    "citation": "Goepper, Roger. <em>1000 Jahre chinesische Malerei</em>. München: Haus der Kunst, 1959.",
+    "page_number": "Reproduced: cat. no.11",
+    "url": null
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1966.</em> Cleveland, OH: The Cleveland Museum of Art, 1966.",
+    "page_number": "Reproduced: p. 258",
+    "url": "https://archive.org/details/CMAHandbook1966/page/n282"
+   },
+   {
+    "citation": "Edwards, Richard. <em>Li Ti</em>. Washington: Smithsonian Institution, 1967.",
+    "page_number": "Mentioned: p. 18, footnote 14",
+    "url": "https://archive.org/details/liti331967edwa"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1969</em>. Cleveland, OH: The Cleveland Museum of Art, 1969.",
+    "page_number": "Reproduced: p. 258",
+    "url": "https://archive.org/details/CMAHandbook1969/page/n282"
+   },
+   {
+    "citation": "The Cleveland Museum of Art. <em>Handbook of the Cleveland Museum of Art/1978</em>. Cleveland, OH: The Cleveland Museum of Art, 1978.",
+    "page_number": "Reproduced: p. 341",
+    "url": "https://archive.org/details/CMAHandbook1978/page/n361"
+   },
+   {
+    "citation": "Ho, Wai-kam, Sherman E. Lee, Laurence Sickman, and Marc F. Wilson. <em>Eight Dynasties of Chinese Painting: The Collections of the Nelson Gallery-Atkins Museum, Kansas City, and the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, in cooperation with Indiana University Press, 1980.",
+    "page_number": "Reproduced: cat. no. 21, pp. 35–37",
+    "url": null
+   },
+   {
+    "citation": "Lee, Sherman E., and Wai-kam Ho. <em>The Nature and Significance of the Collection of Liang Ch'ing-Piao</em>. Taipei, Taiwan: Chung-hua ming-kuo, 70 nien [1981].",
+    "page_number": "p. 122, no. 60",
+    "url": null
+   },
+   {
+    "citation": "Talbot, William S. “Visions of Landscape: East and West.” <em>The Bulletin of the Cleveland Museum of Art</em> 70, no. 3 (March 1983): 112–135.",
+    "page_number": "Mentioned and Reproduced: pp. 114–115, fig. 3",
+    "url": "http://www.jstor.org/stable/25159808"
+   },
+   {
+    "citation": "Harrist, Robert E. Jr. \"'Watching Clouds Rise': A Tang Dynasty Couplet and Its Illustration in Song Painting.\" <em>The Bulletin of the Cleveland Museum of Art.</em> Vol. 78, No. 7 (Nov., 1991), 301–323.",
+    "page_number": "Reproduced: p. 315, fig. 8",
+    "url": "https://www.jstor.org/stable/25161335"
+   },
+   {
+    "citation": "Cunningham, Michael R., Stanislaw J. Czuma, Anne E. Wardwell, and J. Keith Wilson. <em>Masterworks of Asian Art</em>. Cleveland, OH: The Cleveland Museum of Art, 1998.",
+    "page_number": "Mentioned and Reproduced: pp. 50–51",
+    "url": ""
+   },
+   {
+    "citation": "\"Silent Poetry: A new book and focus exhibition celebrate Cleveland's outstanding collection of Chinese paintings.” <em>Cleveland Art: Cleveland Museum of Art Members Magazine</em> 55, no. 6 (November/December 2015): 7.",
+    "page_number": "Reproduced: p. 7",
+    "url": "https://archive.org/details/CMAMM2015-06"
+   },
+   {
+    "citation": "Chou, Ju-hsi and Anita Chung. <em>Silent poetry: Chinese paintings from the collection of the Cleveland Museum of Art</em>. Cleveland, OH: Cleveland Museum of Art, 2015.",
+    "page_number": "Mentioned and Reproduced: pp. 34–43",
+    "url": null
+   },
+   {
+    "citation": "McCormick, Sooa Im. \"Cross-cultural Dialogues and Misattributions in Early Joseon Period Landscape Paintings.\" <em>Arts of Asia</em> 48, no. 3 (May-June 2018): 78-84.",
+    "page_number": "Reproduced: p. 80, fig. 4",
+    "url": null
+   },
+   {
+    "citation": "Giuffrida, Noelle. <em>Separating Sheep from Goats: Sherman E. Lee and Chinese Art Collecting in Postwar America</em>. Oakland, California: University of California Press, 2018.",
+    "page_number": "Reproduced: pp. 90–91, fig. 51; cover; Mentioned: pp. 88–97, 203",
+    "url": null
+   },
+   {
+    "citation": "Hay, Jonathan. “Making sense of <em>Xuanhe huapu</em>.” <em>Archives of Asian Art </em>76, i. 1 (April 2026): 31–75.",
+    "page_number": "Mentioned: p. 60; Reproduced: pp. 62–63",
+    "url": ""
+   }
+  ],
+  "url": "https://clevelandart.org/art/1953.126",
+  "images": {
+   "annotation": null,
+   "web": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_web.jpg",
+    "width": "900",
+    "height": "139",
+    "filesize": "75890",
+    "filename": "1953.126_web.jpg"
+   },
+   "print": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_print.jpg",
+    "width": "3400",
+    "height": "525",
+    "filesize": "584573",
+    "filename": "1953.126_print.jpg"
+   },
+   "full": {
+    "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_full.tif",
+    "width": "28075",
+    "height": "4336",
+    "filesize": "365233716",
+    "filename": "1953.126_full.tif"
+   }
+  },
+  "alternate_images": [
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt0_web.jpg",
+     "width": "448",
+     "height": "900",
+     "filesize": "121689"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt0_print.jpg",
+     "width": "1693",
+     "height": "3400",
+     "filesize": "1301850"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt0_full.tif",
+     "width": "3036",
+     "height": "6096",
+     "filesize": "55545728"
+    },
+    "date_created": "2017-05-22T15:22:23",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt1_web.jpg",
+     "width": "900",
+     "height": "586",
+     "filesize": "158278"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt1_print.jpg",
+     "width": "3400",
+     "height": "2215",
+     "filesize": "2475089"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt1_full.tif",
+     "width": "6668",
+     "height": "4344",
+     "filesize": "86922196"
+    },
+    "date_created": "2007-09-19T19:35:12",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt2_web.jpg",
+     "width": "900",
+     "height": "40",
+     "filesize": "48539"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt2_print.jpg",
+     "width": "3400",
+     "height": "151",
+     "filesize": "227988"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt2_full.tif",
+     "width": "97338",
+     "height": "4328",
+     "filesize": "1263869976"
+    },
+    "date_created": "2007-07-19T17:12:06",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt3_web.jpg",
+     "width": "900",
+     "height": "611",
+     "filesize": "146158"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt3_print.jpg",
+     "width": "3400",
+     "height": "2310",
+     "filesize": "2009396"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt3_full.tif",
+     "width": "6353",
+     "height": "4317",
+     "filesize": "82303152"
+    },
+    "date_created": "2007-07-19T17:17:13",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt4_web.jpg",
+     "width": "900",
+     "height": "587",
+     "filesize": "188652"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt4_print.jpg",
+     "width": "3400",
+     "height": "2219",
+     "filesize": "3502867"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt4_full.tif",
+     "width": "6641",
+     "height": "4334",
+     "filesize": "86370588"
+    },
+    "date_created": "2007-07-19T17:30:47",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt5_web.jpg",
+     "width": "900",
+     "height": "586",
+     "filesize": "191810"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt5_print.jpg",
+     "width": "3400",
+     "height": "2213",
+     "filesize": "3497557"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt5_full.tif",
+     "width": "6638",
+     "height": "4320",
+     "filesize": "86052788"
+    },
+    "date_created": "2007-07-19T17:35:33",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt6_web.jpg",
+     "width": "900",
+     "height": "582",
+     "filesize": "185791"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt6_print.jpg",
+     "width": "3400",
+     "height": "2198",
+     "filesize": "3511063"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt6_full.tif",
+     "width": "6608",
+     "height": "4272",
+     "filesize": "84712232"
+    },
+    "date_created": "2007-07-19T17:39:17",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt7_web.jpg",
+     "width": "900",
+     "height": "582",
+     "filesize": "189704"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt7_print.jpg",
+     "width": "3400",
+     "height": "2200",
+     "filesize": "3451614"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt7_full.tif",
+     "width": "6621",
+     "height": "4284",
+     "filesize": "85117436"
+    },
+    "date_created": "2007-07-19T17:42:27",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt8_web.jpg",
+     "width": "900",
+     "height": "582",
+     "filesize": "161859"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt8_print.jpg",
+     "width": "3400",
+     "height": "2200",
+     "filesize": "2976512"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt8_full.tif",
+     "width": "6622",
+     "height": "4284",
+     "filesize": "85129272"
+    },
+    "date_created": "2007-07-19T17:45:44",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt9_web.jpg",
+     "width": "900",
+     "height": "589",
+     "filesize": "182392"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt9_print.jpg",
+     "width": "3400",
+     "height": "2226",
+     "filesize": "2357835"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt9_full.tif",
+     "width": "6627",
+     "height": "4338",
+     "filesize": "86269416"
+    },
+    "date_created": "2007-07-19T17:49:32",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt10_web.jpg",
+     "width": "900",
+     "height": "584",
+     "filesize": "202308"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt10_print.jpg",
+     "width": "3400",
+     "height": "2206",
+     "filesize": "2459719"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt10_full.tif",
+     "width": "6657",
+     "height": "4320",
+     "filesize": "86300676"
+    },
+    "date_created": "2007-07-19T17:52:40",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt11_web.jpg",
+     "width": "900",
+     "height": "588",
+     "filesize": "156334"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt11_print.jpg",
+     "width": "3400",
+     "height": "2223",
+     "filesize": "2239146"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt11_full.tif",
+     "width": "6616",
+     "height": "4326",
+     "filesize": "85886672"
+    },
+    "date_created": "2007-07-19T17:59:22",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt12_web.jpg",
+     "width": "900",
+     "height": "588",
+     "filesize": "175960"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt12_print.jpg",
+     "width": "3400",
+     "height": "2221",
+     "filesize": "2322447"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt12_full.tif",
+     "width": "6640",
+     "height": "4338",
+     "filesize": "86438796"
+    },
+    "date_created": "2007-07-19T18:06:23",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt13_web.jpg",
+     "width": "900",
+     "height": "589",
+     "filesize": "264312"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt13_print.jpg",
+     "width": "3400",
+     "height": "2224",
+     "filesize": "2645133"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt13_full.tif",
+     "width": "6640",
+     "height": "4344",
+     "filesize": "86562000"
+    },
+    "date_created": "2007-07-19T18:10:48",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt14_web.jpg",
+     "width": "900",
+     "height": "588",
+     "filesize": "226474"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt14_print.jpg",
+     "width": "3400",
+     "height": "2221",
+     "filesize": "2546823"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt14_full.tif",
+     "width": "6603",
+     "height": "4314",
+     "filesize": "85483684"
+    },
+    "date_created": "2007-07-19T18:15:31",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt15_web.jpg",
+     "width": "900",
+     "height": "587",
+     "filesize": "165853"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt15_print.jpg",
+     "width": "3400",
+     "height": "2216",
+     "filesize": "2266678"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt15_full.tif",
+     "width": "6628",
+     "height": "4320",
+     "filesize": "85923876"
+    },
+    "date_created": "2007-07-19T18:21:34",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt16_web.jpg",
+     "width": "900",
+     "height": "592",
+     "filesize": "149853"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt16_print.jpg",
+     "width": "3400",
+     "height": "2236",
+     "filesize": "2157930"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt16_full.tif",
+     "width": "6631",
+     "height": "4361",
+     "filesize": "86778204"
+    },
+    "date_created": "2007-07-19T18:36:24",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt17_web.jpg",
+     "width": "900",
+     "height": "586",
+     "filesize": "179104"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt17_print.jpg",
+     "width": "3400",
+     "height": "2215",
+     "filesize": "2274789"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt17_full.tif",
+     "width": "6668",
+     "height": "4344",
+     "filesize": "86922332"
+    },
+    "date_created": "2007-07-19T18:38:44",
+    "annotation": ""
+   },
+   {
+    "web": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt18_web.jpg",
+     "width": "900",
+     "height": "591",
+     "filesize": "152368"
+    },
+    "print": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt18_print.jpg",
+     "width": "3400",
+     "height": "2233",
+     "filesize": "2240218"
+    },
+    "full": {
+     "url": "https://openaccess-cdn.clevelandart.org/1953.126/1953.126_alt18_full.tif",
+     "width": "6615",
+     "height": "4344",
+     "filesize": "86230372"
+    },
+    "date_created": "2007-07-19T18:43:43",
+    "annotation": ""
+   }
+  ],
+  "creditline": "Gift of the Hanna Fund",
+  "image_credit": null,
+  "sketchfab_id": null,
+  "sketchfab_url": null,
+  "models": null,
+  "gallery_donor_text": null,
+  "athena_id": 130361,
+  "creators": [],
+  "legal_status": "accessioned",
+  "accession_date": "1953-04-17T00:00:00",
+  "sortable_date": 1100,
+  "date_added_to_oa": null,
+  "date_text": "1100–1150",
+  "collapse_artists": false,
+  "on_loan": false,
+  "recently_acquired": false,
+  "record_type": "object",
+  "conservation_statement": null,
+  "has_conservation_images": false,
+  "cover_accession_number": null,
+  "is_nazi_era_provenance": false,
+  "impression": null,
+  "alternate_titles": [
+   "Streams and Mountains without End",
+   "Xi-shan wu chin: Streams and Mountains without End"
+  ],
+  "is_highlight": false,
+  "updated_at": "2026-08-08 11:04:25.226000"
+ }
+}

@@ -1,4 +1,4 @@
-"""Kànjiàn prototype web app.
+"""Kànjiàn prototype web app: an introduction to Chinese painting and calligraphy.
 
 Run it with ``make run`` (this computer only) or ``make phone`` (also reachable
 from phones on the same Wi-Fi), or directly: ``python app.py [--lan] [--port N]``.
@@ -12,56 +12,55 @@ import os
 import re
 import socket
 from pathlib import Path
-from urllib.parse import urlsplit
 
 from flask import Flask, abort, g, jsonify, redirect, render_template, request, url_for
 from markupsafe import Markup, escape
 
-from kanjian import i18n
-from kanjian.corpus import LANGS, VERIFIED_TARGET, Corpus, load_corpus
+from kanjian import i18n, periods
+from kanjian.museums import MUSEUMS, credit
+from kanjian.works import CATEGORIES, LANGS, Collection, load_collection
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_PORT = 8000
-# Layer modes whose parts have their own name when counted ("Section 2 of 5").
-COUNTED_MODES = ("traversal", "reading_path", "brushwork")
+# Addresses of the first prototype, kept working for old links and printed labels.
+LEGACY_CODES = {"01": "met-40081", "02": "met-45636", "03": "met-39919"}
+# Wider than this (width ÷ height), an image is shown as a scroll you move along.
+SCROLL_RATIO = 2.4
 
 # A run of Chinese characters, allowing Chinese punctuation inside it.
-_HAN = "⺀-⿟々-〇㐀-䶿一-鿿豈-﫿"
+_HAN = "⺀-⿟々-〇㐀-䶿一-鿿豈-﫿"
 _HAN_PUNCT = "、-〃〈-】〔-〟！-／：-＠［-｀｛-･‘’“”—…·"
 _HAN_RUN = re.compile(f"[{_HAN}]+(?:[{_HAN_PUNCT}]+[{_HAN}]+)*[。！？]?")
 
 
 def mark_chinese(text: str) -> Markup:
-    """Wrap Chinese inside English text in ``<span lang="zh-CN">``.
-
-    Screen readers then switch voice for it, and the built-in voice reads those
-    spans with a Mandarin voice instead of skipping them.
-    """
+    """Wrap Chinese inside English text in ``<span lang="zh">``, so browsers pick a
+    Chinese font for it and the read-aloud voice switches to Mandarin."""
     out, last = [], 0
     for match in _HAN_RUN.finditer(text):
         out.append(escape(text[last : match.start()]))
-        out.append(Markup('<span lang="zh-CN">%s</span>') % match.group(0))
+        out.append(Markup('<span lang="zh">%s</span>') % match.group(0))
         last = match.end()
     out.append(escape(text[last:]))
     return Markup("").join(out)
 
 
-class CorpusCache:
-    """Reload the corpus whenever a data file is added, removed or edited."""
+class CollectionCache:
+    """Reload the collection whenever a work file is added, removed or edited."""
 
     def __init__(self, data_dir: Path, static_dir: Path, logger):
         self.data_dir, self.static_dir, self.logger = Path(data_dir), Path(static_dir), logger
         self._stamp = None
-        self._corpus: Corpus | None = None
+        self._collection: Collection | None = None
 
-    def get(self) -> Corpus:
+    def get(self) -> Collection:
         stamp = tuple(sorted((p.name, p.stat().st_mtime_ns) for p in self.data_dir.glob("*.json")))
-        if self._corpus is None or stamp != self._stamp:
-            self._corpus = load_corpus(self.data_dir, self.static_dir)
+        if self._collection is None or stamp != self._stamp:
+            self._collection = load_collection(self.data_dir, self.static_dir)
             self._stamp = stamp
-            for problem in self._corpus.problems:
-                self.logger.warning("corpus %s", problem)
-        return self._corpus
+            for problem in self._collection.errors:
+                self.logger.warning("collection %s", problem)
+        return self._collection
 
 
 def lan_address() -> str | None:
@@ -87,22 +86,13 @@ def lan_address() -> str | None:
     return private[0] if private else None
 
 
-def _is_loopback(host: str) -> bool:
-    if host == "localhost":
-        return True
-    try:
-        return ipaddress.ip_address(host).is_loopback
-    except ValueError:
-        return False
-
-
 def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> Flask:
     static_dir = Path(static_dir or ROOT / "static")
     app = Flask(__name__, static_folder=str(static_dir), template_folder=str(ROOT / "templates"))
     app.config["TEMPLATES_AUTO_RELOAD"] = True
     app.json.ensure_ascii = False
-    cache = CorpusCache(Path(data_dir or ROOT / "data" / "works"), static_dir, app.logger)
-    app.extensions["kanjian_corpus"] = cache
+    cache = CollectionCache(Path(data_dir or ROOT / "data" / "works"), static_dir, app.logger)
+    app.extensions["kanjian_collection"] = cache
 
     # --- language ---------------------------------------------------------------
 
@@ -139,6 +129,27 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
             return url_for(request.endpoint, **(request.view_args or {}), **args, lang=target)
         return url_for("home", lang=target)
 
+    def show(field: dict | None) -> Markup:
+        """A two-language field in the visitor's language. If only the other language
+        exists, show that, marked with its language so it is read and rendered right."""
+        field = field or {}
+        text, lang = field.get(g.lang, ""), g.lang
+        if not text:
+            lang = "en" if g.lang == "zh" else "zh"
+            text = field.get(lang, "")
+        if not text:
+            return Markup("")
+        body = mark_chinese(text) if lang == "en" else escape(text)
+        if lang != g.lang:
+            return Markup('<span lang="%s">%s</span>') % (lang, body)
+        return body
+
+    def paragraphs(field: dict | None) -> list[Markup]:
+        field = field or {}
+        text = field.get(g.lang) or field.get("en" if g.lang == "zh" else "zh") or ""
+        lang = g.lang if field.get(g.lang) else ("en" if g.lang == "zh" else "zh")
+        return [show({lang: p}) for p in text.split("\n") if p.strip()]
+
     @app.context_processor
     def template_globals():
         return {
@@ -146,6 +157,8 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
             "html_lang": "zh-CN" if g.lang == "zh" else "en",
             "t": t,
             "lang_url": lang_url,
+            "show": show,
+            "paragraphs": paragraphs,
             "js_strings": i18n.js_strings(g.lang),
         }
 
@@ -153,207 +166,115 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
     def cjk_filter(text: str) -> Markup:
         return mark_chinese(text) if g.lang == "en" else escape(text)
 
-    # --- what the work page needs, in the visitor's language ------------------------
-
-    def layer_title(layer: dict, spoken: bool = False) -> str:
-        title = t(f"layer_{layer['key']}")
-        if layer["mode"]:
-            joiner = "，" if spoken and g.lang == "zh" else ", " if spoken else " · "
-            title = f"{title}{joiner}{t('mode_' + layer['mode'])}"
-        return title
+    # --- what a work page needs -------------------------------------------------------
 
     def present(work: dict) -> dict:
-        layers = []
-        for index, layer in enumerate(work["layers"]):
-            total = len(layer["stops"])
-            # how the parts of this layer are counted aloud: sections, stops, passages or parts
-            unit = layer["mode"] if layer["mode"] in COUNTED_MODES else "default"
-            announce = t("say_layer", n=layer["n"], title=layer_title(layer, spoken=True))
-            if total > 1:
-                announce += " " + t(f"say_count_{unit}", total=total)
-            if index + 1 < len(work["layers"]):
-                ending = t(
-                    "say_layer_end",
-                    title=t(f"layer_{layer['key']}"),
-                    next=layer_title(work["layers"][index + 1], spoken=True),
-                )
-            else:
-                ending = t("say_work_end")
-            layers.append(
-                {
-                    "n": layer["n"],
-                    "key": layer["key"],
-                    "title": layer_title(layer),
-                    "status": t("layer_status", n=layer["n"], title=t(f"layer_{layer['key']}")),
-                    "announce": announce,
-                    "ending": ending,
-                    "stops": [
-                        {
-                            "n": stop["n"],
-                            "label": stop["label"][g.lang] if stop["label"] else None,
-                            "position": t(f"pos_{unit}", n=stop["n"], total=total) if total > 1 else None,
-                            "image": stop["image"],
-                            "region": stop["region"],
-                            "segments": stop["segments"],
-                        }
-                        for stop in layer["stops"]
-                    ],
-                }
-            )
-        images = {
-            key: {
-                "src": url_for("static", filename=image["src"]),
-                "width": image["width"],
-                "height": image["height"],
-                "alt": image["alt"][g.lang],
-                "credit": image["credit"][g.lang] if image["credit"] else "",
-            }
-            for key, image in work["images"].items()
-        }
-        credits = list(dict.fromkeys(image["credit"] for image in images.values() if image["credit"]))
+        museum = MUSEUMS[work["museum"]]
+        image = work["image"]
+        ratio = image["width"] / image["height"] if image["height"] else 1
+        museum_text = work["museum_text"]
+        if museum_text[g.lang]:
+            museum_note = ""
+        elif museum_text["zh"] or museum_text["en"]:
+            museum_note = t("museum_text_only_zh") if museum_text["zh"] else t("museum_text_only_en")
+        else:
+            museum_note = t("museum_text_none")
+        details = [
+            ("cat_artist", show(work["artist"]) or t("unknown_artist")),
+            ("cat_period", periods.label(work["period"], g.lang)),
+            ("cat_date", show(work["date"])),
+            ("cat_format", t("format_" + work["format"])),
+            ("cat_medium", show(work["medium"])),
+            ("cat_dimensions", show(work["dimensions"])),
+            ("cat_museum", museum["name"][g.lang]),
+            ("cat_object_number", work["record"].get("object_number", "")),
+            ("cat_credit_line", show(work["credit_line"])),
+        ]
+        previous, following = cache.get().neighbours(work["id"])
         return {
-            "layers": layers,
-            "images": images,
-            "first_image": next(iter(images.values()), None),
-            "credits": credits,
+            "museum": museum,
+            "credit": credit(work["museum"], g.lang, work["title"]),
+            "scroll": ratio >= SCROLL_RATIO,
+            "image_url": url_for("static", filename=image["src"]),
+            "museum_note": museum_note,
+            "details": [(key, value) for key, value in details if value],
+            "previous": previous,
+            "next": following,
         }
 
-    # --- pages ----------------------------------------------------------------------
+    # --- pages -------------------------------------------------------------------
 
     @app.get("/")
     def home():
-        return render_template("index.html", works=cache.get().works, error=None, entered="")
-
-    @app.get("/go")
-    def go():
-        entered = request.args.get("code", "").strip()[:12]
-        work = cache.get().get(entered)
-        if work:
-            return redirect(url_for("work", code=work["code"]))
-        error = t("code_error", code=entered) if entered else t("code_empty")
-        return render_template("index.html", works=cache.get().works, error=error, entered=entered), 404
-
-    @app.get("/w/<code>")
-    def work(code: str):
-        found = cache.get().get(code)
-        if found is None:
-            abort(404)
-        if code != found["code"]:
-            return redirect(url_for("work", code=found["code"]))
-        return render_template("work.html", work=found, view=present(found))
-
-    @app.get("/labels")
-    def labels():
-        configured = os.environ.get("KANJIAN_PUBLIC_URL", "").strip().rstrip("/")
-        base = configured or request.host_url.rstrip("/")
-        parts = urlsplit(base)
-        if not configured and _is_loopback(parts.hostname or ""):
-            address = lan_address()
-            if address:
-                port = f":{parts.port}" if parts.port else ""
-                base = f"{parts.scheme}://{address}{port}"
-        try:
-            import segno
-        except ImportError:  # the page still lists the addresses
-            segno = None
-        cards = []
-        for item in cache.get().works:
-            link = f"{base}{url_for('work', code=item['code'])}"
-            svg = None
-            if segno:
-                svg = Markup(segno.make(link, error="m").svg_inline(scale=5, border=3, dark="#000", light="#fff"))
-            cards.append({"work": item, "url": link, "svg": svg})
+        category = request.args.get("category")
+        if category not in CATEGORIES:
+            category = None
+        collection = cache.get()
         return render_template(
-            "labels.html",
-            cards=cards,
-            base=base,
-            local_only=_is_loopback(urlsplit(base).hostname or ""),
-            has_qr=segno is not None,
+            "index.html",
+            groups=collection.by_era(category),
+            category=category,
+            total=len(collection.works),
+            museums=MUSEUMS,
         )
 
-    @app.get("/corpus")
-    def corpus_status():
-        corpus = cache.get()
-        return render_template("corpus.html", corpus=corpus, totals=corpus.totals, target=f"{VERIFIED_TARGET:.0%}")
+    @app.get("/w/<work_id>")
+    def work(work_id: str):
+        if work_id in LEGACY_CODES:
+            return redirect(url_for("work", work_id=LEGACY_CODES[work_id]), 301)
+        found = cache.get().get(work_id)
+        if found is None:
+            abort(404)
+        return render_template("work.html", work=found, view=present(found))
 
-    # --- JSON, for a future mini-program front end --------------------------------------
+    @app.get("/about")
+    def about():
+        return render_template("about.html")
 
-    def work_json(work: dict) -> dict:
-        return {
+    # --- JSON --------------------------------------------------------------------------
+
+    def work_json(work: dict, full: bool = False) -> dict:
+        data = {
             "id": work["id"],
-            "code": work["code"],
+            "museum": work["museum"],
+            "category": work["category"],
             "format": work["format"],
+            "period": work["period"],
+            "year": work["year"],
             "title": work["title"],
             "artist": work["artist"],
-            "date": work["date"],
-            "stats": work["stats"],
-            "sources": work["sources"],
-            "catalogue": (
-                {
-                    "source": work["catalogue"]["source"]["id"] if work["catalogue"]["source"] else None,
-                    "fields": work["catalogue"]["fields"],
-                }
-                if work["catalogue"]
-                else None
-            ),
-            "images": {
-                key: {**image, "url": url_for("static", filename=image["src"])} for key, image in work["images"].items()
-            },
-            "layers": [
-                {
-                    "n": layer["n"],
-                    "key": layer["key"],
-                    "mode": layer["mode"],
-                    "stops": [
-                        {
-                            "n": stop["n"],
-                            "label": stop["label"],
-                            "image": stop["image"],
-                            "region": stop["region"],
-                            "segments": [
-                                {
-                                    "text": seg["text"],
-                                    "status": seg["status"],
-                                    "source": seg["source"]["id"] if seg["source"] else None,
-                                }
-                                for seg in stop["segments"]
-                            ],
-                        }
-                        for stop in layer["stops"]
-                    ],
-                }
-                for layer in work["layers"]
-            ],
+            "image": url_for("static", filename=work["image"]["src"]),
+            "thumbnail": url_for("static", filename=work["image"]["thumb"]),
+            "url": url_for("work", work_id=work["id"]),
+            "api": url_for("api_work", work_id=work["id"]),
         }
+        if full:
+            data.update(
+                {
+                    field: work[field]
+                    for field in ("date", "medium", "dimensions", "museum_text", "credit_line", "record")
+                }
+            )
+            data["credit"] = {lang: credit(work["museum"], lang, work["title"]) for lang in LANGS}
+            data["license"] = MUSEUMS[work["museum"]]["license"]
+            data["editorial"] = {
+                "status": "ai_draft_not_reviewed",
+                "intro": work["intro"],
+                "look_for": work["look_for"],
+                "alt": work["alt"],
+            }
+        return data
 
     @app.get("/api/works")
     def api_works():
-        corpus = cache.get()
-        return jsonify(
-            {
-                "target": VERIFIED_TARGET,
-                "works": [
-                    {
-                        "code": w["code"],
-                        "id": w["id"],
-                        "format": w["format"],
-                        "title": w["title"],
-                        "artist": w["artist"],
-                        "date": w["date"],
-                        "stats": w["stats"],
-                        "url": url_for("api_work", code=w["code"]),
-                    }
-                    for w in corpus.works
-                ],
-            }
-        )
+        return jsonify({"works": [work_json(w) for w in cache.get().works]})
 
-    @app.get("/api/works/<code>")
-    def api_work(code: str):
-        found = cache.get().get(code)
+    @app.get("/api/works/<work_id>")
+    def api_work(work_id: str):
+        found = cache.get().get(work_id)
         if found is None:
             return jsonify({"error": "not found"}), 404
-        return jsonify(work_json(found))
+        return jsonify(work_json(found, full=True))
 
     @app.get("/favicon.ico")
     def favicon():
@@ -375,19 +296,17 @@ def main() -> None:
     args = parser.parse_args()
 
     app = create_app()
-    corpus = app.extensions["kanjian_corpus"].get()
-    reloaded = os.environ.get("WERKZEUG_RUN_MAIN") == "true"
-    if not reloaded:
-        totals = corpus.totals
-        print(f"\nKànjiàn: {totals['works']} works, {totals['share']:.0%} of statements verified.")
+    collection = app.extensions["kanjian_collection"].get()
+    if os.environ.get("WERKZEUG_RUN_MAIN") != "true":
+        museums = sorted({w["museum"] for w in collection.works})
+        print(f"\nKànjiàn: {len(collection.works)} works from {', '.join(museums)}.")
         print(f"  On this computer:  http://127.0.0.1:{args.port}")
         if args.lan:
             address = lan_address()
             if address:
                 print(f"  On a phone (same Wi-Fi):  http://{address}:{args.port}")
-                print(f"  QR labels to print:  http://{address}:{args.port}/labels")
             else:
-                print("  No local network address found; set KANJIAN_PUBLIC_URL for the QR labels.")
+                print("  No local network address found.")
         print()
     data_files = [str(p) for p in (ROOT / "data" / "works").glob("*.json")]
     app.run(

@@ -1,0 +1,88 @@
+{
+  "id": "cma-149791",
+  "museum": "cma",
+  "record": {
+    "id": "149791",
+    "object_number": "1980.10",
+    "url": "https://clevelandart.org/art/1980.10",
+    "accessed": "2026-11-24"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "ming",
+  "year": 1617,
+  "title": {
+    "zh": "青弁圖",
+    "en": "Mt. Qingbian"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Dong Qichang (Chinese, 1555–1636)"
+  },
+  "date": {
+    "zh": "",
+    "en": "1617"
+  },
+  "medium": {
+    "zh": "",
+    "en": "hanging scroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Painting: 225 x 67.6 cm (88 9/16 x 26 5/8 in.); Overall: 355 x 92.7 cm (139 3/4 x 36 1/2 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Dong Qichang radically transforms the landscape composition into a purely abstract design. He organizes the mountain forms to achieve an overall sense of structure, activating the flow of energy (qi) and the momentum of force (shi) throughout the pictorial design. In his art, brush and ink assume life independent of the depicted forms, so that the painting can be appreciated for “the sheer marvels of brush and ink.”\n\nDong Qichang had visited the Bian Mountains, which are part of a low range located not far from Wuxing and Lake Tai in the southern province of Zhejiang."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Leonard C. Hanna Jr. Fund"
+  },
+  "image": {
+    "src": "img/works/cma-149791.jpg",
+    "width": 1013,
+    "height": 2961,
+    "thumb": "img/works/cma-149791-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "董其昌（1555–1636）是晚明最有影响力的画家和评论家。这幅1617年的作品画的是青弁山，但它与其说是一处风景，不如说是一个结构：山石层层推挤、倾斜、堆叠，笔墨本身就成了观看的对象。",
+      "en": "Dong Qichang (1555–1636) was the most influential painter and critic of the late Ming dynasty. This scroll of 1617 shows Mount Qingbian, but it is less a view than a structure: masses of rock push, tilt and stack up the scroll, and the brush and ink themselves become the thing to look at."
+    },
+    "look_for": [
+      {
+        "zh": "用重复的圆笔堆出的山石和坡地，而不是照着真实地方描画。",
+        "en": "Rocks and slopes built from repeated, rounded strokes rather than drawn from a real place."
+      },
+      {
+        "zh": "空间的跳跃：地面似乎在折叠、滑动。",
+        "en": "Odd jumps in space: the ground seems to fold and slide."
+      },
+      {
+        "zh": "山石之间的树、房屋和小路，帮你找到画中的尺度。",
+        "en": "Trees, houses and paths among the rocks, which help you find a sense of scale."
+      }
+    ],
+    "alt": {
+      "zh": "一幅高大的水墨立轴：层层叠叠、折转的山体，中间有树木和小房屋，顶部有题字。",
+      "en": "A tall hanging scroll in ink: stacked, folding mountain masses with trees and small houses, and an inscription at the top."
+    },
+    "overrides": {
+      "title": {
+        "zh": "青弁圖",
+        "en": ""
+      },
+      "artist": {
+        "zh": "董其昌（1555–1636）",
+        "en": ""
+      },
+      "date": {
+        "zh": "1617年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

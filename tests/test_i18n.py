@@ -7,9 +7,8 @@ import string
 
 import pytest
 
-from app import COUNTED_MODES
-from kanjian import i18n
-from kanjian.corpus import CATALOGUE_KEYS, FORMATS, LANGS, LAYER_KEYS, LAYER_MODES, SOURCE_KINDS, STATUSES
+from kanjian import i18n, periods
+from kanjian.works import CATEGORIES, FORMATS, LANGS
 from tests.conftest import ROOT
 
 
@@ -32,7 +31,6 @@ def test_both_languages_take_the_same_values(key):
 
 
 def test_chinese_strings_are_in_chinese():
-    # Names and the brand can be the same in both; everything else must actually be translated.
     same = [k for k, v in i18n.STRINGS.items() if v["zh"] == v["en"]]
     assert same == [], f"not translated: {same}"
 
@@ -45,12 +43,12 @@ def test_unknown_key_fails_loudly():
 def _template_keys() -> tuple[set[str], set[str]]:
     """Keys the templates ask for: whole keys, and prefixes joined to a value (t('format_' + x))."""
     whole, prefixes = set(), set()
-    sources = [p.read_text(encoding="utf-8") for p in (ROOT / "templates").glob("*.html")]
-    for text in sources:
-        for key, plus in re.findall(r"\bt\('([a-z_]+)'(\s*\+)?", text):
+    for path in (ROOT / "templates").glob("*.html"):
+        for key, plus in re.findall(r"\bt\('([a-z_]+)'(\s*\+)?", path.read_text(encoding="utf-8")):
             (prefixes if plus else whole).add(key)
     app_text = (ROOT / "app.py").read_text(encoding="utf-8")
     whole |= set(re.findall(r"""\bt\(["']([a-z_]+)["'][,)]""", app_text))
+    whole |= set(re.findall(r"""\(["'](cat_[a-z_]+)["'],""", app_text))  # detail rows name their label key
     return whole, prefixes
 
 
@@ -62,22 +60,17 @@ def test_templates_and_app_only_use_defined_keys():
 
 def test_template_prefixes_are_the_ones_covered_below():
     _, prefixes = _template_keys()
-    assert prefixes <= {"format_", "tag_", "kind_", "cat_", "level_", "mode_"}, prefixes
+    assert prefixes <= {"format_", "category_", "era_", "era_dates_", "era_intro_"}, prefixes
 
 
 @pytest.mark.parametrize(
     "prefix, values",
     [
         ("format_", FORMATS),
-        ("layer_", LAYER_KEYS),
-        ("mode_", [m for modes in LAYER_MODES.values() for m in modes]),
-        ("tag_", STATUSES),
-        ("say_", STATUSES),
-        ("kind_", SOURCE_KINDS),
-        ("cat_", CATALOGUE_KEYS),
-        ("level_", ("error", "warning")),
-        ("pos_", (*COUNTED_MODES, "default")),
-        ("say_count_", (*COUNTED_MODES, "default")),
+        ("category_", CATEGORIES),
+        ("era_", periods.ERAS),
+        ("era_dates_", periods.ERAS),
+        ("era_intro_", periods.ERAS),
     ],
 )
 def test_every_value_built_into_a_key_has_text(prefix, values):
@@ -85,10 +78,9 @@ def test_every_value_built_into_a_key_has_text(prefix, values):
     assert missing == []
 
 
-def test_strings_the_player_script_reads_are_sent_to_it():
+def test_strings_the_script_reads_are_sent_to_it():
     script = (ROOT / "static" / "js" / "kanjian.js").read_text(encoding="utf-8")
     used = set(re.findall(r"\bS\.([a-z_]+)", script))
-    used |= {"say_" + s for s in STATUSES} if "S['say_' +" in script else set()
     assert used, "expected the script to read interface strings"
     assert used <= set(i18n.JS_KEYS), sorted(used - set(i18n.JS_KEYS))
     for lang in LANGS:

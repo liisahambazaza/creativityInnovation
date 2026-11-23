@@ -12,6 +12,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "works"
 STATIC = ROOT / "static"
+FIXTURES = ROOT / "tests" / "fixtures"
 
 
 @pytest.fixture
@@ -30,20 +31,20 @@ def client(app):
 
 @pytest.fixture
 def sample_work() -> dict:
-    """A deep copy of the handscroll file, to break in tests."""
-    return copy.deepcopy(json.loads((DATA / "01-wang-xizhi-watching-geese.json").read_text(encoding="utf-8")))
+    """A deep copy of a real work file, to change or break in tests."""
+    return copy.deepcopy(json.loads((DATA / "npm-1195.json").read_text(encoding="utf-8")))
 
 
 @pytest.fixture
-def corpus_dir(tmp_path):
+def collection_dir(tmp_path):
     """An empty data folder plus a static folder holding the real images."""
     data = tmp_path / "works"
     data.mkdir()
     static = tmp_path / "static"
     shutil.copytree(STATIC / "img", static / "img")
 
-    def write(name: str, work: dict) -> Path:
-        path = data / f"{name}.json"
+    def write(work: dict, name: str | None = None) -> Path:
+        path = data / f"{name or work['id']}.json"
         path.write_text(json.dumps(work, ensure_ascii=False), encoding="utf-8")
         return path
 

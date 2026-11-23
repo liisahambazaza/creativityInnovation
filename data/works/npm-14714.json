@@ -1,0 +1,92 @@
+{
+  "id": "npm-14714",
+  "museum": "npm",
+  "record": {
+    "id": "14714",
+    "dep": "P",
+    "object_number": "購書001001N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/14714?dep=P",
+    "accessed": "2026-11-24",
+    "image": "B2B001001N000000000PAD"
+  },
+  "category": "calligraphy",
+  "format": "handscroll",
+  "period": "northern_song",
+  "year": 960,
+  "title": {
+    "zh": "蘇東坡書黃州寒食詩",
+    "en": "The Cold Food Observance"
+  },
+  "artist": {
+    "zh": "蘇軾",
+    "en": "Su Shi"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "紙",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "本幅 34.2 × 199.5 公分；隔水一 12 公分；引首 53.2 公分；隔水二 12.2 公分",
+    "en": "Image 34.2 × 199.5 cm; Mounting strip 1 12 cm; Frontispiece 53.2 cm; Mounting strip 2 12.2 cm"
+  },
+  "museum_text": {
+    "zh": "1080年蘇軾謫居黃州（湖北黃岡），第三年（1082）四月寒食日，有感於季節更替，生活困乏，及仕途的挫折，作〈寒食雨二首〉，後來書成此卷，將詩中所描寫的心境，轉化成筆墨變化豐富的書法形象，詩中抑鬱的情感如決堤般從筆端傾洩而下。此卷由宋至今，流傳九百餘年，後人譽為蘇軾最好的書法傑作。 蘇軾（1037－1101），四川眉山人。嘉祐二年（1057）進士。他兼善詩文、繪畫、書法，與蔡襄、黃庭堅、米芾並稱北宋四大書家。",
+    "en": "Su Shih was a native of Szechwan also known by his sobriquet Tung-po and an outstanding calligrapher, statesman, and writer of the Sung.\n\nThis handscroll of two poems was written in 1082. In these two poems, Su reveals how he ran afoul of court politics and was exiled to Huang-chou, Hupeh. His calligraphy flows with strong emotions as the strokes rise and fall according to his feelings and as the characters increase in size to a crescendo. In writing, Su was not technically adept at suspending the wrist but very gifted at free writing with great individuality. His characters are expansive, strokes strong and deep, and ink jet-black, creating for a new realm of expressiveness in calligraphy at the time."
+  },
+  "image": {
+    "src": "img/works/npm-14714.jpg",
+    "width": 3058,
+    "height": 2037,
+    "thumb": "img/works/npm-14714-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "大诗人苏轼在1082年、贬居黄州的第三年写下这两首诗。诗里写寒食节时连绵的春雨：漏雨的小屋、冰冷的灶台、回不去的家。诗意越来越沉重，字也越写越大、越来越重。它常被称为“天下第三行书”。",
+      "en": "Su Shi, one of China's great poets, wrote out these two poems in 1082, in his third year of exile in Huangzhou. They describe the endless spring rain at the Cold Food Festival: a leaking house, a cold stove, and no way home. As the poems grow darker, the characters grow larger and heavier. It is often called the third-finest piece of running script in Chinese history."
+    },
+    "look_for": [
+      {
+        "zh": "这一段里，“破灶烧湿苇”几个字写得特别大。",
+        "en": "In this section, the characters 破竈燒濕葦 ('a broken stove, burning wet reeds') are among the largest."
+      },
+      {
+        "zh": "每一行字的大小和轻重都在变，跟着诗中的情绪起伏。",
+        "en": "How the size and weight change from line to line, following the feeling of the poem."
+      },
+      {
+        "zh": "苏轼的字略扁、略向一侧倾斜，这是他书法的特点。",
+        "en": "The slightly flattened, leaning character shapes typical of Su Shi's hand."
+      },
+      {
+        "zh": "在整卷后面，他的朋友黄庭坚写了一段著名的题跋（这一段里看不到）。",
+        "en": "Further along the scroll, his friend Huang Tingjian added a famous inscription of praise (not in this section)."
+      }
+    ],
+    "alt": {
+      "zh": "手卷中的一段：泛黄纸上一列列粗重的黑色行书，有几个字比其他字大得多，还有红色印章。",
+      "en": "A section of a handscroll in bold running-script calligraphy: columns of black characters on yellowed paper, a few much larger than the rest, with red seals."
+    },
+    "overrides": {
+      "title": {
+        "zh": "黃州寒食詩",
+        "en": ""
+      },
+      "year": 1082,
+      "date": {
+        "zh": "1082年",
+        "en": "1082"
+      }
+    },
+    "image_choice": {
+      "canvas": "PAD",
+      "region": "pct:0,0,100,89",
+      "note": "One section: the poem's climax. The museum photographs this scroll in sections."
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

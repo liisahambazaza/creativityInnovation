@@ -1,0 +1,92 @@
+{
+  "id": "met-39919",
+  "museum": "met",
+  "record": {
+    "id": "39919",
+    "object_number": "1984.174",
+    "url": "https://www.metmuseum.org/art/collection/search/39919",
+    "accessed": "2026-11-24"
+  },
+  "category": "calligraphy",
+  "format": "handscroll",
+  "period": "northern_song",
+  "year": 1085,
+  "title": {
+    "zh": "",
+    "en": "Poem Written in a Boat on the Wu River"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Mi Fu (Chinese, 1051–1107)"
+  },
+  "date": {
+    "zh": "",
+    "en": "ca. 1095"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Handscroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "12 1/4 in. × 18 ft. 3 1/4 in. (31.1 × 556.9 cm)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Gift of John M. Crawford Jr., in honor of Professor Wen Fong, 1984"
+  },
+  "image": {
+    "src": "img/works/met-39919.jpg",
+    "width": 1941,
+    "height": 840,
+    "thumb": "img/works/met-39919-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "米芾（1051–1107）是宋代四大书法家之一，也是出名的怪人。这首诗写一条船困在吴江上：风向转了，船夫只好拉纤前行。他的字或倾或侧，忽大忽小，写字仿佛也随着船和风一起摇动。",
+      "en": "Mi Fu (1051–1107) was one of the four great calligraphers of the Song dynasty, and a famous eccentric. In this poem he describes a boat stuck on the Wu River: the wind turns against it, and the boatmen have to haul it along. The characters lean, tilt and change size, so the writing seems to move with the boat and the wind."
+    },
+    "look_for": [
+      {
+        "zh": "像所有传统中文一样，从上往下、从右往左读。",
+        "en": "Read it from top to bottom and right to left, like all traditional Chinese writing."
+      },
+      {
+        "zh": "字向不同方向倾斜，大小突然变化。",
+        "en": "Characters that tilt in different directions and suddenly change size."
+      },
+      {
+        "zh": "这是诗的开头一段：“昨风起西北……”",
+        "en": "This is the opening of the poem: 昨風起西北 ('Yesterday the wind rose in the north-west')."
+      },
+      {
+        "zh": "纸上散布着后世收藏者的红色印章。",
+        "en": "The red seals of later collectors scattered over the paper."
+      }
+    ],
+    "alt": {
+      "zh": "手卷中的一段：浅色纸上大而倾斜的黑色行书，有红色印章，右边是一块写满小字的题跋。",
+      "en": "A section of a handscroll: large, slanting black characters in running script on light paper, with red seals and a panel of small writing at the right."
+    },
+    "overrides": {
+      "title": {
+        "zh": "吳江舟中詩",
+        "en": ""
+      },
+      "artist": {
+        "zh": "米芾（1051–1107）",
+        "en": ""
+      },
+      "date": {
+        "zh": "约1095年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

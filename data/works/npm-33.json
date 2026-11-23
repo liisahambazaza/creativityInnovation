@@ -1,0 +1,88 @@
+{
+  "id": "npm-33",
+  "museum": "npm",
+  "record": {
+    "id": "33",
+    "dep": "P",
+    "object_number": "故畫000896N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/33?dep=P",
+    "accessed": "2026-11-24",
+    "image": "K2A000896N000000000PGA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "萬壑松風圖",
+    "en": "Whispering Pines in Myriad Valleys"
+  },
+  "artist": {
+    "zh": "李唐",
+    "en": "Li Tang"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 188.7 × 139.8 公分",
+    "en": "Image 188.7 × 139.8 cm"
+  },
+  "museum_text": {
+    "zh": "李唐（約一０四九-一一三０後，另一說約一０七０-一一五０後），河陽人，字晞古。北宋徽宗朝任職翰林圖畫院。靖康之難後，中原紛亂，李唐則在建炎年間（一一二七-一一三０）渡江至杭州。南宋紹興年間（一一三一-一一六二）高宗重建了畫院，李唐再入畫院，授成忠郎，為畫院待詔，賜金帶。 本幅是繼「谿山行旅」、「早春」之後，北宋山水的另一巨作，代表了山水畫邁入另一輝煌的階段。在主峰旁陡直的遠山上，題有「皇宋宣和甲辰春河陽李唐筆」款，此時為北宋宣和六年（一一二四），李唐已經步入高齡，但下筆所呈現出的氣勢，仍令觀者撼動。畫上的主峰布置在畫幅中央，兩旁有高低參差的插雲尖峰相襯，無論山崗、峭壁，造型沈穩厚重，巖面堅硬，紋理如同經過斧頭砍鑿，世稱「斧劈皴」。畫中構圖採高遠形式，使全畫氣氛肅穆，但李唐在構圖上擴大了近景林木的比例，縮小了主峰，使近景松林和觀者的距離接近，空間結構更為合理。李唐畫風承先啟後，實已開啟南宋近景山水的先聲。",
+    "en": "The latest scientific study on this work shows the signature on a peak to the left appearing beneath the bluish-green wash. Suggesting the ink is original, it affirms the date as 1124. Li T'ang, native to Ho-yang, entered the Painting Academy under Hui-tsung at the prime of his career. About thirty years later, he re-entered the Academy after the Sung re-established in the south under Kao-tsung. The axe-cut texture strokes in ink that he developed strongly influenced later professional painting. Thus, this work offers precious evidence for Li T'ang's art and the transition from Northern to Southern Sung landscape painting. The landscape here consciously skirts past that of Li's predecessor Kuo Hsi and harks back to Fan K'uan. However, the focus is no longer the monumentality of the mountain, but rather the deep valley with windy pines and flowing water. Scientific photography clearly shows the pine needles were once covered with thick, dark green pigment and the original coloring of the mountains behind as being more ochre. As such, one can imagine the clear spatial definition and rich effect of light once evident here. The detailed interlacing combination of the flowing water and its spray also create a realm full of energy."
+  },
+  "image": {
+    "src": "img/works/npm-33.jpg",
+    "width": 1352,
+    "height": 1788,
+    "thumb": "img/works/npm-33-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "高耸的山崖下，松林填满了深谷，溪水从岩石间流下。李唐在1124年画成此画，那时北宋即将灭亡；后来他到南方再入画院，成为南宋宫廷山水的开创者之一。与范宽的大山相比，这里的视线更近、更密，岩石用坚硬、方折的笔触“劈”出来。",
+      "en": "Pine forests fill a deep valley beneath a towering cliff, and streams tumble down through the rocks. Li Tang painted it in 1124, near the end of the Northern Song dynasty; he later rejoined the court painting academy in the south and helped shape the Southern Song court style. Compared with Fan Kuan's mountain, the view is closer and denser, and the rocks are cut with hard, angular strokes."
+    },
+    "look_for": [
+      {
+        "zh": "左侧远处一座细高的山峰上，有画家很小的题款和年份。",
+        "en": "The artist's tiny signature and date, written on a slender distant peak on the left."
+      },
+      {
+        "zh": "岩石表面平直、像斧头劈过一样的笔触，称为“斧劈皴”，与李唐的名字联系在一起。",
+        "en": "The flat, chopping strokes on the rock faces, called 'axe-cut' texture strokes, a technique linked with Li Tang."
+      },
+      {
+        "zh": "从山谷中间落下的溪流和底部的水潭，水花画得十分细密。",
+        "en": "The stream falling through the middle of the valley and the pools at the bottom, with finely drawn spray."
+      },
+      {
+        "zh": "大山崖后面停在山谷里的白云。",
+        "en": "The white cloud resting in the valley behind the great cliff."
+      }
+    ],
+    "alt": {
+      "zh": "一幅墨色深沉、略带设色的立轴：巨大的山崖上长满松树，旁边有细高的山峰，中间有白云，下方山谷中有溪流。",
+      "en": "A hanging scroll in dark ink and muted colour: a massive cliff covered in pines, a slender side peak, a patch of white cloud and a stream through the valley below."
+    },
+    "overrides": {
+      "period": "northern_song",
+      "year": 1124,
+      "date": {
+        "zh": "1124年",
+        "en": "dated 1124"
+      }
+    },
+    "image_choice": {
+      "region": "pct:20,25.5,59,58.5",
+      "note": "Cropped to the painting; the museum photograph includes the mounting and a colour chart."
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

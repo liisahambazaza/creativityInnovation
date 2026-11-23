@@ -1,54 +1,54 @@
 {% extends "base.html" %}
 {% block main %}
-<h1 class="home-title"><span lang="zh-CN">看见</span> Kànjiàn</h1>
-<p class="lede">{{ t('tagline') }}</p>
-
-<section class="panel" aria-labelledby="find-h">
-  <h2 id="find-h">{{ t('find_heading') }}</h2>
-  <form class="code-form" action="{{ url_for('go') }}" method="get">
-    <label for="code">{{ t('code_label') }}</label>
-    <p class="hint" id="code-hint">{{ t('code_hint') }}</p>
-    {% if error %}<p class="form-error" id="code-error" role="alert">{{ error }}</p>{% endif %}
-    <div class="code-row">
-      <input id="code" name="code" type="text" inputmode="numeric" autocomplete="off" maxlength="4"
-             value="{{ entered }}" required
-             aria-describedby="code-hint{% if error %} code-error{% endif %}"{% if error %} aria-invalid="true"{% endif %}>
-      <button type="submit" class="button button--primary">{{ t('code_go') }}</button>
-    </div>
-  </form>
+<section class="hero">
+  <h1 class="hero-title"><span lang="zh">看见</span> <span class="hero-title-en">Kànjiàn</span></h1>
+  <p class="hero-tagline">{{ t('tagline') }}</p>
+  <p class="hero-lede">{{ t('gallery_lede') }}</p>
 </section>
 
-<section aria-labelledby="works-h">
-  <h2 id="works-h">{{ t('works_heading') }}</h2>
-  <ul class="work-list">
+<nav class="filters" aria-label="{{ t('filter_label') }}">
+  <span class="filters-label">{{ t('filter_label') }}</span>
+  <ul>
+    <li><a href="{{ url_for('home') }}"{% if not category %} aria-current="true"{% endif %}>{{ t('filter_all') }}</a></li>
+    <li><a href="{{ url_for('home', category='painting') }}"{% if category == 'painting' %} aria-current="true"{% endif %}>{{ t('filter_painting') }}</a></li>
+    <li><a href="{{ url_for('home', category='calligraphy') }}"{% if category == 'calligraphy' %} aria-current="true"{% endif %}>{{ t('filter_calligraphy') }}</a></li>
+  </ul>
+  <span class="filters-count">{{ t('works_count', n=total) }}</span>
+</nav>
+
+{% for era, works in groups %}
+<section class="era" aria-labelledby="era-{{ era }}">
+  <header class="era-header">
+    <h2 id="era-{{ era }}">{{ t('era_' + era) }} <span class="era-dates">{{ t('era_dates_' + era) }}</span></h2>
+    <p class="era-intro">{{ t('era_intro_' + era) }}</p>
+  </header>
+  <ul class="cards">
     {% for work in works %}
-    <li>
-      <a class="work-card" href="{{ url_for('work', code=work.code) }}">
-        <span class="work-card-code">{{ t('work_number', code=work.code) }}</span>
-        <span class="work-card-title">{{ work.title[lang] }}</span>
-        <span class="work-card-meta">{{ work.artist[lang] }} · {{ work.date[lang] }} · {{ t('format_' + work.format) }}</span>
+    <li class="card{% if work.format == 'handscroll' %} card--wide{% endif %}">
+      <a class="card-link" href="{{ url_for('work', work_id=work.id) }}">
+        <span class="card-image">
+          <img src="{{ url_for('static', filename=work.image.thumb) }}" alt="" loading="lazy">
+        </span>
+        <span class="card-text">
+          <span class="card-title">{{ show(work.title) }}</span>
+          <span class="card-meta">{{ show(work.artist) or t('unknown_artist') }}</span>
+          <span class="card-meta card-meta--small">{{ t('category_' + work.category) }} · {{ t('format_' + work.format) }} · {{ museums[work.museum].short[lang] }}</span>
+        </span>
       </a>
     </li>
     {% endfor %}
   </ul>
 </section>
+{% else %}
+<p class="empty">{{ t('none_in_filter') }}</p>
+{% endfor %}
 
-<section aria-labelledby="how-h">
-  <h2 id="how-h">{{ t('how_heading') }}</h2>
-  <p>{{ t('how_two_kinds') }}</p>
-  <ul class="legend">
-    <li class="seg seg--verified">
-      <span class="tag tag--verified">{{ t('tag_verified') }}<span class="vh">.</span></span>
-      <span class="seg-text">{{ t('how_verified') }}</span>
-      <button type="button" class="button button--small" data-cue="verified" hidden>{{ t('hear_verified') }}</button>
-    </li>
-    <li class="seg seg--inferred">
-      <span class="tag tag--inferred">{{ t('tag_inferred') }}<span class="vh">.</span></span>
-      <span class="seg-text">{{ t('how_inferred') }}</span>
-      <button type="button" class="button button--small" data-cue="inferred" hidden>{{ t('hear_inferred') }}</button>
-    </li>
+<section class="how-to" aria-labelledby="how-h">
+  <h2 id="how-h">{{ t('how_to_read_heading') }}</h2>
+  <ul>
+    <li>{{ t('how_to_read_scrolls') }}</li>
+    <li>{{ t('how_to_read_seals') }}</li>
+    <li>{{ t('how_to_read_brush') }}</li>
   </ul>
-  <p>{{ t('how_sound') }}</p>
-  <p>{{ t('how_layers') }}</p>
 </section>
 {% endblock %}

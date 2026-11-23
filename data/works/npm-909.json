@@ -1,0 +1,91 @@
+{
+  "id": "npm-909",
+  "museum": "npm",
+  "record": {
+    "id": "909",
+    "dep": "P",
+    "object_number": "故畫001011N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/909?dep=P",
+    "accessed": "2026-11-24",
+    "image": "K2A001011N000000000SDAAA"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "yuan",
+  "year": 1271,
+  "title": {
+    "zh": "鵲華秋色",
+    "en": "Autumn Colors on the Qiao and Hua Mountains"
+  },
+  "artist": {
+    "zh": "趙孟頫",
+    "en": ""
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "引首：紙；紙；拖尾：紙；隔水二：綾；隔水三：綾",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "本幅 28.4 × 93.2 公分；隔水一 12.3 公分；引首 28.2 × 99.6 公分；隔水二 10.9 公分；隔水三 11.1 公分；拖尾 28.4 × 320.2 公分",
+    "en": "Image 28.4 × 93.2 cm; Mounting strip 1 12.3 cm; Frontispiece 28.2 × 99.6 cm; Mounting strip 2 10.9 cm; Mounting strip 3 11.1 cm; Colophons 28.4 × 320.2 cm"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "image": {
+    "src": "img/works/npm-909.jpg",
+    "width": 2041,
+    "height": 574,
+    "thumb": "img/works/npm-909-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "1295年，赵孟頫在北方做官多年后回到南方。他的朋友周密祖籍济南，却从未去过那里，赵孟頫便为他画下了济南的两座名山：尖尖的华不注山和圆圆的鹊山。这种有意朴拙、仿古的画法，上追唐代以前的绘画，也为元代文人画指出了方向。",
+      "en": "In 1295 Zhao Mengfu came home to the south after years as an official in the north. His friend Zhou Mi's family came from Jinan in Shandong, a place Zhou Mi had never seen, so Zhao painted its two famous hills for him: the sharp peak of Mount Hua and the low, rounded Mount Qiao. Its deliberately simple, old-fashioned style looked back to painting before the Song and pointed the way for the scholar-painters of the Yuan dynasty."
+    },
+    "look_for": [
+      {
+        "zh": "两座山：右边是尖顶、青绿色的华不注山，左边是低矮圆浑的鹊山。",
+        "en": "The two mountains: the pointed blue-green peak of Mount Hua on the right, and the low, rounded Mount Qiao on the left."
+      },
+      {
+        "zh": "树上点点红黄，是秋天的颜色。",
+        "en": "Touches of red and yellow in the trees: the autumn colours of the title."
+      },
+      {
+        "zh": "两山之间的水边有渔舟和茅屋。",
+        "en": "Fishing boats and cottages along the marshy shore between the hills."
+      },
+      {
+        "zh": "手卷从右往左展开。整卷上，画的前后还有乾隆皇帝的题字和历代题跋，这里只显示画作本身。",
+        "en": "Handscrolls open from right to left. On the full scroll the painting is surrounded by the Qianlong emperor's inscription and later colophons; only the painting is shown here."
+      }
+    ],
+    "alt": {
+      "zh": "一幅横长的设色手卷：平坦的水泽边有树木和茅屋，右边是一座尖尖的青绿山峰，左边是一座低矮的圆山。",
+      "en": "A wide handscroll in soft colour: flat marshland with trees and cottages, a pointed blue-green peak on the right and a low, rounded hill on the left."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "",
+        "en": "Zhao Mengfu"
+      },
+      "year": 1295,
+      "date": {
+        "zh": "1295年",
+        "en": "dated 1295"
+      }
+    },
+    "image_choice": {
+      "region": "pct:57.5,0,19.5,100",
+      "note": "The painting only; the museum image is the whole scroll, with later inscriptions."
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

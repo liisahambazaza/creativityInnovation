@@ -24,7 +24,7 @@ def main() -> int:
     steps = [
         ("Code style (ruff)", [PY, "-m", "ruff", "check", "."]),
         ("Code formatting (ruff format)", [PY, "-m", "ruff", "format", "--check", "."]),
-        ("Corpus audit", [PY, "-m", "kanjian.corpus"]),
+        ("Collection check", [PY, "-m", "kanjian.works"]),
         ("Tests", [PY, "-m", "pytest", "-q", *(["-m", "not browser"] if args.fast else [])]),
     ]
 

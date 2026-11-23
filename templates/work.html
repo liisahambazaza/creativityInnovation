@@ -1,126 +1,76 @@
 {% extends "base.html" %}
-{% block title %}{{ work.title[lang] }} · {{ t('app_name_full') }}{% endblock %}
+{% block title %}{{ work.title[lang] or work.title.zh or work.title.en }} · {{ t('app_name_full') }}{% endblock %}
 {% block main %}
-<article class="work" data-work="{{ work.code }}" data-format="{{ work.format }}">
-  <header class="work-header">
-    <p class="work-kicker">{{ t('work_number', code=work.code) }} · {{ t('format_' + work.format) }}</p>
-    <h1>{{ work.title[lang] }}</h1>
-    <p class="work-byline">{{ work.artist[lang] }} · {{ work.date[lang] }}</p>
-  </header>
-
-  {% if view.first_image %}
-  <div class="viewer" data-viewer>
-    <div class="viewer-frame">
-      <img class="viewer-image" src="{{ view.first_image.src }}" alt="{{ view.first_image.alt }}"
-           width="{{ view.first_image.width }}" height="{{ view.first_image.height }}">
+<article class="work" data-work="{{ work.id }}">
+  <figure class="viewer{% if view.scroll %} viewer--scroll{% endif %}" aria-label="{{ t('viewer_label') }}">
+    <div class="viewer-frame"{% if view.scroll %} tabindex="0" data-scroll-start="right"{% endif %}>
+      <img class="viewer-image" src="{{ view.image_url }}" alt="{{ work.alt[lang] or show(work.title)|striptags }}"
+           width="{{ work.image.width }}" height="{{ work.image.height }}">
     </div>
-  </div>
-  {% endif %}
+    <figcaption class="viewer-caption">
+      {% if view.scroll %}<span class="viewer-hint">{{ t('viewer_handscroll_hint') }}</span>{% endif %}
+      <a href="{{ view.image_url }}">{{ t('viewer_open_full') }}</a>
+      <span class="viewer-credit">{{ view.credit }}</span>
+    </figcaption>
+  </figure>
 
-  {# The player is switched on by the script; without it the whole text below is still readable. #}
-  <section class="player" id="player" aria-label="{{ t('player_label') }}" hidden>
-    <p class="player-status" id="player-status">{{ t('status_ready') }}</p>
-    <div class="player-progress" aria-hidden="true"><span id="player-progress-bar"></span></div>
-    <div class="player-buttons">
-      <button type="button" class="button player-button" id="btn-prev">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M6 5v14M19 5l-9 7 9 7z"/></svg>
-        <span>{{ t('btn_prev') }}</span>
-      </button>
-      <button type="button" class="button button--primary player-button" id="btn-play">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path class="icon-play" d="M7 4l13 8-13 8z"/><path class="icon-pause" d="M7 4h4v16H7zM14 4h4v16h-4z"/></svg>
-        <span id="btn-play-text">{{ t('btn_play') }}</span>
-      </button>
-      <button type="button" class="button player-button" id="btn-next">
-        <span>{{ t('btn_next') }}</span>
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M18 5v14M5 5l9 7-9 7z"/></svg>
-      </button>
-    </div>
-    <p class="player-notice" id="player-notice" role="status" hidden></p>
-  </section>
+  <div class="work-body">
+    <header class="work-header">
+      <p class="work-kicker">{{ t('category_' + work.category) }} · {{ t('format_' + work.format) }}</p>
+      <h1>{{ show(work.title) }}</h1>
+      <p class="work-byline">{{ show(work.artist) or t('unknown_artist') }}{% if work.period %} · {{ t('era_' + work.era) }}{% endif %}{% if work.date[lang] or work.date.en %} · {{ show(work.date) }}{% endif %}</p>
+      <p class="read-aloud" hidden>
+        <button type="button" class="button" id="btn-read" aria-pressed="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none"/></svg>
+          <span id="btn-read-text">{{ t('read_aloud') }}</span>
+        </button>
+        <span class="read-aloud-status" id="read-status" role="status"></span>
+      </p>
+    </header>
 
-  <div class="layers">
-    {% for layer in view.layers %}
-    <section class="layer" id="layer-{{ layer.n }}" data-layer="{{ layer.n }}"
-             data-status="{{ layer.status }}" data-announce="{{ layer.announce }}" data-ending="{{ layer.ending }}"
-             aria-labelledby="layer-{{ layer.n }}-h">
-      <h2 class="layer-heading" id="layer-{{ layer.n }}-h"><span class="layer-n">{{ layer.n }}</span> <span class="layer-title">{{ layer.title }}</span></h2>
-      <div class="layer-body" id="layer-{{ layer.n }}-body">
-        {% for stop in layer.stops %}
-        <div class="stop" id="stop-{{ layer.n }}-{{ stop.n }}" data-stop
-             {%- if stop.image %} data-image="{{ stop.image }}"{% endif %}
-             {%- if stop.region %} data-region="{{ stop.region|join(',') }}"{% endif %}>
-          {% if stop.label %}
-          <h3 class="stop-heading" tabindex="-1">
-            {%- if stop.position %}<span class="stop-pos">{{ stop.position }}</span> {% endif -%}
-            <span class="stop-label">{{ stop.label|cjk }}</span>
-          </h3>
-          {% endif %}
-          {% for seg in stop.segments %}
-          <p class="seg seg--{{ seg.status }}" data-status="{{ seg.status }}">
-            <span class="tag tag--{{ seg.status }}">{{ t('tag_' + seg.status) }}<span class="vh">.</span></span>
-            <span class="seg-text">{{ seg.text[lang]|cjk }}</span>
-            {% if seg.source -%}
-            <a class="seg-source" href="#source-{{ seg.source.n }}" aria-label="{{ t('source_ref', n=seg.source.n, title=seg.source.title[lang]) }}">[{{ seg.source.n }}]</a>
-            {%- endif %}
-          </p>
-          {% endfor %}
-          <p class="stop-empty" hidden>{{ t('none_verified_note') }}</p>
-        </div>
-        {% endfor %}
-      </div>
+    {% if work.intro[lang] or work.look_for %}
+    <section class="editorial" aria-labelledby="intro-h">
+      <h2 id="intro-h">{{ t('intro_heading') }} <span class="badge">{{ t('ai_badge') }}</span></h2>
+      {% for p in paragraphs(work.intro) %}<p data-read>{{ p }}</p>{% endfor %}
+      {% if work.look_for %}
+      <h3>{{ t('look_heading') }}</h3>
+      <ul class="look-for">
+        {% for item in work.look_for %}<li data-read>{{ show(item) }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      <p class="ai-note">{{ t('ai_note') }}</p>
     </section>
-    {% endfor %}
+    {% endif %}
+
+    <section class="museum" aria-labelledby="museum-h">
+      <h2 id="museum-h">{{ t('museum_heading') }}</h2>
+      {% if work.museum_text.zh or work.museum_text.en %}
+      <p class="source-note">{{ t('museum_text_source', museum=view.museum.name[lang]) }}{% if view.museum_note %} {{ view.museum_note }}{% endif %}</p>
+      <blockquote class="museum-text" cite="{{ work.record.url }}">
+        {% for p in paragraphs(work.museum_text) %}<p>{{ p }}</p>{% endfor %}
+      </blockquote>
+      {% else %}
+      <p class="source-note">{{ view.museum_note }}</p>
+      {% endif %}
+
+      <h3>{{ t('details_heading') }}</h3>
+      <dl class="details">
+        {% for key, value in view.details %}
+        <div><dt>{{ t(key) }}</dt><dd>{{ value }}</dd></div>
+        {% endfor %}
+      </dl>
+      {% if work.image.note %}
+      <p class="image-note"><strong>{{ t('image_note_label') }}:</strong> {{ work.image.note }}</p>
+      {% endif %}
+      <p class="record-link"><a href="{{ work.record.url }}" rel="noopener">{{ t('record_link') }}</a>
+        · <a href="{{ view.museum.license_url }}" rel="noopener license">{{ t('license_line', license=view.museum.license) }}</a></p>
+    </section>
+
+    <nav class="work-nav" aria-label="{{ t('work_nav') }}">
+      {% if view.previous %}<a class="work-nav-prev" href="{{ url_for('work', work_id=view.previous.id) }}" rel="prev"><span>{{ t('prev_work') }}</span> {{ show(view.previous.title) }}</a>{% endif %}
+      {% if view.next %}<a class="work-nav-next" href="{{ url_for('work', work_id=view.next.id) }}" rel="next"><span>{{ t('next_work') }}</span> {{ show(view.next.title) }}</a>{% endif %}
+    </nav>
+    <p class="back"><a href="{{ url_for('home') }}">{{ t('back_to_gallery') }}</a></p>
   </div>
-
-  {% if work.catalogue %}
-  <section class="catalogue" aria-labelledby="catalogue-h">
-    <h2 id="catalogue-h">{{ t('catalogue_heading') }}</h2>
-    <dl>
-      {% for field in work.catalogue.fields %}
-      <div><dt>{{ t('cat_' + field.key) }}</dt><dd>{{ field.value[lang] }}</dd></div>
-      {% endfor %}
-    </dl>
-    {% if work.catalogue.source %}
-    <p class="catalogue-note">
-      <span class="tag tag--verified">{{ t('tag_verified') }}<span class="vh">.</span></span>
-      {{ t('catalogue_verified') }}
-      <a href="#source-{{ work.catalogue.source.n }}">{{ work.catalogue.source.title[lang] }}</a>
-    </p>
-    {% else %}
-    <p class="catalogue-note">
-      <span class="tag tag--inferred">{{ t('tag_inferred') }}<span class="vh">.</span></span>
-      {{ t('catalogue_unverified') }}
-    </p>
-    {% endif %}
-  </section>
-  {% endif %}
-
-  <section class="sources" aria-labelledby="sources-h">
-    <h2 id="sources-h">{{ t('sources_heading') }}</h2>
-    {% if work.sources %}
-    <ol>
-      {% for source in work.sources %}
-      <li id="source-{{ source.n }}" tabindex="-1">
-        <span class="source-kind">{{ t('kind_' + source.kind) }}.</span>
-        {{ source.title[lang] }}{% if source.accessed %}, {{ t('source_accessed', date=source.accessed) }}{% endif %}{% if source.license %}, {{ t('source_license', license=source.license) }}{% endif %}.
-        {% if source.note %}{{ source.note[lang] }}{% endif %}
-        {% if source.url %}<a href="{{ source.url }}" rel="noopener">{{ t('source_link') }}</a>{% endif %}
-      </li>
-      {% endfor %}
-    </ol>
-    {% else %}
-    <p>{{ t('sources_none') }}</p>
-    {% endif %}
-    {% for credit in view.credits %}
-    <p class="image-credit">{{ credit }}</p>
-    {% endfor %}
-    <p class="share-note">{{ t('verified_share', verified=work.stats.verified, segments=work.stats.segments, pct='%d%%'|format(work.stats.share * 100)) }}</p>
-    <p class="demo-note">{{ t('demo_note') }}</p>
-  </section>
-
-  <p class="back"><a href="{{ url_for('home') }}">{{ t('back_to_list') }}</a></p>
 </article>
-{% endblock %}
-{% block data %}
-<script type="application/json" id="kj-work">{{ {'images': view.images}|tojson }}</script>
 {% endblock %}

@@ -1,4 +1,5 @@
-"""The app in a real browser: accessibility, phone layout, and the audio player.
+"""The app in a real browser: page quality checks, phone layout, the handscroll viewer
+and read-aloud.
 
 Uses the Google Chrome installed on this computer (no extra download). If it
 cannot be started, these tests are skipped rather than failed; the checks
@@ -7,7 +8,6 @@ script says so, and CI installs a browser so they always run there.
 
 from __future__ import annotations
 
-import json
 import threading
 
 import pytest
@@ -17,21 +17,26 @@ from tests.conftest import ROOT
 
 pytestmark = pytest.mark.browser
 AXE = ROOT / "tests" / "vendor" / "axe.min.js"
-PAGES = ["/", "/w/01", "/w/02", "/w/03", "/labels", "/corpus", "/w/99"]
+PAGES = ["/", "/?category=calligraphy", "/about", "/w/npm-1195", "/w/npm-1194", "/w/cma-136951", "/w/nope"]
 
-# A stand-in for the browser's voice: records what would be said and finishes each line quickly.
+# A stand-in for the browser's voice: offers some voices, records what would be said,
+# and finishes each line quickly.
 FAKE_SPEECH = """
 (() => {
   window.__spoken = [];
-  class Utterance { constructor(text) { this.text = text; this.lang = ''; this.pitch = 1; this.rate = 1; } }
+  const voices = [
+    { name: 'Eddy (Chinese (China mainland))', lang: 'zh-CN', localService: true },
+    { name: 'Tingting', lang: 'zh-CN', localService: true },
+    { name: 'Samantha', lang: 'en-US', localService: true },
+    { name: 'Ava (Premium)', lang: 'en-US', localService: true },
+  ];
+  class Utterance { constructor(text) { this.text = text; this.lang = ''; } }
   const synth = {
-    speaking: false,
-    getVoices: () => window.__voices || [],
+    getVoices: () => voices,
     addEventListener: () => {},
-    cancel: () => { synth._queue = []; },
-    _queue: [],
+    cancel: () => {},
     speak(u) {
-      if (u.text.trim()) window.__spoken.push({ text: u.text, lang: u.lang, pitch: u.pitch, voice: u.voice ? u.voice.name : null });
+      window.__spoken.push({ text: u.text, lang: u.lang, voice: u.voice ? u.voice.name : null });
       setTimeout(() => { u.onstart && u.onstart(); setTimeout(() => u.onend && u.onend(), 5); }, 5);
     },
   };
@@ -40,9 +45,10 @@ FAKE_SPEECH = """
 })();
 """
 
-
-def prefs_script(**values) -> str:
-    return f"localStorage.setItem('kanjian.prefs', {json.dumps(json.dumps(values))});"
+SCROLL_LEFT_OF_END = (
+    "(() => { const f = document.querySelector('.viewer-frame');"
+    " return f.scrollWidth - f.clientWidth - f.scrollLeft; })()"
+)
 
 
 @pytest.fixture(scope="module")
@@ -112,17 +118,12 @@ def make_page(browser):
         ctx.close()
 
 
-def open_work(page, base_url, code):
-    page.goto(f"{base_url}/w/{code}")
-    page.wait_for_selector("html[data-player=ready]")
-
-
-# --- accessibility and layout ----------------------------------------------------------
+# --- page quality and layout ---------------------------------------------------------
 
 
 @pytest.mark.parametrize("lang", ["zh", "en"])
 @pytest.mark.parametrize("path", PAGES)
-def test_no_accessibility_violations(make_page, base_url, path, lang):
+def test_pages_pass_the_axe_checker_and_load_cleanly(make_page, base_url, path, lang):
     page = make_page(lang)
     page.goto(f"{base_url}{path}")
     page.add_script_tag(path=str(AXE))
@@ -133,191 +134,91 @@ def test_no_accessibility_violations(make_page, base_url, path, lang):
 
 
 @pytest.mark.parametrize("width", [320, 390, 1280])
-@pytest.mark.parametrize("path", ["/", "/w/01", "/w/03", "/labels", "/corpus"])
-def test_no_sideways_scrolling(make_page, base_url, path, width):
+@pytest.mark.parametrize("path", ["/", "/about", "/w/npm-1195", "/w/npm-1194", "/w/npm-909"])
+def test_no_sideways_page_scrolling(make_page, base_url, path, width):
     page = make_page("en", width=width)
     page.goto(f"{base_url}{path}")
     overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
     assert overflow <= 0, f"{path} is {overflow}px wider than a {width}px screen"
 
 
-def test_largest_text_size_still_fits_a_phone(make_page, base_url):
-    page = make_page("zh", width=320, init=[prefs_script(text="xlarge")])
-    open_work(page, base_url, "01")
-    assert page.get_attribute("html", "data-text") == "xlarge"
-    assert page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth")
-
-
-def test_reads_fully_without_javascript(make_page, base_url):
-    page = make_page("en", script=False)
-    page.goto(f"{base_url}/w/01")
-    assert page.locator("#player").is_hidden()
-    assert page.locator(".seg").count() == 53
-    assert all(page.locator(".layer-body").nth(i).is_visible() for i in range(4))
-
-
-# --- the player with the built-in voice off (a screen-reader user) ---------------------------
-
-
-def test_next_and_back_move_focus_through_the_parts(make_page, base_url):
-    page = make_page("en", init=[prefs_script(voice="off")])
-    open_work(page, base_url, "01")
-    assert page.text_content("#player-status") == "Press Next to read part by part."
-
-    page.click("#btn-next")  # layer 1 has one part, so this opens layer 2, section 1
-    assert page.evaluate("document.activeElement.closest('.stop').id") == "stop-2-1"
-    assert page.text_content("#player-status") == "Layer 2: Composition · Section 1 of 5"
-    assert page.get_attribute("#layer-2 .layer-toggle", "aria-expanded") == "true"
-
-    page.click("#btn-next")
-    assert page.evaluate("document.activeElement.closest('.stop').id") == "stop-2-2"
-    page.click("#btn-prev")
-    assert page.evaluate("document.activeElement.closest('.stop').id") == "stop-2-1"
+def test_every_gallery_image_loads(make_page, base_url):
+    page = make_page("en", width=1280)
+    page.goto(f"{base_url}/")
+    page.evaluate("Promise.all([...document.images].map(i => { i.loading = 'eager'; return i.decode(); }))")
+    broken = page.evaluate("[...document.images].filter(i => !i.naturalWidth).map(i => i.src)")
+    assert broken == []
     assert page.errors == []
 
 
-def test_viewer_pans_right_to_left_along_the_handscroll(make_page, base_url):
-    page = make_page("en", init=[prefs_script(voice="off")])
-    open_work(page, base_url, "01")
-    offsets = []
-    for _ in range(5):
-        page.click("#btn-next")
-        transform = page.get_attribute(".viewer-image", "style")
-        offsets.append(float(transform.split("translate(")[1].split("px")[0]))
-    # moving left along the scroll means the image slides right
-    assert offsets == sorted(offsets), offsets
+# --- handscroll viewer -------------------------------------------------------------
 
 
-def test_layer_headings_open_and_close(make_page, base_url):
-    page = make_page("en", init=[prefs_script(voice="off")])
-    open_work(page, base_url, "02")
-    toggle = page.locator("#layer-3 .layer-toggle")
-    assert toggle.get_attribute("aria-expanded") == "false" and page.locator("#layer-3-body").is_hidden()
-    toggle.click()
-    assert toggle.get_attribute("aria-expanded") == "true" and page.locator("#layer-3-body").is_visible()
-    toggle.click()
-    assert page.locator("#layer-3-body").is_hidden()
+def test_handscroll_opens_at_its_right_hand_end_and_moves_with_arrow_keys(make_page, base_url):
+    page = make_page("en", width=1000)
+    page.goto(f"{base_url}/w/npm-1194")
+    page.wait_for_function(
+        "(() => { const f = document.querySelector('.viewer-frame');"
+        " return f.scrollWidth > f.clientWidth && f.scrollLeft > 0; })()"
+    )
+    assert page.evaluate(SCROLL_LEFT_OF_END) <= 2
+    page.locator(".viewer-frame").focus()
+    page.keyboard.press("ArrowLeft")
+    page.wait_for_function(f"{SCROLL_LEFT_OF_END} > 50")
 
 
-def test_another_calligraphy_image_is_shown_per_passage(make_page, base_url):
-    page = make_page("en", init=[prefs_script(voice="off")])
-    open_work(page, base_url, "03")
-    page.click("#layer-3 .layer-toggle")  # opening the brushwork layer selects its first passage
-    seen = []
-    for index, stop in enumerate(page.locator("#layer-3 [data-stop]").all()):
-        if index:
-            page.click("#btn-next")
-        assert "is-current" in stop.get_attribute("class").split()
-        seen.append(page.get_attribute(".viewer-image", "src").rsplit("/", 1)[-1])
-    assert len(set(seen)) >= 2, seen
+def test_work_page_reads_fully_without_javascript(make_page, base_url):
+    page = make_page("en", script=False)
+    page.goto(f"{base_url}/w/npm-1195")
+    assert page.locator(".read-aloud").is_hidden()
+    assert page.locator(".look-for li").count() == 4
+    assert page.locator(".museum-text").is_visible()
 
 
-# --- the player with the built-in voice on (stand-in voice) -----------------------------------
+# --- read aloud ----------------------------------------------------------------------
 
 
-def play_until(page, done_js, timeout=10_000):
-    page.click("#btn-play")
-    page.wait_for_function(done_js, timeout=timeout)
+def read_aloud(page):
+    page.click("#btn-read")
+    page.wait_for_function(
+        "document.getElementById('btn-read').getAttribute('aria-pressed') === 'false' && window.__spoken.length > 3",
+        timeout=10_000,
+    )
     return page.evaluate("window.__spoken")
 
 
-def test_play_announces_the_layer_and_marks_each_kind_of_statement(make_page, base_url):
-    page = make_page("en", init=[FAKE_SPEECH, prefs_script(voice="on")])
-    open_work(page, base_url, "01")
-    spoken = play_until(
-        page, "document.querySelector('#player').dataset.state === 'paused' && window.__spoken.length > 3"
-    )
-    texts = [s["text"] for s in spoken]
-    assert texts[0].startswith("Layer 1 of 4: Orientation.")
-    assert "Verified." in texts and "AI description, not verified." in texts
-    # AI descriptions are spoken lower, so the difference can be heard
-    pitches = {s["pitch"] for s in spoken if s["text"] == "AI description, not verified."}
-    assert pitches == {0.85}
-    # ends the layer by saying what comes next, then waits for the listener
-    assert texts[-1] == "End of Orientation. Press Next to go deeper: Composition, scroll traversal."
-    assert page.evaluate("document.querySelector('.stop.is-current').id") == "stop-1-1"
+def test_read_aloud_uses_ava_for_english_and_mandarin_for_chinese_inside_it(make_page, base_url):
+    page = make_page("en", init=[FAKE_SPEECH])
+    page.goto(f"{base_url}/w/npm-1195")
+    spoken = read_aloud(page)
+    assert spoken[0]["text"] == "Travelers Among Mountains and Streams"
+    assert {s["voice"] for s in spoken if s["lang"].startswith("en")} == {"Ava (Premium)"}
+    assert [s["text"] for s in spoken if s["lang"].startswith("zh")] == ["范寬"]
+    assert {s["voice"] for s in spoken if s["lang"].startswith("zh")} == {"Tingting"}
     assert page.errors == []
 
 
-def test_handscroll_plays_section_after_section_and_stops_at_the_layer_end(make_page, base_url):
-    page = make_page("en", init=[FAKE_SPEECH, prefs_script(voice="on", auto=True)])
-    open_work(page, base_url, "01")
-    page.click("#btn-next")  # to layer 2: the traversal
-    page.wait_for_function("window.__spoken.length > 0")
-    page.wait_for_function(
-        "document.querySelector('#player').dataset.state === 'paused' && "
-        "document.querySelector('.stop.is-current').id === 'stop-2-5'",
-        timeout=15_000,
-    )
-    texts = [s["text"] for s in page.evaluate("window.__spoken")]
-    for n in range(1, 6):
-        assert f"Section {n} of 5." in texts
-    assert page.evaluate("document.querySelector('.stop.is-current').id") == "stop-2-5"
+def test_read_aloud_in_chinese_prefers_tingting(make_page, base_url):
+    page = make_page("zh", init=[FAKE_SPEECH])
+    page.goto(f"{base_url}/w/npm-47")
+    spoken = read_aloud(page)
+    assert {s["voice"] for s in spoken} == {"Tingting"}
+    assert any("早春" in s["text"] for s in spoken)
 
 
-def test_chinese_inside_english_gets_a_mandarin_voice(make_page, base_url):
-    page = make_page("en", init=[FAKE_SPEECH, prefs_script(voice="on", auto=True)])
-    open_work(page, base_url, "01")
-    page.click("#btn-next")
-    page.wait_for_function("window.__spoken.some(s => s.lang === 'zh-CN')", timeout=15_000)
-    zh = [s for s in page.evaluate("window.__spoken") if s["lang"] == "zh-CN"]
-    assert all(any("一" <= ch <= "鿿" for ch in s["text"]) for s in zh)
+def test_read_aloud_can_be_stopped(make_page, base_url):
+    page = make_page("en", init=[FAKE_SPEECH])
+    page.goto(f"{base_url}/w/npm-1195")
+    page.click("#btn-read")
+    assert page.get_attribute("#btn-read", "aria-pressed") == "true"
+    page.click("#btn-read")
+    assert page.get_attribute("#btn-read", "aria-pressed") == "false"
+    assert page.locator(".is-reading").count() == 0
 
 
-VOICES_WITH_AVA = """
-window.__voices = [
-  { name: 'Samantha', lang: 'en-US', localService: true },
-  { name: 'Ava', lang: 'en-US', localService: true },
-  { name: 'Ava (Premium)', lang: 'en-US', localService: true },
-  { name: 'Avani', lang: 'en-IN', localService: true },
-  { name: 'Tingting', lang: 'zh-CN', localService: true },
-];
-"""
-
-
-def test_english_prefers_the_best_installed_ava_voice(make_page, base_url):
-    page = make_page("en", init=[VOICES_WITH_AVA, FAKE_SPEECH, prefs_script(voice="on", auto=True)])
-    open_work(page, base_url, "01")
-    page.click("#btn-next")
-    page.wait_for_function("window.__spoken.some(s => s.lang === 'zh-CN')", timeout=15_000)
-    spoken = page.evaluate("window.__spoken")
-    assert {s["voice"] for s in spoken if s["lang"] == "en-US"} == {"Ava (Premium)"}
-    assert {s["voice"] for s in spoken if s["lang"] == "zh-CN"} == {"Tingting"}
-
-
-def test_verified_only_skips_ai_descriptions(make_page, base_url):
-    page = make_page("en", init=[FAKE_SPEECH, prefs_script(voice="on", verifiedOnly=True)])
-    open_work(page, base_url, "01")
-    spoken = play_until(
-        page, "document.querySelector('#player').dataset.state === 'paused' && window.__spoken.length > 2"
-    )
-    texts = [s["text"] for s in spoken]
-    assert "AI description, not verified." not in texts
-    assert "Verified." in texts
-    assert page.get_attribute("html", "data-verified-only") == ""
-
-
-def test_settings_are_saved_on_the_device(make_page, base_url):
-    page = make_page("en")
-    open_work(page, base_url, "02")
-    page.click("#settings summary")
-    page.check("input[name=text][value=large]")
-    page.check("input[name=voice][value=off]")
-    assert page.get_attribute("html", "data-text") == "large"
-    page.reload()
-    page.wait_for_selector("html[data-player=ready]")
-    assert page.get_attribute("html", "data-text") == "large"
-    assert page.is_checked("input[name=voice][value=off]")
-    assert page.text_content("#player-status") == "Press Next to read part by part."
-
-
-def test_speech_that_never_starts_is_reported_not_hung(make_page, base_url):
-    # Some phones have no voice installed: speak() is accepted but nothing ever happens.
-    silent = FAKE_SPEECH.replace(
-        "setTimeout(() => { u.onstart && u.onstart(); setTimeout(() => u.onend && u.onend(), 5); }, 5);", ""
-    )
-    page = make_page("en", init=[silent, prefs_script(voice="on")])
-    open_work(page, base_url, "01")
-    page.click("#btn-play")
-    page.wait_for_selector("#player-notice:not([hidden])", timeout=12_000)
-    assert page.get_attribute("#player", "data-state") == "paused"
+def test_browser_without_speech_says_so(make_page, base_url):
+    no_speech = "delete window.speechSynthesis; window.SpeechSynthesisUtterance = undefined;"
+    page = make_page("en", init=[no_speech])
+    page.goto(f"{base_url}/w/npm-1195")
+    page.click("#btn-read")
+    assert "cannot read aloud" in page.inner_text("#read-status")

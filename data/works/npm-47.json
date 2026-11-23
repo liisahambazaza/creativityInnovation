@@ -1,0 +1,84 @@
+{
+  "id": "npm-47",
+  "museum": "npm",
+  "record": {
+    "id": "47",
+    "dep": "P",
+    "object_number": "故畫000053N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/47?dep=P",
+    "accessed": "2026-11-24",
+    "image": "K2A000053N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "早春圖",
+    "en": "Early Spring"
+  },
+  "artist": {
+    "zh": "郭熙",
+    "en": "Guo Xi"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 158.3 × 108.1 公分",
+    "en": "Image 158.3 × 108.1 cm"
+  },
+  "museum_text": {
+    "zh": "作於一○七二年的〈早春圖〉，不僅是郭熙傳世的代表作，也是山水畫史中最重要的里程碑。郭熙在宋神宗時進入宮廷服務，正當王安石變法之際，官府殿閣的新建布置中，都使用了郭熙的山水。此作可能原來也是其中之一。 畫中構圖有著對稱性的安排，但在秩序感中又充滿著韻律的變化。而藉著墨色深淺所營造出來的光影效果，更為此山水增添了空間的奇幻。舟樵行旅等活動的加入，也進一步將此意境轉化成一個生機處處，可遊可居的神奇所在。這些表現都可以從他的《林泉高致》書中，得到理論上的印證。",
+    "en": "Kuo Hsi (active late 11th century) came from Wen-hsien, Honan. He was a student (i-hsueh) in the Painting Academy, specializing in landscapes and wintry trees. He was extremely skilful and profoundly original, and although he studied the style of Li Ch’eng he was also able to express his own feelings. On a large screen or high wall he would paint tall pines and large trees, winding streams and jagged promontories, lofty peaks and soaring cliffs, or high mountains gracefully rising, transformed or obliterated by mist and clouds and partially visible among them – he could render a thousand forms and myriad appearances. His mountain peaks were high and precipitous, his trees characterized by “crab-claw” branches, and his ink fairly dilute; his brushwork resembled that of cursive calligraphy, In his early years he concentrated on developing his skill, while in his later year his brushwork became increasingly strong. He wrote the Treatise on Landscape Painting (Shan-shui hua-lun) in which he said that one should study the near and far, the shallow and deep, the effects of wind and rain, light and shadow, and the changes of the seasons and times of day."
+  },
+  "image": {
+    "src": "img/works/npm-47.jpg",
+    "width": 1448,
+    "height": 2072,
+    "thumb": "img/works/npm-47-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "早春时节，雾气正从山间升起。郭熙是宋神宗的宫廷画家，这幅画题为1072年所作。画中没有一个固定的视点：目光会向上望见高峰，向里看进山谷，又向远处望向平野。郭熙在他的画论中把这称为“三远”。",
+      "en": "Mist is lifting from the mountains in the first days of spring. Guo Xi was a court painter to the emperor Shenzong, and he dated this scroll 1072. There is no single fixed viewpoint: your eye looks up at the peaks, deep into the valleys and far across the plain. Guo Xi himself described this in his writings on painting as the 'three distances'."
+    },
+    "look_for": [
+      {
+        "zh": "光秃而弯曲的树枝，枝梢像蟹爪一样，表明冬天刚刚过去。",
+        "en": "The bare, twisting branches with claw-like tips (often called 'crab-claw' branches): winter has only just ended."
+      },
+      {
+        "zh": "仔细找找藏在山水里的小人物、小船和房屋，这幅画值得慢慢看。",
+        "en": "Small people, boats and buildings tucked into the landscape. The painting rewards a slow search."
+      },
+      {
+        "zh": "山与山之间的雾气，用淡墨或留白来表现。",
+        "en": "The mist between the mountains, made with very pale ink or bare silk."
+      },
+      {
+        "zh": "整座山像一个向上扭动的“S”形，仿佛在生长。",
+        "en": "The way the whole mountain twists upward in an S-shape, as if it were growing."
+      }
+    ],
+    "alt": {
+      "zh": "一幅立轴山水，墨色褐灰：扭动的山峰穿过雾气升起，近景有光秃的树和岩石。",
+      "en": "A hanging scroll of a mountain landscape in grey-brown ink: twisting peaks rising through mist, with bare trees and rocks in the foreground."
+    },
+    "overrides": {
+      "period": "northern_song",
+      "year": 1072,
+      "date": {
+        "zh": "1072年",
+        "en": "dated 1072"
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

@@ -1,7 +1,7 @@
 [project]
 name = "kanjian"
-version = "0.1.0"
-description = "Kànjiàn (看见): spoken descriptions of Chinese artworks for blind and low-vision visitors"
+version = "0.2.0"
+description = "Kànjiàn (看见): an introduction to Chinese painting and calligraphy, from open museum collections"
 requires-python = ">=3.10"
 
 [tool.pytest.ini_options]

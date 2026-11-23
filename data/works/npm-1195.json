@@ -1,0 +1,84 @@
+{
+  "id": "npm-1195",
+  "museum": "npm",
+  "record": {
+    "id": "1195",
+    "dep": "P",
+    "object_number": "故畫000826N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1195?dep=P",
+    "accessed": "2026-11-24",
+    "image": "K2A000826N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "谿山行旅圖",
+    "en": "Travelers Among Mountains and Streams"
+  },
+  "artist": {
+    "zh": "范寬",
+    "en": "Fan Kuan"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 206.3 × 103.3 公分",
+    "en": "Image 206.3 × 103.3 cm"
+  },
+  "museum_text": {
+    "zh": "范寬向來被視為山水成立期的大師，可惜生平不詳，只知他曾隱居終南、太華，晚年來往於開封、洛陽間，但未入朝任職，大約一○二五年時還在世。本幅被公認為他的真蹟，甚至視為宋代山水畫的代表形象。 畫中山水並非模仿真實空間為目標，而是巧妙地在近、中、遠三段式的基本構圖中，藉推遠主山、拉近中景、突顯近景渺小行旅與主山巍峨崇高的對比等手法，創造了一種如臨其境的壯碩山水之趣。 畫幅右下角樹蔭中藏有「范寬」二字款，左下腳則有「忠孝之家」印，為錢勰所有，他也是蘇軾的朋友。",
+    "en": "Fan K'uan has long been considered a founding master of Chinese landscape painting. Unfortunately, little is known about him, including his birth and death dates. However, he apparently lived in reclusion in the Chung-nan and T'ai-hua Mountains, and in later years traveled between K'ai-feng and Loyang. He never became an official and was still living around 1025. This is universally regarded as an authentic work of his and representative of Sung landscape painting, especially the Northern Sung monumental manner. The artist's purpose here apparently was not to replicate realistic space. Rather, by cleverly manipulating the basic compositional blocks of the fore-, middle-, and background, he could push back the main mountain peak, reign in the middleground, and focus on the minute travelers in the foreground. With the dramatic contrast between tiny figures and towering central mountains, the artist created an interesting scene placing the viewer in the midst of a monumental landscape. In the lower right corner, hidden among the trees, is the brief signature “Fan K’uan”, and in the lower left is the seal “Chung-hsiao chih chia” (Of the Family of Chung-hsiao). The latter belonged to Ch'ien Hsieh, a friend of the Northern Sung literary great Su Shih."
+  },
+  "image": {
+    "src": "img/works/npm-1195.jpg",
+    "width": 1174,
+    "height": 2556,
+    "thumb": "img/works/npm-1195-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "这幅高大的绢本立轴，几乎整幅都被一座大山占满，山体从云雾中拔地而起。画面底部的小路上，一队旅人赶着骡马前行，小得要仔细寻找才看得见。此画约作于公元1000年前后，是中国山水画成熟期的奠基之作：它画的不是某一处真实的风景，而是大自然的雄伟。",
+      "en": "A single mountain fills most of this tall silk scroll, rising straight up out of the mist. On the path at the bottom, a few travellers drive a mule train along, so small that you have to search for them. Painted around the year 1000, it is one of the founding works of Chinese landscape painting: a picture of nature's grandeur rather than of one particular view."
+    },
+    "look_for": [
+      {
+        "zh": "右下方小路上的旅人和骡队。他们在岩石旁显得极小，正是他们衬出了大山的高大。",
+        "en": "The travellers and mules on the path at the lower right. They look tiny beside the rocks, and that is what makes the mountain feel enormous."
+      },
+      {
+        "zh": "右侧山崖上细细垂下的一道瀑布。",
+        "en": "The thin waterfall dropping down the cliff on the right."
+      },
+      {
+        "zh": "画家的名款“范宽”二字，藏在右下角的树丛间。",
+        "en": "The artist's two-character signature, 范寬 (Fan Kuan), hidden among the trees in the lower right corner."
+      },
+      {
+        "zh": "山崖的质感由无数短促的笔点堆成，这种画法称为“雨点皴”。",
+        "en": "The texture of the cliff, built up from countless short dabs of the brush, a technique known as 'raindrop' texture strokes."
+      }
+    ],
+    "alt": {
+      "zh": "一幅高大的立轴：一座巨大而深暗的山崖，右侧有瀑布，山下是一道雾气，近景是树木和一条小路。",
+      "en": "A tall hanging scroll: a huge, dark cliff face with a waterfall on its right, a band of mist below, and trees and a small path in the foreground."
+    },
+    "overrides": {
+      "period": "northern_song",
+      "year": 1000,
+      "date": {
+        "zh": "约11世纪初",
+        "en": "early 11th century"
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

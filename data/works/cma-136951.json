@@ -1,0 +1,84 @@
+{
+  "id": "cma-136951",
+  "museum": "cma",
+  "record": {
+    "id": "136951",
+    "object_number": "1961.421.2",
+    "url": "https://clevelandart.org/art/1961.421.2",
+    "accessed": "2026-11-24"
+  },
+  "category": "calligraphy",
+  "format": "album_leaf",
+  "period": "southern_song",
+  "year": 1256,
+  "title": {
+    "zh": "王維詩",
+    "en": "Poem by Wang Wei in the Cursive Script Style"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Song Lizong (Chinese, 1205–1264)"
+  },
+  "date": {
+    "zh": "",
+    "en": "1256"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Album leaf; ink on silk"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Image: 25.1 x 25.3 cm (9 7/8 x 9 15/16 in.); with mat: 33.3 x 40.5 cm (13 1/8 x 15 15/16 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Poem and painting, once mounted together as one fan, exemplify the collaboration between imperial patron and court painter. Emperor Lizong’s calligraphy cites a verse from Wang Wei’s (701–761) poem, Walking to where the water ends, I sit and watch when clouds arise.\n\nMa Lin’s response is this painting. At the water’s edge, a scholar reclines by a large rock. The view leads across the empty middle ground to a distant mountain. With sparse ink and subtly graded washes, Ma Lin visualizes the poetic verse. The painting suggests the impact of Chan aesthetics through interaction between the palace, literati-officials, and monasteries around Hangzhou.\n\nThe leaf facing Emperor Lizong’s calligraphy has an inscription by Zhang Daqian (1899–1983).\n\nEmperor Lizong had little interest in governmental affairs, but he was perhaps the finest calligrapher among the Song emperors."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "John L. Severance Fund"
+  },
+  "image": {
+    "src": "img/works/cma-136951.jpg",
+    "width": 1906,
+    "height": 1574,
+    "thumb": "img/works/cma-136951-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "南宋理宗皇帝在一面圆形绢扇上写下唐代诗人王维的两句诗：“行到水穷处，坐看云起时。”这面扇子原本一面是皇帝的书法，另一面是宫廷画家马麟为这两句诗画的画。理宗不太理会朝政，却可能是宋代皇帝中最好的书法家。",
+      "en": "The Southern Song emperor Lizong wrote two lines by the Tang poet Wang Wei on a round silk fan: 'Walking to where the water ends, I sit and watch the clouds rise.' The fan once had the emperor's calligraphy on one side and, on the other, a painting of the couplet by the court painter Ma Lin. Lizong took little interest in governing, but he was perhaps the finest calligrapher among the Song emperors."
+    },
+    "look_for": [
+      {
+        "zh": "从右往左读两行字：行到水窮處／坐看雲起時。",
+        "en": "Read the two columns from right to left: 行到水窮處 / 坐看雲起時."
+      },
+      {
+        "zh": "圆圆的形状：它原本是一把团扇，后来才裱成册页。",
+        "en": "The round shape: this was a flat silk fan before it was mounted as an album leaf."
+      },
+      {
+        "zh": "左边的小款和红色印章。",
+        "en": "The small signature and red seals at the left."
+      }
+    ],
+    "alt": {
+      "zh": "一面裱在白色纸上的圆形褐色绢扇，上面有两行黑色书法，左边有红色印章。",
+      "en": "A round fan of brownish silk mounted on a white page, with two columns of black calligraphy and red seals at the left."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "宋理宗（1205–1264）",
+        "en": "Emperor Lizong of the Song (1205–1264)"
+      },
+      "date": {
+        "zh": "1256年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

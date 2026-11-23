@@ -1,0 +1,87 @@
+{
+  "id": "npm-1194",
+  "museum": "npm",
+  "record": {
+    "id": "1194",
+    "dep": "P",
+    "object_number": "故畫001016N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1194?dep=P",
+    "accessed": "2026-11-24",
+    "image": "K2A001016N000000000SDAAA"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "yuan",
+  "year": 1271,
+  "title": {
+    "zh": "富春山居圖",
+    "en": "Dwelling in the Fuchun Mountains (Master Wuyong Scroll)"
+  },
+  "artist": {
+    "zh": "黃公望",
+    "en": "Huang Gongwang"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "紙；拖尾：紙",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "本幅 33 × 636.9 公分；拖尾 32.5 × 324.8 公分",
+    "en": "Image 33 × 636.9 cm; Colophons 32.5 × 324.8 cm"
+  },
+  "museum_text": {
+    "zh": "黃公望（西元一二六九－一三五四年），富陽人。字子久，號一峰，又號大癡道人，晚號井西道人。山水以董源為宗，為元四大家之冠。 此卷為僧無用所作，於至正七年（一三四七）起草，其年正八十歲。得暇即畫數筆，其中因曾外出旅行，至至正十年（一三五０），尚未完成。本卷筆端變化鼓舞，聖而神矣。",
+    "en": "The Yuan dynasty was a time when Taoism flourished and gave shelter to many scholars. Huang Kung-wang, having spent time in prison and with his hopes of an official career dashed, became a Taoist of the Full Truth Sect. He taught the Tao in the south-central Kiangnan region and became friends with such scholar-artists as Ts'ao Chih-po and Ni Tsan. He also taught painting, and \"Secrets of Landscape Painting\" may reflect his teachings. His landscape painting was influenced by Chao Meng-fu and his own enlightenment of the land. This scroll's depiction of fishermen as seen in his travels represents the culmination of his artistic career. Taking 4 years and finished in 1350, traces of his retouching are still seen, adding a dimension of time and thought. Done for Cheng Wu-yung, also a Taoist, it serves as a medium between the two."
+  },
+  "image": {
+    "src": "img/works/npm-1194.jpg",
+    "width": 8325,
+    "height": 448,
+    "thumb": "img/works/npm-1194-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "这是沿着杭州附近富春江的一段长长的旅程。黄公望用纸本水墨画了三四年，约在1350年完成，送给道友无用师。1650年，一位极爱此画的收藏家临终前要用它殉葬，画被人从火中抢出，却已烧成两段：烧焦的前一小段如今在杭州，这长长的主体部分在台北。",
+      "en": "A long journey along the Fuchun River near Hangzhou, painted in ink on paper by Huang Gongwang over three or four years and finished around 1350 for a Daoist friend, Master Wuyong. In 1650 a collector who loved it asked for it to be burned with him as he died. It was pulled from the fire, but in two pieces: the short, burnt opening section is now in Hangzhou, and this long main section is in Taipei."
+    },
+    "look_for": [
+      {
+        "zh": "像展开真正的手卷那样，从右往左慢慢看：山、江、树和村落一处接一处，就像一次散步。",
+        "en": "Unroll it slowly from right to left, as you would a real handscroll: hills, river, trees and villages follow one another like a walk."
+      },
+      {
+        "zh": "干而轻的灰色笔触，几乎没有颜色。",
+        "en": "Dry, light brushstrokes in grey ink, with almost no colour."
+      },
+      {
+        "zh": "江上小船里的渔人，以及岸边的小屋和亭子。",
+        "en": "Fishermen in small boats on the river, and little huts and pavilions on the shore."
+      },
+      {
+        "zh": "大片的空白，读作江水和雾气。",
+        "en": "Long stretches of empty paper that read as water and mist."
+      }
+    ],
+    "alt": {
+      "zh": "一幅极长而窄的淡墨手卷：起伏的山丘，岸边有树和小屋，中间是开阔的江面。",
+      "en": "A very long, narrow handscroll in pale ink: rolling hills, river banks with trees and small houses, and open water."
+    },
+    "overrides": {
+      "year": 1350,
+      "date": {
+        "zh": "1347–1350年",
+        "en": "1347–1350"
+      }
+    },
+    "image_choice": {
+      "region": "pct:38,0,62,100",
+      "note": "The painting only; the museum image is the whole scroll, with later inscriptions."
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

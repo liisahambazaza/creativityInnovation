@@ -1,0 +1,96 @@
+{
+  "id": "met-40081",
+  "museum": "met",
+  "record": {
+    "id": "40081",
+    "object_number": "1973.120.6",
+    "url": "https://www.metmuseum.org/art/collection/search/40081",
+    "accessed": "2026-11-24"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "yuan",
+  "year": 1285,
+  "title": {
+    "zh": "",
+    "en": "Wang Xizhi watching geese"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Qian Xuan (Chinese, 1239–1301)"
+  },
+  "date": {
+    "zh": "",
+    "en": "ca. 1295"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Handscroll; ink, color, and gold on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Image: 9 1/8 x 36 1/2 in. (23.2 x 92.7 cm); Overall with mounting: 11 x 418 13/16 in. (27.9 x 1063.8 cm)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973"
+  },
+  "image": {
+    "src": "img/works/met-40081.jpg",
+    "width": 3600,
+    "height": 901,
+    "thumb": "img/works/met-40081-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "大书法家王羲之（303–361）站在水边的亭子里看鹅。传说他从鹅转动脖子的姿态中，悟出了写字时手腕的运转。钱选约在1295年画成此画，用的是明亮的青绿设色，有意追摹远古的画风。",
+      "en": "The great calligrapher Wang Xizhi (303–361) stands in a waterside pavilion watching geese. It was said that he learned how to turn his wrist while writing by watching the way a goose turns its neck. Qian Xuan painted the scene around 1295 in a bright blue-green style that deliberately looked back to much older painting."
+    },
+    "look_for": [
+      {
+        "zh": "亭子里穿白袍的王羲之，旁边站着一个小童。",
+        "en": "Wang Xizhi in his white robe in the pavilion, with a young servant beside him."
+      },
+      {
+        "zh": "亭子右边水面上游着的鹅。",
+        "en": "The geese swimming on the water to the right of the pavilion."
+      },
+      {
+        "zh": "用线勾勒、平涂青绿色的山，这是一种有意仿古的画法。",
+        "en": "Blue-green hills drawn with outlines and flat colour, a deliberately old-fashioned manner."
+      },
+      {
+        "zh": "最左边是钱选自己题写的诗，还有许多收藏者的印章。",
+        "en": "At the far left, Qian Xuan's own poem in his calligraphy, and many collectors' seals."
+      }
+    ],
+    "alt": {
+      "zh": "一幅色彩明亮的手卷：树丛中有一座亭子，亭中有穿白衣的人物，湖面上有鹅，左边是青绿色的山丘，最左边有一段书法。",
+      "en": "A brightly coloured handscroll: a pavilion among trees with a figure in white, geese on a lake, blue and green hills to the left, and a passage of calligraphy at the far left."
+    },
+    "overrides": {
+      "title": {
+        "zh": "王羲之觀鵝圖",
+        "en": ""
+      },
+      "artist": {
+        "zh": "錢選（1239–1301）",
+        "en": ""
+      },
+      "date": {
+        "zh": "约1295年",
+        "en": ""
+      }
+    },
+    "image_choice": {
+      "keep": true,
+      "note": "Stitched from two Met Open Access section photographs and cropped to the painting."
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

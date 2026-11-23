@@ -1,0 +1,88 @@
+{
+  "id": "cma-130361",
+  "museum": "cma",
+  "record": {
+    "id": "130361",
+    "object_number": "1953.126",
+    "url": "https://clevelandart.org/art/1953.126",
+    "accessed": "2026-11-24"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "northern_song",
+  "year": 1100,
+  "title": {
+    "zh": "溪山無盡",
+    "en": "Streams and Mountains without End"
+  },
+  "artist": {
+    "zh": "",
+    "en": ""
+  },
+  "date": {
+    "zh": "",
+    "en": "1100–1150"
+  },
+  "medium": {
+    "zh": "",
+    "en": "handscroll; ink and slight color on silk"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Image: 35.1 x 213 cm (13 13/16 x 83 7/8 in.); Overall: 35.1 x 1103.8 cm (13 13/16 x 434 9/16 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Streams and Mountains without End was a landmark acquisition of 1953, made just a year after Sherman Lee had returned to Cleveland as curator of Oriental art. He acquired it with the intention to provide \"a more than adequate foundation for a fine collection of Chinese landscape painting.\" This impressive work demonstrates the culmination of stylistic developments in Chinese monumental landscape painting following the Northern Song tradition. It represents a journey through a landscape, making it a fitting metaphor for Lee’s journey of discovery and achievement over a lifetime.\n\nThe portrayal of the distant lands is rich with details like pavilions, villages, and human activities."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Gift of the Hanna Fund"
+  },
+  "image": {
+    "src": "img/works/cma-130361.jpg",
+    "width": 3400,
+    "height": 525,
+    "thumb": "img/works/cma-130361-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "没有人知道这幅手卷的作者，它约于12世纪上半叶画于中国北方。从右往左展开，它带你穿过整片山脉、江河与村落：从宁静的水岸，攀上高耸的群峰，再回落到开阔的水面。它是美国博物馆中最受推崇的早期中国山水手卷之一。",
+      "en": "No one knows who painted this scroll, made in north China in the first half of the 1100s. Unrolled from right to left, it takes you on a journey through a whole range of mountains, rivers and villages: from a quiet shore, up to towering peaks, and down again to open water. It is one of the most admired early Chinese landscape scrolls in an American museum."
+    },
+    "look_for": [
+      {
+        "zh": "从右边开始往左看：山势在中段达到高潮，到卷尾又回落到水面。",
+        "en": "Start at the right and move left: the mountains build to a climax in the middle and fall away to water at the end."
+      },
+      {
+        "zh": "细小的亭子、村落和行人，衬出山的尺度。",
+        "en": "Tiny pavilions, villages and people, which give the mountains their scale."
+      },
+      {
+        "zh": "把近山和远山隔开的雾气。",
+        "en": "The mist that separates near hills from distant ones."
+      }
+    ],
+    "alt": {
+      "zh": "一幅横长的绢本水墨手卷：连绵的群山和树林，中段山峰高耸，两端是开阔的水面。",
+      "en": "A long handscroll in ink on silk: a continuous range of wooded mountains, with tall peaks in the middle and open water at both ends."
+    },
+    "overrides": {
+      "title": {
+        "zh": "溪山無盡圖",
+        "en": ""
+      },
+      "artist": {
+        "zh": "佚名",
+        "en": "Unidentified artist"
+      },
+      "date": {
+        "zh": "约1100–1150年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

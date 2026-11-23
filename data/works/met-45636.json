@@ -1,0 +1,88 @@
+{
+  "id": "met-45636",
+  "museum": "met",
+  "record": {
+    "id": "45636",
+    "object_number": "1973.120.8",
+    "url": "https://www.metmuseum.org/art/collection/search/45636",
+    "accessed": "2026-11-24"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "yuan",
+  "year": 1372,
+  "title": {
+    "zh": "",
+    "en": "Woods and Valleys of Mount Yu"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Ni Zan (Chinese, 1306–1374)"
+  },
+  "date": {
+    "zh": "",
+    "en": "dated 1372"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Hanging scroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Image: 37 1/4 x 14 1/8 in. (94.6 x 35.9 cm); Overall with mounting: 82 x 20 5/8 in. (208.3 x 52.4 cm); Overall with knobs: 82 x 24 5/8 in. (208.3 x 62.5 cm)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973"
+  },
+  "image": {
+    "src": "img/works/met-45636.jpg",
+    "width": 1287,
+    "height": 2332,
+    "thumb": "img/works/met-45636-thumb.jpg"
+  },
+  "editorial": {
+    "intro": {
+      "zh": "倪瓒是元末四大家之一，这幅画作于1372年，那时他已近晚年。他的山水以简淡著称：近岸几棵树，中间一大片空白的水面，远处是低缓的山。画中没有人。这种宁静和空旷，被看作画家心境高洁的表现。",
+      "en": "Ni Zan, one of the Four Great Masters of the late Yuan dynasty, painted this in 1372, near the end of his life. His landscapes are famously spare: a near shore with a few trees, a wide stretch of empty water, and low hills beyond. There are no people. The calm and emptiness were read as a sign of the painter's purity of mind."
+    },
+    "look_for": [
+      {
+        "zh": "干而淡的墨色：倪瓒用墨极少，几乎不用渲染。",
+        "en": "The dry, pale ink: Ni Zan used very little ink and almost no wash."
+      },
+      {
+        "zh": "三段式的布局：近岸、空水、远山。",
+        "en": "The three-part plan: near shore, empty water, distant hills."
+      },
+      {
+        "zh": "留白：画面上很大一部分是没有落笔的纸。",
+        "en": "The bare space: a large part of the picture is untouched paper."
+      }
+    ],
+    "alt": {
+      "zh": "一幅窄高的淡墨立轴：近景岩石上有几棵细树，中间是空白的水面，上方是圆缓的山丘。",
+      "en": "A tall, narrow hanging scroll in pale grey ink: a few thin trees on rocks in the foreground, empty water, and rounded hills at the top."
+    },
+    "overrides": {
+      "title": {
+        "zh": "虞山林壑圖",
+        "en": ""
+      },
+      "artist": {
+        "zh": "倪瓚（1306–1374）",
+        "en": ""
+      },
+      "date": {
+        "zh": "1372年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "drafted": "2026-11-24"
+  }
+}

@@ -1,1 +1,1 @@
-"""Kànjiàn (看见): spoken descriptions of Chinese artworks for blind and low-vision visitors."""
+"""Kànjiàn (看见): an introduction to Chinese painting and calligraphy, from open museum collections."""
