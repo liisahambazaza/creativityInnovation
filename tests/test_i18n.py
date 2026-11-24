@@ -8,7 +8,7 @@ import string
 import pytest
 
 from kanjian import i18n, periods
-from kanjian.works import CATEGORIES, FORMATS, LANGS
+from kanjian.works import CATEGORIES, FORMATS, LANGS, SOURCE_KINDS
 from tests.conftest import ROOT
 
 
@@ -60,7 +60,7 @@ def test_templates_and_app_only_use_defined_keys():
 
 def test_template_prefixes_are_the_ones_covered_below():
     _, prefixes = _template_keys()
-    assert prefixes <= {"format_", "category_", "era_", "era_dates_", "era_intro_"}, prefixes
+    assert prefixes <= {"format_", "category_", "era_", "era_dates_", "era_intro_", "source_kind_"}, prefixes
 
 
 @pytest.mark.parametrize(
@@ -71,6 +71,7 @@ def test_template_prefixes_are_the_ones_covered_below():
         ("era_", periods.ERAS),
         ("era_dates_", periods.ERAS),
         ("era_intro_", periods.ERAS),
+        ("source_kind_", SOURCE_KINDS),
     ],
 )
 def test_every_value_built_into_a_key_has_text(prefix, values):

@@ -46,22 +46,59 @@
     "thumb": "img/works/cma-130361-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "没有人知道这幅手卷的作者，它约于12世纪上半叶画于中国北方。从右往左展开，它带你穿过整片山脉、江河与村落：从宁静的水岸，攀上高耸的群峰，再回落到开阔的水面。它是美国博物馆中最受推崇的早期中国山水手卷之一。",
-      "en": "No one knows who painted this scroll, made in north China in the first half of the 1100s. Unrolled from right to left, it takes you on a journey through a whole range of mountains, rivers and villages: from a quiet shore, up to towering peaks, and down again to open water. It is one of the most admired early Chinese landscape scrolls in an American museum."
-    },
+    "intro": [
+      {
+        "zh": "这卷画没有作者记录；馆方定为1100–1150年，北宋末至金代。",
+        "en": "No artist is recorded for this scroll, which the museum dates to 1100–1150, the late Northern Song to Jin dynasty.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "它表现的是一次穿越山水的旅程，远处的景物里有许多亭台、村落和人的活动。",
+        "en": "It represents a journey through a landscape, and its distant lands are rich with pavilions, villages and human activity.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "1953年，策展人李雪曼把它买进克利夫兰，作为馆中中国山水画收藏的基础。",
+        "en": "The curator Sherman Lee acquired it in 1953 as the foundation for the museum's collection of Chinese landscape painting.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "题目中的“无尽”二字是张大千在20世纪加上的；早先的题跋者康里巎巎只称它为“溪山”。",
+        "en": "The words 'without End' were added to the title by Zhang Daqian in the 20th century; an earlier colophon writer, Kangli Naonao, called it simply 'Streams and Mountains'.",
+        "sources": [
+          "api"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "从右边开始往左看：山势在中段达到高潮，到卷尾又回落到水面。",
-        "en": "Start at the right and move left: the mountains build to a climax in the middle and fall away to water at the end."
+        "zh": "山间细线勾出的桥梁和房屋。",
+        "en": "Bridges and buildings drawn in fine lines, nestled among the mountains.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
-        "zh": "细小的亭子、村落和行人，衬出山的尺度。",
-        "en": "Tiny pavilions, villages and people, which give the mountains their scale."
+        "zh": "远处的亭台、村落和人物。",
+        "en": "Pavilions, villages and people in the distance.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
-        "zh": "把近山和远山隔开的雾气。",
-        "en": "The mist that separates near hills from distant ones."
+        "zh": "后来的文人和收藏者留下了9段题跋和48方印章，最早的写于1205年。",
+        "en": "Later writers and collectors added 9 colophons and 48 seals, the earliest dated 1205.",
+        "sources": [
+          "api"
+        ]
       }
     ],
     "alt": {
@@ -78,11 +115,67 @@
         "en": "Unidentified artist"
       },
       "date": {
-        "zh": "约1100–1150年",
+        "zh": "1100–1150年",
         "en": ""
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "杨懋",
+          "en": "Yang Mao"
+        },
+        "about": {
+          "zh": "1380年的题跋",
+          "en": "colophon, 1380"
+        },
+        "zh": "他写道不必追问画家是谁：宋、金、元的题跋者都找不到它的来历，可见它年代久远。",
+        "en": "He wrote that there is no need to ask who painted it: since writers of the Song, Jin and Yuan could not trace it, its origin must be ancient.",
+        "sources": [
+          "api"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "There is no need to ask the name of the painter"
+        }
+      },
+      {
+        "who": {
+          "zh": "李雪曼（Sherman E. Lee）",
+          "en": "Sherman E. Lee"
+        },
+        "about": {
+          "zh": "克利夫兰艺术博物馆东方艺术策展人",
+          "en": "curator of Oriental art, the Cleveland Museum of Art"
+        },
+        "zh": "他买下这卷画，是为了给一个出色的中国山水画收藏打下坚实的基础。",
+        "en": "He bought the scroll to lay a solid foundation for a fine collection of Chinese landscape painting.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "a more than adequate foundation for a fine collection of Chinese landscape painting"
+        }
+      }
+    ],
+    "sources": {
+      "api": {
+        "kind": "museum",
+        "title": "Open Access record 1953.126 (inscriptions and colophons)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1953.126",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

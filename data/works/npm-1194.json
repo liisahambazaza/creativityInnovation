@@ -44,26 +44,73 @@
     "thumb": "img/works/npm-1194-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "这是沿着杭州附近富春江的一段长长的旅程。黄公望用纸本水墨画了三四年，约在1350年完成，送给道友无用师。1650年，一位极爱此画的收藏家临终前要用它殉葬，画被人从火中抢出，却已烧成两段：烧焦的前一小段如今在杭州，这长长的主体部分在台北。",
-      "en": "A long journey along the Fuchun River near Hangzhou, painted in ink on paper by Huang Gongwang over three or four years and finished around 1350 for a Daoist friend, Master Wuyong. In 1650 a collector who loved it asked for it to be burned with him as he died. It was pulled from the fire, but in two pieces: the short, burnt opening section is now in Hangzhou, and this long main section is in Taipei."
-    },
+    "intro": [
+      {
+        "zh": "黄公望被馆方称为元四大家之首；1347年，八十岁的他开始为无用师画这卷画。",
+        "en": "Huang Gongwang, whom the museum ranks first among the Four Great Masters of the Yuan, began this scroll in 1347, at the age of eighty, for his friend Wuyong.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他有空就画几笔；馆方的中文说明说到1350年仍未完成，英文说明则说历时四年、于1350年完成。",
+        "en": "He added a few strokes whenever he had time. The museum's Chinese text says it was still unfinished in 1350; its English text says it took four years and was finished that year.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "画的是富阳一带的富春山水，黄公望本人就是富阳人。",
+        "en": "It shows the scenery of the Fuchun Mountains at Fuyang, Huang's home district.",
+        "sources": [
+          "wiki",
+          "museum"
+        ]
+      },
+      {
+        "zh": "1650年，收藏者吴洪裕临终前命人焚烧此画，想把它带到另一个世界；侄子吴静安把它救出，但画已烧成两段。",
+        "en": "In 1650 its owner, Wu Hongyu, had it burnt shortly before he died, so that he could take it to the afterlife; his nephew Wu Jing'an pulled it out, but it was already in two pieces.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "较短的前段《剩山图》在杭州的浙江省博物馆，较长的这一段在台北。",
+        "en": "The short opening piece, The Remaining Mountain, is in the Zhejiang Provincial Museum in Hangzhou; this long main section is in Taipei.",
+        "sources": [
+          "wiki"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "像展开真正的手卷那样，从右往左慢慢看：山、江、树和村落一处接一处，就像一次散步。",
-        "en": "Unroll it slowly from right to left, as you would a real handscroll: hills, river, trees and villages follow one another like a walk."
+        "zh": "江上的渔人：馆方说画中的渔人来自他的游历见闻。",
+        "en": "The fishermen on the river: the museum says they come from what he saw on his travels.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
-        "zh": "干而轻的灰色笔触，几乎没有颜色。",
-        "en": "Dry, light brushstrokes in grey ink, with almost no colour."
+        "zh": "一层层的湿墨渲染和笔触。",
+        "en": "Layer upon layer of wet ink washes and brushstrokes.",
+        "sources": [
+          "wiki"
+        ]
       },
       {
-        "zh": "江上小船里的渔人，以及岸边的小屋和亭子。",
-        "en": "Fishermen in small boats on the river, and little huts and pavilions on the shore."
+        "zh": "仍可看出他反复修改的痕迹，为画面添上了时间的维度。",
+        "en": "Traces of his retouching, still visible, which add a dimension of time.",
+        "sources": [
+          "museum"
+        ]
       },
       {
         "zh": "大片的空白，读作江水和雾气。",
-        "en": "Long stretches of empty paper that read as water and mist."
+        "en": "Long stretches of empty paper that read as water and mist.",
+        "sources": [
+          "image"
+        ]
       }
     ],
     "alt": {
@@ -71,7 +118,7 @@
       "en": "A very long, narrow handscroll in pale ink: rolling hills, river banks with trees and small houses, and open water."
     },
     "overrides": {
-      "year": 1350,
+      "year": 1347,
       "date": {
         "zh": "1347–1350年",
         "en": "1347–1350"
@@ -82,6 +129,62 @@
       "note": "The painting only; the museum image is the whole scroll, with later inscriptions."
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "李雪曼（Sherman E. Lee）与何惠鉴（Wai-kam Ho）",
+          "en": "Sherman E. Lee and Wai-kam Ho"
+        },
+        "about": {
+          "zh": "《蒙古统治下的中国艺术》（1968）",
+          "en": "Chinese Art under the Mongols (1968)"
+        },
+        "zh": "据维基百科对他们研究的转述，这卷画用一层层湿墨和笔触精心经营，看似随意，实则布局巧妙。",
+        "en": "As Wikipedia summarises their study, the scroll was carefully built up in layers of wet washes and brushwork, so that it looks offhand while being inspired in its organisation.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      },
+      {
+        "who": {
+          "zh": "乾隆皇帝",
+          "en": "The Qianlong emperor"
+        },
+        "about": {
+          "zh": "清代皇帝、收藏家",
+          "en": "Qing emperor and collector"
+        },
+        "zh": "真迹进入宫中时，他判定它是假的，坚持自己先得到的仿本才是真迹；这个错误直到1816年才被纠正。",
+        "en": "When the genuine scroll reached his collection he judged it a fake, insisting that an imitation he already owned was the real one; the mistake was corrected only in 1816.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Dwelling in the Fuchun Mountains",
+        "url": "https://en.wikipedia.org/wiki/Dwelling_in_the_Fuchun_Mountains",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

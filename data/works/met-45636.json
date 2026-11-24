@@ -46,22 +46,57 @@
     "thumb": "img/works/met-45636-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "倪瓒是元末四大家之一，这幅画作于1372年，那时他已近晚年。他的山水以简淡著称：近岸几棵树，中间一大片空白的水面，远处是低缓的山。画中没有人。这种宁静和空旷，被看作画家心境高洁的表现。",
-      "en": "Ni Zan, one of the Four Great Masters of the late Yuan dynasty, painted this in 1372, near the end of his life. His landscapes are famously spare: a near shore with a few trees, a wide stretch of empty water, and low hills beyond. There are no people. The calm and emptiness were read as a sign of the painter's purity of mind."
-    },
+    "intro": [
+      {
+        "zh": "倪瓒是元代四大家之一。",
+        "en": "Ni Zan was one of the Four Masters of the Yuan dynasty.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "1366年，他为躲避兵乱离开家园；1368年明朝建立后，他仍过着四处漂泊的生活。",
+        "en": "In 1366 he left his home to escape marauding soldiers, and even after the Ming dynasty was founded in 1368 he lived as a wanderer.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这幅画作于1372年，在他去世前两年；大都会博物馆说，它表达了画家安于隐居生活的心境。",
+        "en": "He painted this in 1372, two years before his death; the Met says it expresses his contentment in the life of a recluse.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的山水常画相隔很远的两岸，树木映着一片空阔的水面，画中从不出现人物。",
+        "en": "His landscapes show widely separated riverbanks, with trees set against an expanse of water, and never include people.",
+        "sources": [
+          "wiki"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "干而淡的墨色：倪瓒用墨极少，几乎不用渲染。",
-        "en": "The dry, pale ink: Ni Zan used very little ink and almost no wash."
+        "zh": "干而柔和的笔触，冷淡而克制。",
+        "en": "Dry but tender brushwork, aloof and restrained.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "三段式的布局：近岸、空水、远山。",
-        "en": "The three-part plan: near shore, empty water, distant hills."
+        "zh": "近岸几棵树，中间是空阔的水面，远处是山。",
+        "en": "A few trees on the near bank, open water, and hills beyond.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "留白：画面上很大一部分是没有落笔的纸。",
-        "en": "The bare space: a large part of the picture is untouched paper."
+        "zh": "画上的诗以“看云弄笔，饮酒赋诗”的欢愉作结。",
+        "en": "The poem on the painting, which ends with watching clouds, daubing with brushes, drinking wine and writing poems.",
+        "sources": [
+          "museum"
+        ]
       }
     ],
     "alt": {
@@ -83,6 +118,62 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "周南老",
+          "en": "Zhou Nanlao"
+        },
+        "about": {
+          "zh": "（1308–1383），倪瓒墓志铭的作者",
+          "en": "(1308–1383), who wrote Ni Zan's epitaph"
+        },
+        "zh": "他写道，倪瓒晚年更加沉静内敛，散尽家财，戴黄冠、穿布衣，在湖山之间过隐士生活。",
+        "en": "He wrote that in his late years Ni Zan grew quieter and more withdrawn, gave away all he owned, and roamed the lakes and mountains in a yellow Daoist cap and country clothes.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "he became quieter and more withdrawn than ever"
+        }
+      },
+      {
+        "who": {
+          "zh": "大都会艺术博物馆",
+          "en": "The Metropolitan Museum of Art"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方认为，画中宁静而明亮的气质，使它成为倪瓒晚年最完满的作品之一。",
+        "en": "The museum finds a tranquil, luminous quality in it that makes it one of the most fully realized works of his later years.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Ni Zan",
+        "url": "https://en.wikipedia.org/wiki/Ni_Zan",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

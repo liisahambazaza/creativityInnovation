@@ -46,26 +46,53 @@
     "thumb": "img/works/met-39919-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "米芾（1051–1107）是宋代四大书法家之一，也是出名的怪人。这首诗写一条船困在吴江上：风向转了，船夫只好拉纤前行。他的字或倾或侧，忽大忽小，写字仿佛也随着船和风一起摇动。",
-      "en": "Mi Fu (1051–1107) was one of the four great calligraphers of the Song dynasty, and a famous eccentric. In this poem he describes a boat stuck on the Wu River: the wind turns against it, and the boatmen have to haul it along. The characters lean, tilt and change size, so the writing seems to move with the boat and the wind."
-    },
+    "intro": [
+      {
+        "zh": "米芾（1051–1107）被大都会博物馆称为北宋后期最重要的书法家，也是公认的宋代四大书法家之一。",
+        "en": "Mi Fu (1051–1107) is called by the Met the leading calligrapher of the late Northern Song, and is counted among the four major calligraphers of the Song.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      },
+      {
+        "zh": "诗写吴江上的一条船：风向转东，船陷在泥里不动，加了钱之后纤夫才一下把它拉走。",
+        "en": "The poem tells of a boat on the Wu River: the wind turns east, the boat sticks fast in the mud, and only when the trackers are paid more do they haul it free in a single pull.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他悬臂、用肘运笔，不求每个字完美，而是任由笔势让字倾倒、变形，以求表现力。",
+        "en": "He wrote with a suspended arm, working from the elbow; rather than perfect characters, he let the force of the brush collapse and distort them for the sake of expressiveness.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "像所有传统中文一样，从上往下、从右往左读。",
-        "en": "Read it from top to bottom and right to left, like all traditional Chinese writing."
+        "zh": "从上往下、从右往左读，共44行，行书和草书兼用。",
+        "en": "Read top to bottom and right to left: 44 columns in semi-cursive and cursive script.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这一段是诗的开头：“昨风起西北，万艘皆乘便”。",
+        "en": "This section is the opening of the poem: 昨風起西北，萬艘皆乘便 ('Yesterday's wind arose from the north-west, and innumerable boats all took advantage of it').",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
         "zh": "字向不同方向倾斜，大小突然变化。",
-        "en": "Characters that tilt in different directions and suddenly change size."
-      },
-      {
-        "zh": "这是诗的开头一段：“昨风起西北……”",
-        "en": "This is the opening of the poem: 昨風起西北 ('Yesterday the wind rose in the north-west')."
-      },
-      {
-        "zh": "纸上散布着后世收藏者的红色印章。",
-        "en": "The red seals of later collectors scattered over the paper."
+        "en": "Characters that tilt in different directions and suddenly change size.",
+        "sources": [
+          "image",
+          "museum"
+        ]
       }
     ],
     "alt": {
@@ -87,6 +114,62 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "苏轼",
+          "en": "Su Shi"
+        },
+        "about": {
+          "zh": "（1036–1101），诗人、书法家",
+          "en": "(1036–1101), poet and calligrapher"
+        },
+        "zh": "据大都会博物馆的英译，他把米芾的字比作疾风中的帆船、冲入战阵的战马。",
+        "en": "In the Met's translation, he likened Mi's writing to a sailboat in a gust of wind, or a warhorse charging into battle.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "a sailboat in a gust of wind, or a warhorse charging into battle"
+        }
+      },
+      {
+        "who": {
+          "zh": "孙过庭",
+          "en": "Sun Guoting"
+        },
+        "about": {
+          "zh": "《书谱》（687）",
+          "en": "Manual on Calligraphy (687)"
+        },
+        "zh": "他认为书法能显露书写者的性情；大都会博物馆说，很少有作品像这卷一样清楚地印证这一点。",
+        "en": "He held that calligraphy reveals the writer's character and emotions; the Met says few works show this as clearly as this scroll.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Mi Fu",
+        "url": "https://en.wikipedia.org/wiki/Mi_Fu",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

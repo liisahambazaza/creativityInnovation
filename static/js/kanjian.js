@@ -105,6 +105,7 @@
   function partsOf(element) {
     var parts = [];
     element.childNodes.forEach(function (node) {
+      if (node.nodeType === 1 && node.hasAttribute('data-noread')) { return; }   // citation numbers
       var text = (node.textContent || '').replace(/\s+/g, ' ').trim();
       if (!text || !/[\p{L}\p{N}]/u.test(text)) { return; }   // nothing to say in bare punctuation
       var lang = node.nodeType === 1 && node.getAttribute('lang') ? node.getAttribute('lang') : pageLang;

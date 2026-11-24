@@ -159,6 +159,7 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
             "lang_url": lang_url,
             "show": show,
             "paragraphs": paragraphs,
+            "cite": cite,
             "js_strings": i18n.js_strings(g.lang),
         }
 
@@ -167,6 +168,34 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
         return mark_chinese(text) if g.lang == "en" else escape(text)
 
     # --- what a work page needs -------------------------------------------------------
+
+    def describe_source(entry: dict, work: dict, museum: dict) -> dict:
+        """A numbered source as the page lists it. The two built-in ones are the work's
+        own museum record and the image on the page."""
+        if entry["key"] == "museum":
+            return {
+                "n": entry["n"],
+                "kind": "museum",
+                "text": t("source_museum_record", museum=museum["name"][g.lang]),
+                "url": work["record"]["url"],
+            }
+        if entry["key"] == "image":
+            return {"n": entry["n"], "kind": "image", "text": t("source_image"), "url": ""}
+        parts = [p for p in (entry["author"], entry["title"], entry["publisher"]) if p]
+        text = ", ".join(parts)
+        if entry["accessed"]:
+            text += " (" + t("source_accessed", date=entry["accessed"]) + ")"
+        return {"n": entry["n"], "kind": entry["kind"], "text": text, "url": entry["url"]}
+
+    def cite(statement: dict, work: dict) -> Markup:
+        """Superscript links from a statement to the sources that support it."""
+        numbers = [work["source_numbers"][key] for key in statement.get("sources", []) if key in work["source_numbers"]]
+        if not numbers:
+            return Markup("")
+        links = Markup(",").join(
+            Markup('<a href="#src-%d" aria-label="%s">%d</a>') % (n, t("cite_label", n=n), n) for n in numbers
+        )
+        return Markup('<sup class="cite" data-noread>%s</sup>') % links
 
     def present(work: dict) -> dict:
         museum = MUSEUMS[work["museum"]]
@@ -198,6 +227,7 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
             "image_url": url_for("static", filename=image["src"]),
             "museum_note": museum_note,
             "details": [(key, value) for key, value in details if value],
+            "sources": [describe_source(entry, work, museum) for entry in work["sources"]],
             "previous": previous,
             "next": following,
         }
@@ -258,9 +288,12 @@ def create_app(data_dir: Path | None = None, static_dir: Path | None = None) -> 
             data["credit"] = {lang: credit(work["museum"], lang, work["title"]) for lang in LANGS}
             data["license"] = MUSEUMS[work["museum"]]["license"]
             data["editorial"] = {
-                "status": "ai_draft_not_reviewed",
+                "status": "ai_draft_checked_against_sources_not_reviewed",
+                "checked": work["checked"],
                 "intro": work["intro"],
                 "look_for": work["look_for"],
+                "views": work["views"],
+                "sources": work["sources"],
                 "alt": work["alt"],
             }
         return data

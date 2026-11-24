@@ -261,14 +261,14 @@ def test_unreadable_image_is_refused(tmp_path):
 
 
 def test_write_work_keeps_editorial_text(tmp_path, sample_work):
-    sample_work["editorial"]["intro"]["en"] = "Written by us."
+    sample_work["editorial"]["intro"] = [{"zh": "我们写的。", "en": "Written by us.", "sources": ["museum"]}]
     write_work(json.loads(json.dumps(sample_work)), tmp_path)
     fresh = {k: v for k, v in sample_work.items() if k != "editorial"}
     fresh["title"] = {"zh": "新", "en": "New"}
     path = write_work(fresh, tmp_path)
     saved = json.loads(path.read_text(encoding="utf-8"))
     assert saved["title"]["en"] == "New"
-    assert saved["editorial"]["intro"]["en"] == "Written by us."
+    assert saved["editorial"]["intro"][0]["en"] == "Written by us."
 
 
 def test_import_one_end_to_end(tmp_path):
@@ -279,7 +279,7 @@ def test_import_one_end_to_end(tmp_path):
     path = import_one("met", "45636", fetcher=fetcher, data_dir=data, image_dir=image_dir)
     work = json.loads(path.read_text(encoding="utf-8"))
     assert _ident_of(work) == "45636"
-    assert work["editorial"]["intro"] == {"zh": "", "en": ""}
+    assert work["editorial"]["intro"] == [] and work["editorial"]["status"] == "ai_draft"
     collection = load_collection(data, tmp_path / "static")
     assert [w["id"] for w in collection.works] == ["met-45636"]
     assert collection.errors == []

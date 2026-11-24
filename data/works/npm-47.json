@@ -44,26 +44,67 @@
     "thumb": "img/works/npm-47-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "早春时节，雾气正从山间升起。郭熙是宋神宗的宫廷画家，这幅画题为1072年所作。画中没有一个固定的视点：目光会向上望见高峰，向里看进山谷，又向远处望向平野。郭熙在他的画论中把这称为“三远”。",
-      "en": "Mist is lifting from the mountains in the first days of spring. Guo Xi was a court painter to the emperor Shenzong, and he dated this scroll 1072. There is no single fixed viewpoint: your eye looks up at the peaks, deep into the valleys and far across the plain. Guo Xi himself described this in his writings on painting as the 'three distances'."
-    },
+    "intro": [
+      {
+        "zh": "郭熙在宋神宗时进入宫廷，当时新建的官府殿阁里都布置了他的山水；馆方推测此画原本也可能是其中之一。",
+        "en": "Guo Xi entered court service under Emperor Shenzong, when his landscapes decorated newly built government halls; the museum suggests Early Spring may once have been one of them.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "此画作于1072年，被视为中国山水画史上最重要的里程碑之一。",
+        "en": "Dated 1072, it is considered one of the great masterpieces of Chinese landscape painting.",
+        "sources": [
+          "museum",
+          "uw"
+        ]
+      },
+      {
+        "zh": "构图对称而有秩序，又充满韵律的变化；墨色的深浅营造出光影。",
+        "en": "The composition is symmetrical and ordered, yet full of rhythmic change, and graded ink creates light and shadow.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的画论《林泉高致》主张，画家要研究远近、浅深、风雨明晦以及四时朝暮的变化。",
+        "en": "His treatise, Lofty Message of Forests and Streams (林泉高致), says a painter should study near and far, shallow and deep, wind and rain, and the changes of the seasons and the times of day.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "光秃而弯曲的树枝，枝梢像蟹爪一样，表明冬天刚刚过去。",
-        "en": "The bare, twisting branches with claw-like tips (often called 'crab-claw' branches): winter has only just ended."
+        "zh": "像蟹爪一样的枝梢，这是郭熙画树的特点。",
+        "en": "Branches with claw-like tips: the museum notes his trees are known for their 'crab-claw' branches.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "仔细找找藏在山水里的小人物、小船和房屋，这幅画值得慢慢看。",
-        "en": "Small people, boats and buildings tucked into the landscape. The painting rewards a slow search."
+        "zh": "山水间的行舟、樵夫和旅人，让这里成为“可游可居”的地方。",
+        "en": "Boats, woodcutters and travellers, which make this a place one could wander in and live in.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "山与山之间的雾气，用淡墨或留白来表现。",
-        "en": "The mist between the mountains, made with very pale ink or bare silk."
+        "zh": "几种不同的树：弯曲的小树、盘曲的老树和挺直的高树。",
+        "en": "Different kinds of trees: small bending ones, crouching gnarled ones and tall vertical ones.",
+        "sources": [
+          "uw"
+        ]
       },
       {
-        "zh": "整座山像一个向上扭动的“S”形，仿佛在生长。",
-        "en": "The way the whole mountain twists upward in an S-shape, as if it were growing."
+        "zh": "没有单一的视点：郭熙认为看山水不必只从一处看。",
+        "en": "No single viewpoint: Guo Xi held that a landscape need not be seen from one spot.",
+        "sources": [
+          "wiki",
+          "uw"
+        ]
       }
     ],
     "alt": {
@@ -79,6 +120,51 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "郭熙之子",
+          "en": "Guo Xi's son"
+        },
+        "about": {
+          "zh": "据亚瑟·韦利（Arthur Waley）的英译",
+          "en": "as translated by Arthur Waley"
+        },
+        "zh": "他记下父亲作画前的习惯：要先坐到一张干净的桌前。",
+        "en": "He recorded his father's habits before painting, beginning with sitting down at a clean table.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "On days when he was going to paint, he would seat himself at a clean table"
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Guo Xi",
+        "url": "https://en.wikipedia.org/wiki/Guo_Xi",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      },
+      "uw": {
+        "kind": "museum_essay",
+        "title": "Guo Xi's Early Spring (A Visual Sourcebook of Chinese Civilization)",
+        "url": "https://depts.washington.edu/chinaciv/painting/4lndguox.htm",
+        "publisher": "University of Washington",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

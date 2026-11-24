@@ -46,26 +46,51 @@
     "thumb": "img/works/met-40081-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "大书法家王羲之（303–361）站在水边的亭子里看鹅。传说他从鹅转动脖子的姿态中，悟出了写字时手腕的运转。钱选约在1295年画成此画，用的是明亮的青绿设色，有意追摹远古的画风。",
-      "en": "The great calligrapher Wang Xizhi (303–361) stands in a waterside pavilion watching geese. It was said that he learned how to turn his wrist while writing by watching the way a goose turns its neck. Qian Xuan painted the scene around 1295 in a bright blue-green style that deliberately looked back to much older painting."
-    },
+    "intro": [
+      {
+        "zh": "1276年南宋都城杭州陷落后，钱选选择做一名“遗民”，不在新朝做官。",
+        "en": "After the fall of Hangzhou, the Southern Song capital, in 1276, Qian Xuan chose to live as a yimin, a 'leftover subject' of the fallen dynasty.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这幅手卷画的是书法大师王羲之（303–361）的故事；传说他从鹅颈优雅的转动等自然形态中得到启发。",
+        "en": "This scroll tells the story of the master calligrapher Wang Xizhi (303–361), who was said to draw inspiration from natural forms such as the graceful movement of a goose's neck.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "画用有意古拙的“青绿”画法；大都会博物馆认为，这种如梦的、不真实的空间，表达了宋亡之后画家内心的断裂感。",
+        "en": "It is painted in a deliberately primitive 'blue-and-green' style; the Met reads its dreamlike, unreal space as Qian Xuan's way of expressing the break he felt after the fall of the Song.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
     "look_for": [
       {
         "zh": "亭子里穿白袍的王羲之，旁边站着一个小童。",
-        "en": "Wang Xizhi in his white robe in the pavilion, with a young servant beside him."
+        "en": "Wang Xizhi in his white robe in the pavilion, with a young servant beside him.",
+        "sources": [
+          "image"
+        ]
       },
       {
         "zh": "亭子右边水面上游着的鹅。",
-        "en": "The geese swimming on the water to the right of the pavilion."
+        "en": "The geese swimming on the water to the right of the pavilion.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "用线勾勒、平涂青绿色的山，这是一种有意仿古的画法。",
-        "en": "Blue-green hills drawn with outlines and flat colour, a deliberately old-fashioned manner."
-      },
-      {
-        "zh": "最左边是钱选自己题写的诗，还有许多收藏者的印章。",
-        "en": "At the far left, Qian Xuan's own poem in his calligraphy, and many collectors' seals."
+        "zh": "左边四行字是钱选自题的诗，诗中说王羲之为道士写《道德经》，留下“爱鹅”的风流佳话。",
+        "en": "At the left, Qian Xuan's own four-line poem, which recalls Wang Xizhi writing out the Daode jing for a Daoist and leaving behind the romantic image of 'a man who loves geese'.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       }
     ],
     "alt": {
@@ -91,6 +116,34 @@
       "note": "Stitched from two Met Open Access section photographs and cropped to the painting."
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "乾隆皇帝",
+          "en": "The Qianlong emperor"
+        },
+        "about": {
+          "zh": "（在位1735–1795）",
+          "en": "(r. 1735–1795)"
+        },
+        "zh": "他在签条上题写此画是钱选的真迹，并盖上“神品”印。",
+        "en": "On the label strip he wrote that it is a genuine work by Qian Xuan, and stamped it with a seal reading 'divine class' (神品).",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "錢選觀鵝圖真跡，内府御玩",
+          "en": "a genuine work; a delight for imperial enjoyment"
+        }
+      }
+    ],
+    "sources": {},
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

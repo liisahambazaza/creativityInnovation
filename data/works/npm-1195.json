@@ -44,26 +44,67 @@
     "thumb": "img/works/npm-1195-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "这幅高大的绢本立轴，几乎整幅都被一座大山占满，山体从云雾中拔地而起。画面底部的小路上，一队旅人赶着骡马前行，小得要仔细寻找才看得见。此画约作于公元1000年前后，是中国山水画成熟期的奠基之作：它画的不是某一处真实的风景，而是大自然的雄伟。",
-      "en": "A single mountain fills most of this tall silk scroll, rising straight up out of the mist. On the path at the bottom, a few travellers drive a mule train along, so small that you have to search for them. Painted around the year 1000, it is one of the founding works of Chinese landscape painting: a picture of nature's grandeur rather than of one particular view."
-    },
+    "intro": [
+      {
+        "zh": "一座高耸的主峰占满了这幅绢本立轴的大半，中段是雾气和流水。",
+        "en": "A towering central peak fills most of this tall silk scroll, with mist and water across the middle.",
+        "sources": [
+          "image",
+          "wiki"
+        ]
+      },
+      {
+        "zh": "山脚的路上有一队骡马，几乎小得看不见。",
+        "en": "At its foot a mule train is barely visible on the road, tiny beside the cliffs.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "范宽曾隐居终南、太华山中，约1025年时仍在世；馆方说，此画被公认为他的真迹，也是北宋雄伟山水的代表。",
+        "en": "Fan Kuan lived as a recluse in the Zhongnan and Taihua mountains and was still alive around 1025; the museum calls this painting universally accepted as his genuine work and representative of Northern Song monumental landscape.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "馆方解释，画家并不模仿真实空间，而是把主峰推远、突出近景渺小的行旅，让观者仿佛置身于雄伟的山水之中。",
+        "en": "The museum explains that he did not set out to copy real space: he pushed the main peak back and focused on the minute travellers, so that the viewer feels placed inside a monumental landscape.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "右下方小路上的旅人和骡队。他们在岩石旁显得极小，正是他们衬出了大山的高大。",
-        "en": "The travellers and mules on the path at the lower right. They look tiny beside the rocks, and that is what makes the mountain feel enormous."
+        "zh": "右下方的骡马队，在岩石旁显得极小。",
+        "en": "The mule train at the lower right, tiny beside the rocks.",
+        "sources": [
+          "image",
+          "wiki"
+        ]
       },
       {
         "zh": "右侧山崖上细细垂下的一道瀑布。",
-        "en": "The thin waterfall dropping down the cliff on the right."
+        "en": "The thin waterfall dropping down the cliff on the right.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "画家的名款“范宽”二字，藏在右下角的树丛间。",
-        "en": "The artist's two-character signature, 范寬 (Fan Kuan), hidden among the trees in the lower right corner."
+        "zh": "右下角树丛中藏着的“范宽”二字款，直到1958年才被重新发现。",
+        "en": "The signature 范寬 (Fan Kuan), hidden among the trees in the lower right corner, rediscovered only in 1958.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
       },
       {
-        "zh": "山崖的质感由无数短促的笔点堆成，这种画法称为“雨点皴”。",
-        "en": "The texture of the cliff, built up from countless short dabs of the brush, a technique known as 'raindrop' texture strokes."
+        "zh": "馆方记录把山石的画法列为“雨点皴”：由无数短促的笔点堆成。",
+        "en": "The museum's record lists the rock texture as 'raindrop' texture strokes (雨點皴), built up from countless short dabs.",
+        "sources": [
+          "museum"
+        ]
       }
     ],
     "alt": {
@@ -79,6 +120,63 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "董其昌",
+          "en": "Dong Qichang"
+        },
+        "about": {
+          "zh": "（1555–1636），明代画家、鉴赏家",
+          "en": "(1555–1636), Ming painter and connoisseur"
+        },
+        "zh": "他在画上方的诗塘题字，认定这是北宋范宽（字中立）的作品。",
+        "en": "On the poem panel above the painting he identified it as a work by Fan Kuan (style name Zhongli) of the Northern Song.",
+        "sources": [
+          "museum",
+          "image"
+        ],
+        "quote": {
+          "zh": "北宋范中立谿山行旅圖。董其昌觀。",
+          "en": ""
+        }
+      },
+      {
+        "who": {
+          "zh": "苏立文（Michael Sullivan）",
+          "en": "Michael Sullivan"
+        },
+        "about": {
+          "zh": "艺术史学者，《中国艺术》作者",
+          "en": "art historian, author of The Arts of China"
+        },
+        "zh": "维基百科引用他的论述：这幅画为雄伟山水画树立了一种理想。",
+        "en": "Wikipedia, citing his account, says the painting establishes an ideal in monumental landscape painting.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Fan Kuan",
+        "url": "https://en.wikipedia.org/wiki/Fan_Kuan",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

@@ -28,17 +28,39 @@
       </p>
     </header>
 
-    {% if work.intro[lang] or work.look_for %}
+    {% if work.intro or work.look_for or work.views %}
     <section class="editorial" aria-labelledby="intro-h">
       <h2 id="intro-h">{{ t('intro_heading') }} <span class="badge">{{ t('ai_badge') }}</span></h2>
-      {% for p in paragraphs(work.intro) %}<p data-read>{{ p }}</p>{% endfor %}
+      {% if work.intro %}
+      <p class="intro" data-read>{% for s in work.intro %}{{ show(s) }}{{ cite(s, work) }}{% if lang == 'en' and not loop.last %} {% endif %}{% endfor %}</p>
+      {% endif %}
       {% if work.look_for %}
       <h3>{{ t('look_heading') }}</h3>
       <ul class="look-for">
-        {% for item in work.look_for %}<li data-read>{{ show(item) }}</li>{% endfor %}
+        {% for item in work.look_for %}<li data-read>{{ show(item) }}{{ cite(item, work) }}</li>{% endfor %}
       </ul>
       {% endif %}
-      <p class="ai-note">{{ t('ai_note') }}</p>
+      {% if work.views %}
+      <h3>{{ t('views_heading') }}</h3>
+      <ul class="views">
+        {% for view in work.views %}
+        <li>
+          <p class="view-who"><strong>{{ show(view.who) }}</strong>{% if view.about[lang] or view.about.en %} <span class="view-about">{{ show(view.about) }}</span>{% endif %}</p>
+          <p class="view-text" data-read>{{ show(view) }}{% set q = view.quote[lang] or view.quote.en or view.quote.zh %}{% if q and q not in (view[lang] or '') %} <q>{{ show(view.quote) }}</q>{% endif %}{{ cite(view, work) }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <p class="ai-note">{{ t('ai_note') }}{% if work.checked.on %} {{ t('checked_on', date=work.checked.on) }}{% endif %}</p>
+      {% if view.sources %}
+      <h3 id="sources-h">{{ t('sources_heading') }}</h3>
+      <ol class="sources" aria-labelledby="sources-h">
+        {% for src in view.sources %}
+        <li id="src-{{ src.n }}"><span class="source-kind">{{ t('source_kind_' + src.kind) }}</span>
+          {% if src.url %}<a href="{{ src.url }}" rel="noopener">{{ src.text|cjk }}</a>{% else %}{{ src.text|cjk }}{% endif %}</li>
+        {% endfor %}
+      </ol>
+      {% endif %}
     </section>
     {% endif %}
 

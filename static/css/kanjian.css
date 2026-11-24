@@ -241,7 +241,25 @@ main { display: block; }
   color: var(--ink-2);
   letter-spacing: 0.02em;
 }
-.editorial > p[data-read] { font-size: 1.12rem; }
+.intro { font-size: 1.12rem; }
+.cite { font-size: 0.72em; line-height: 0; margin-left: 0.1em; font-family: var(--font-body); }
+.cite a { text-decoration: none; padding: 0 0.12em; }
+.cite a:hover { text-decoration: underline; }
+.views { list-style: none; padding: 0; margin: 0 0 1rem; }
+.views li { border-left: 3px solid var(--seal); padding: 0.2rem 0 0.2rem 0.9rem; margin-bottom: 1rem; }
+.views p { margin: 0 0 0.25rem; }
+.view-about { color: var(--ink-2); font-size: 0.92rem; }
+.sources { font-size: 0.9rem; padding-left: 1.6rem; color: var(--ink-2); }
+.sources li { margin-bottom: 0.35rem; overflow-wrap: anywhere; }
+.sources li:target { background: var(--seal-soft); border-radius: 0.2rem; }
+.source-kind {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
 .look-for { padding-left: 1.2rem; }
 .look-for li { margin-bottom: 0.55rem; }
 .look-for li::marker { color: var(--seal); }

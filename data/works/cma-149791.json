@@ -46,22 +46,58 @@
     "thumb": "img/works/cma-149791-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "董其昌（1555–1636）是晚明最有影响力的画家和评论家。这幅1617年的作品画的是青弁山，但它与其说是一处风景，不如说是一个结构：山石层层推挤、倾斜、堆叠，笔墨本身就成了观看的对象。",
-      "en": "Dong Qichang (1555–1636) was the most influential painter and critic of the late Ming dynasty. This scroll of 1617 shows Mount Qingbian, but it is less a view than a structure: masses of rock push, tilt and stack up the scroll, and the brush and ink themselves become the thing to look at."
-    },
+    "intro": [
+      {
+        "zh": "董其昌（1555–1636）是晚明的画家、书法家、艺术理论家和官员，他的理论深深影响了清代的画家。",
+        "en": "Dong Qichang (1555–1636) was a painter, calligrapher, art theorist and official of the late Ming, whose theories strongly influenced painters of the Qing.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "1617年夏天，他画了青弁山，送给他的前辈张慎其。",
+        "en": "In the summer of 1617 he painted the Qingbian Mountains and sent the scroll to his senior, Zhang Shenqi.",
+        "sources": [
+          "api"
+        ]
+      },
+      {
+        "zh": "他的题字说，这是仿“北苑”，即十世纪的大师董源的笔意。",
+        "en": "His inscription says it is in the manner of Beiyuan, that is, the tenth-century master Dong Yuan.",
+        "sources": [
+          "api"
+        ]
+      },
+      {
+        "zh": "馆方说，他经营山形以求整体的结构感，让笔墨本身获得独立于物象的生命。",
+        "en": "The museum says he organised the mountain forms for an overall sense of structure, so that brush and ink take on a life independent of the things they depict.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "用重复的圆笔堆出的山石和坡地，而不是照着真实地方描画。",
-        "en": "Rocks and slopes built from repeated, rounded strokes rather than drawn from a real place."
+        "zh": "弁山是太湖边、吴兴附近的一列低山，董其昌曾亲自去过。",
+        "en": "The Bian Mountains, a low range near Wuxing and Lake Tai, which Dong had visited himself.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "空间的跳跃：地面似乎在折叠、滑动。",
-        "en": "Odd jumps in space: the ground seems to fold and slide."
+        "zh": "山石之间的树木和房屋。",
+        "en": "Trees and houses among the rocks.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "山石之间的树、房屋和小路，帮你找到画中的尺度。",
-        "en": "Trees, houses and paths among the rocks, which help you find a sense of scale."
+        "zh": "画上方董其昌的题字。",
+        "en": "Dong Qichang's inscription at the top.",
+        "sources": [
+          "image",
+          "api"
+        ]
       }
     ],
     "alt": {
@@ -83,6 +119,70 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "克利夫兰艺术博物馆",
+          "en": "The Cleveland Museum of Art"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方认为，董其昌把山水构图彻底改造成一种纯粹抽象的设计。",
+        "en": "The museum argues that Dong radically transformed the landscape composition into a purely abstract design.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "a purely abstract design"
+        }
+      },
+      {
+        "who": {
+          "zh": "劳伦斯·高英（Lawrence Gowing）编",
+          "en": "Lawrence Gowing (ed.)"
+        },
+        "about": {
+          "zh": "《艺术家传记百科》",
+          "en": "Biographical Encyclopedia of Artists"
+        },
+        "zh": "据维基百科引述，此书称董其昌是第一位不只是罗列、评定画家等级的艺术史家。",
+        "en": "As quoted by Wikipedia, it calls Dong the first art historian to do more than list and grade artists.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "the first art historian to do more than list and grade artists"
+        }
+      }
+    ],
+    "sources": {
+      "api": {
+        "kind": "museum",
+        "title": "Open Access record 1980.10 (inscriptions)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1980.10",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-24"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Dong Qichang",
+        "url": "https://en.wikipedia.org/wiki/Dong_Qichang",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

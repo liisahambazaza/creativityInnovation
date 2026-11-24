@@ -44,26 +44,67 @@
     "thumb": "img/works/npm-14714-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "大诗人苏轼在1082年、贬居黄州的第三年写下这两首诗。诗里写寒食节时连绵的春雨：漏雨的小屋、冰冷的灶台、回不去的家。诗意越来越沉重，字也越写越大、越来越重。它常被称为“天下第三行书”。",
-      "en": "Su Shi, one of China's great poets, wrote out these two poems in 1082, in his third year of exile in Huangzhou. They describe the endless spring rain at the Cold Food Festival: a leaking house, a cold stove, and no way home. As the poems grow darker, the characters grow larger and heavier. It is often called the third-finest piece of running script in Chinese history."
-    },
+    "intro": [
+      {
+        "zh": "苏轼是宋代杰出的书法家、政治家和文学家，1080年被贬到黄州。",
+        "en": "Su Shi, an outstanding calligrapher, statesman and writer of the Song, was exiled to Huangzhou in 1080.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "在那里的第三年（1082）四月寒食节，他有感于季节更替、生活困乏和仕途挫折，写下《寒食雨二首》，后来书成此卷。",
+        "en": "In the fourth month of his third year there, 1082, at the Cold Food Festival, he wrote two poems on the rain, the hardship of his life and his frustrations in office, and later wrote them out on this scroll.",
+        "sources": [
+          "museum",
+          "anime"
+        ]
+      },
+      {
+        "zh": "馆方说，笔画随着他的情绪起伏，字也越写越大，形成高潮。",
+        "en": "The museum describes the strokes rising and falling with his feelings, and the characters growing in size to a crescendo.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "后人称它为苏轼传世书法中最好的一件。",
+        "en": "Later critics praised it as Su Shi's finest surviving calligraphy.",
+        "sources": [
+          "ninety",
+          "anime"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "这一段里，“破灶烧湿苇”几个字写得特别大。",
-        "en": "In this section, the characters 破竈燒濕葦 ('a broken stove, burning wet reeds') are among the largest."
+        "zh": "这一段里写得很大的“破灶烧湿苇”几个字。",
+        "en": "In this section, the large characters 破竈燒濕葦 ('a broken stove, burning wet reeds').",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "每一行字的大小和轻重都在变，跟着诗中的情绪起伏。",
-        "en": "How the size and weight change from line to line, following the feeling of the poem."
+        "zh": "字的大小和间距随情绪有节奏地变化。",
+        "en": "How the size of the characters and the spaces between them vary rhythmically with his emotions.",
+        "sources": [
+          "anime"
+        ]
       },
       {
-        "zh": "苏轼的字略扁、略向一侧倾斜，这是他书法的特点。",
-        "en": "The slightly flattened, leaning character shapes typical of Su Shi's hand."
+        "zh": "字形舒展，笔画厚重，墨色乌黑。",
+        "en": "Expansive characters, strong deep strokes and jet-black ink.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "在整卷后面，他的朋友黄庭坚写了一段著名的题跋（这一段里看不到）。",
-        "en": "Further along the scroll, his friend Huang Tingjian added a famous inscription of praise (not in this section)."
+        "zh": "卷末有他的朋友黄庭坚的题跋，字比苏轼的还大（这一段里看不到）。",
+        "en": "At the end of the scroll, a colophon by his friend Huang Tingjian, in characters even larger than Su's (not in this section).",
+        "sources": [
+          "anime",
+          "ninety"
+        ]
       }
     ],
     "alt": {
@@ -87,6 +128,71 @@
       "note": "One section: the poem's climax. The museum photographs this scroll in sections."
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "苏轼",
+          "en": "Su Shi"
+        },
+        "about": {
+          "zh": "谈自己的书法",
+          "en": "on his own calligraphy"
+        },
+        "zh": "据馆方的英译，他说自己的字从短到长、从肥到瘦，什么样子都有。",
+        "en": "In the museum's translation, he said his writing ranged from short to long and plump to bony.",
+        "sources": [
+          "anime"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "everything from short to long, plump to bony"
+        }
+      },
+      {
+        "who": {
+          "zh": "黄庭坚",
+          "en": "Huang Tingjian"
+        },
+        "about": {
+          "zh": "诗人、书法家，苏轼的朋友",
+          "en": "poet, calligrapher and Su's friend"
+        },
+        "zh": "约1100年，他在卷末写下题跋；馆方说他谦称自己是在苏轼身后才受到瞩目。",
+        "en": "Around 1100 he added a colophon at the end of the scroll; the museum says he humbly claimed he came into the spotlight only after Su's passing.",
+        "sources": [
+          "ninety",
+          "anime"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "anime": {
+        "kind": "museum_essay",
+        "title": "Painting Animation: The Cold Food Observance",
+        "url": "https://theme.npm.edu.tw/exh106/npm_anime/ColdFoodObservance/en/index.html",
+        "publisher": "National Palace Museum, Taipei",
+        "author": "",
+        "accessed": "2026-11-24"
+      },
+      "ninety": {
+        "kind": "museum_essay",
+        "title": "A Century of Collecting (exhibition page)",
+        "url": "https://theme.npm.edu.tw/exh104/90collecting/en/page-3.html",
+        "publisher": "National Palace Museum, Taipei",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

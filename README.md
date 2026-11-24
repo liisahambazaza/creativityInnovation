@@ -5,8 +5,11 @@ The site shows masterpieces from the open collections of three museums, grouped
 by dynasty. Each work page has:
 
 - the image, with handscrolls unrolling from right to left as real ones do;
-- a short **introduction** and **things to look for**, drafted with AI help and
-  labelled *AI-drafted · not reviewed* until a curator has checked them;
+- a short **introduction** and **things to look for**, drafted with AI help, every
+  sentence citing its sources and checked against them, and labelled as not yet
+  reviewed by a curator;
+- **what critics and historians say**: named scholars paraphrased, traditional critics
+  and inscriptions quoted, each with its source;
 - the **museum's own text** and catalogue details, quoted with their source and licence;
 - a **Read aloud** button (Ava for English and Tingting for Chinese, when installed).
 
@@ -52,10 +55,19 @@ ours and is never overwritten by an import:
 
 | `editorial` field | What it is |
 | --- | --- |
-| `intro`, `look_for`, `alt` | introduction, things to look for, image description (`zh` and `en`) |
+| `intro`, `look_for` | lists of statements: `zh`, `en` and `sources` (the keys of the sources that support it) |
+| `views` | what named critics and historians said: `who`, `about`, the paraphrase (`zh`, `en`), an optional short `quote`, and `sources` |
+| `sources` | each source by key: `kind` (`museum`, `museum_essay`, `inscription`, `scholarship`, `encyclopedia`), `title`, `url`, `accessed`. Built in: `museum` (the work's own record) and `image` (visible in the image) |
+| `checked` | `on`: the date every statement was last checked against its sources |
+| `alt` | the image description (`zh` and `en`) |
 | `overrides` | corrections or translations of museum fields (`title`, `artist`, `date`, `period`, `year`, …) |
 | `image_choice` | which image to use: `canvas` (a Taipei image label), `region` (`pct:x,y,w,h`), `crop`, or `keep: true` |
 | `status` | `ai_draft` until a person has reviewed the text |
+
+**Every statement must cite a source, and the text must be marked as checked.**
+`make collection` (and so `make check` and the commit hook) fails otherwise. The
+procedure for writing and checking introductions is in `CLAUDE.md`. On the page, each
+sentence links to its numbered source.
 
 The site picks up changes without a restart. `make collection` warns about any work
 that still lacks an introduction or image description in either language.

@@ -46,22 +46,60 @@
     "thumb": "img/works/cma-136951-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "南宋理宗皇帝在一面圆形绢扇上写下唐代诗人王维的两句诗：“行到水穷处，坐看云起时。”这面扇子原本一面是皇帝的书法，另一面是宫廷画家马麟为这两句诗画的画。理宗不太理会朝政，却可能是宋代皇帝中最好的书法家。",
-      "en": "The Southern Song emperor Lizong wrote two lines by the Tang poet Wang Wei on a round silk fan: 'Walking to where the water ends, I sit and watch the clouds rise.' The fan once had the emperor's calligraphy on one side and, on the other, a painting of the couplet by the court painter Ma Lin. Lizong took little interest in governing, but he was perhaps the finest calligrapher among the Song emperors."
-    },
+    "intro": [
+      {
+        "zh": "南宋理宗皇帝写下唐代诗人王维（701–761）的两句诗：“行到水穷处，坐看云起时。”",
+        "en": "Emperor Lizong of the Southern Song wrote out two lines by the Tang poet Wang Wei (701–761): 'Walking to where the water ends, I sit and watch when clouds arise.'",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这幅书法和马麟据诗意所画的一幅画，原本裱在同一把扇子上。",
+        "en": "This calligraphy and a painting by Ma Lin that visualises the verse were once mounted together as one fan.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "上方的葫芦形印章刻有干支“丙辰”，即1256年。",
+        "en": "The gourd-shaped seal at the top carries the cyclical date bingchen, 1256.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "理宗对朝政不太关心，馆方却称他也许是宋代皇帝中最好的书法家。",
+        "en": "Lizong took little interest in government, but the museum calls him perhaps the finest calligrapher among the Song emperors.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      }
+    ],
     "look_for": [
       {
         "zh": "从右往左读两行字：行到水窮處／坐看雲起時。",
-        "en": "Read the two columns from right to left: 行到水窮處 / 坐看雲起時."
+        "en": "Read the two columns from right to left: 行到水窮處 / 坐看雲起時.",
+        "sources": [
+          "image",
+          "museum"
+        ]
       },
       {
         "zh": "圆圆的形状：它原本是一把团扇，后来才裱成册页。",
-        "en": "The round shape: this was a flat silk fan before it was mounted as an album leaf."
+        "en": "The round shape: it was once a fan, and is now mounted as an album leaf.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
         "zh": "左边的小款和红色印章。",
-        "en": "The small signature and red seals at the left."
+        "en": "The small signature and red seals at the left.",
+        "sources": [
+          "image"
+        ]
       }
     ],
     "alt": {
@@ -79,6 +117,43 @@
       }
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "大都会艺术博物馆",
+          "en": "The Metropolitan Museum of Art"
+        },
+        "about": {
+          "zh": "据维基百科引述",
+          "en": "as quoted by Wikipedia"
+        },
+        "zh": "大都会博物馆的评价更谨慎：理宗是高宗之后宋代皇帝中最好的书法家。",
+        "en": "The Met puts it more narrowly: Lizong was the finest calligrapher among the Song emperors who came after Gaozong.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Emperor Lizong of Song",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Lizong_of_Song",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

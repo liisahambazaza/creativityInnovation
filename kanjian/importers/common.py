@@ -215,7 +215,7 @@ def write_work(record: dict, data_dir: Path = DATA_DIR) -> Path:
             record["image"] = old["image"]
     record.setdefault(
         EDITORIAL_KEY,
-        {"intro": pair(), "look_for": [], "alt": pair(), "overrides": {}},
+        {"intro": [], "look_for": [], "views": [], "sources": {}, "alt": pair(), "overrides": {}, "status": "ai_draft"},
     )
     data_dir.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

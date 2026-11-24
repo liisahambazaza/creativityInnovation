@@ -35,12 +35,18 @@ def test_every_work_is_complete(collection, path):
     assert work["category"] in CATEGORIES and work["format"] in FORMATS
     assert work["period"] in periods.PERIODS
     assert isinstance(work["year"], int), "a year is needed to place the work in time"
+    assert work["intro"], "no introduction"
+    assert work["checked"]["on"], "the editorial text has not been checked against sources"
     for lang in LANGS:
         assert work["title"][lang], f"no {lang} title"
-        assert work["intro"][lang], f"no {lang} introduction"
         assert work["alt"][lang], f"no {lang} image description"
-        for item in work["look_for"]:
-            assert item[lang], f"a 'look for' item has no {lang} text"
+        for statement in [*work["intro"], *work["look_for"], *work["views"]]:
+            assert statement[lang], f"a statement has no {lang} text"
+            assert statement["sources"], f"a statement cites no source: {statement['en'][:60]}"
+    for view in work["views"]:
+        assert view["who"]["en"] and view["who"]["zh"], "a view must say whose it is"
+    for source in work["sources"]:
+        assert source["key"] in ("museum", "image") or source["url"].startswith("https://")
     assert work["record"]["url"].startswith("https://")
     assert (STATIC / work["image"]["src"]).is_file() and (STATIC / work["image"]["thumb"]).is_file()
 
@@ -169,3 +175,82 @@ def test_npm_credit_line_follows_the_museums_form():
         credit("npm", "en", title)
         == "Travelers Among Mountains and Streams The National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw"
     )
+
+
+# --- the source rules ----------------------------------------------------------------
+
+
+def statement(en="A claim.", sources=("museum",)):
+    return {"zh": "一句话。", "en": en, "sources": list(sources)}
+
+
+def with_editorial(sample_work, **editorial):
+    sample_work["editorial"] = {"checked": {"on": "2026-11-24"}, "alt": {"zh": "图", "en": "Image"}, **editorial}
+    return sample_work
+
+
+def test_a_statement_without_a_source_fails_the_check(collection_dir, sample_work):
+    collection = load_one(collection_dir, with_editorial(sample_work, intro=[statement(sources=())]))
+    assert any("cites no source" in str(p) and p.level == "error" for p in collection.problems)
+    assert len(collection.works) == 1, "the work is still shown; the check fails"
+
+
+def test_citing_a_source_that_is_not_listed_fails(collection_dir, sample_work):
+    collection = load_one(collection_dir, with_editorial(sample_work, look_for=[statement(sources=("nowhere",))]))
+    assert any("unknown source(s) nowhere" in str(p) for p in collection.errors)
+
+
+def test_unchecked_editorial_text_fails(collection_dir, sample_work):
+    sample_work = with_editorial(sample_work, intro=[statement()])
+    sample_work["editorial"].pop("checked")
+    assert any("not been checked" in str(p) for p in load_one(collection_dir, sample_work).errors)
+
+
+def test_a_source_needs_a_kind_and_a_link(collection_dir, sample_work):
+    sources = {"x": {"kind": "rumour", "title": "Hearsay", "url": "http://example.com"}}
+    collection = load_one(
+        collection_dir, with_editorial(sample_work, intro=[statement(sources=("x",))], sources=sources)
+    )
+    messages = " ".join(str(p) for p in collection.errors)
+    assert "kind 'rumour'" in messages and "https:// link" in messages
+
+
+def test_an_inscription_needs_no_link(collection_dir, sample_work):
+    sources = {"colophon": {"kind": "inscription", "title": "Colophon by Dong Qichang"}}
+    collection = load_one(
+        collection_dir, with_editorial(sample_work, intro=[statement(sources=("colophon",))], sources=sources)
+    )
+    assert collection.errors == []
+
+
+def test_a_view_must_name_someone(collection_dir, sample_work):
+    collection = load_one(collection_dir, with_editorial(sample_work, views=[statement()]))
+    assert any("does not say whose view" in str(p) for p in collection.errors)
+
+
+def test_sources_are_numbered_in_reading_order(collection_dir, sample_work):
+    sources = {
+        "a": {"kind": "encyclopedia", "title": "A", "url": "https://a.example"},
+        "b": {"kind": "scholarship", "title": "B", "url": "https://b.example"},
+    }
+    editorial = {
+        "intro": [statement(sources=("b",)), statement(sources=("museum", "b"))],
+        "look_for": [statement(sources=("a", "image"))],
+        "sources": sources,
+    }
+    work = load_one(collection_dir, with_editorial(sample_work, **editorial)).works[0]
+    assert [s["key"] for s in work["sources"]] == ["b", "museum", "a", "image"]
+    assert work["source_numbers"] == {"b": 1, "museum": 2, "a": 3, "image": 4}
+
+
+def test_an_unused_source_is_a_warning(collection_dir, sample_work):
+    sources = {"spare": {"kind": "encyclopedia", "title": "Spare", "url": "https://spare.example"}}
+    collection = load_one(collection_dir, with_editorial(sample_work, intro=[statement()], sources=sources))
+    assert collection.errors == []
+    assert any("nothing cites it" in str(p) for p in collection.problems)
+
+
+def test_the_first_format_of_introduction_still_loads_but_fails_the_check(collection_dir, sample_work):
+    collection = load_one(collection_dir, with_editorial(sample_work, intro={"zh": "旧", "en": "Old"}))
+    assert collection.works[0]["intro"][0]["en"] == "Old"
+    assert any("cites no source" in str(p) for p in collection.errors)

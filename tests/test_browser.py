@@ -193,9 +193,24 @@ def test_read_aloud_uses_ava_for_english_and_mandarin_for_chinese_inside_it(make
     spoken = read_aloud(page)
     assert spoken[0]["text"] == "Travelers Among Mountains and Streams"
     assert {s["voice"] for s in spoken if s["lang"].startswith("en")} == {"Ava (Premium)"}
-    assert [s["text"] for s in spoken if s["lang"].startswith("zh")] == ["范寬"]
+    chinese = [s["text"] for s in spoken if s["lang"].startswith("zh")]
+    assert "范寬" in chinese
+    assert all(any("一" <= ch <= "鿿" for ch in text) for text in chinese)
     assert {s["voice"] for s in spoken if s["lang"].startswith("zh")} == {"Tingting"}
+    # citation numbers are links on the page, never read out
+    assert not any(s["text"].strip().replace(",", "").isdigit() for s in spoken)
     assert page.errors == []
+
+
+def test_citation_numbers_link_to_their_sources(make_page, base_url):
+    page = make_page("en", width=1280)
+    page.goto(f"{base_url}/w/npm-1194")
+    first = page.locator(".intro .cite a").first
+    target = first.get_attribute("href")
+    first.click()
+    assert page.evaluate("location.hash") == target
+    assert page.locator(f"{target}").is_visible()
+    assert page.locator(".views li").count() == 2
 
 
 def test_read_aloud_in_chinese_prefers_tingting(make_page, base_url):

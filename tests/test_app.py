@@ -78,8 +78,8 @@ def test_every_work_page_renders(client, work_id, headers):
 
 def test_work_page_shows_intro_museum_text_and_credit(client):
     page = html(client.get("/w/npm-1195?lang=en"))
-    assert "AI-drafted · not reviewed" in page
-    assert "A single mountain fills most of this tall silk scroll" in page
+    assert "AI-drafted · checked against sources · not reviewed by a curator" in page
+    assert "A towering central peak fills most of this tall silk scroll" in page
     assert "Fan K&#39;uan has long been considered" in page
     assert (
         "Travelers Among Mountains and Streams The National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw" in page
@@ -160,7 +160,9 @@ def test_api_work_has_everything_and_says_what_is_ai_drafted(client):
     data = client.get("/api/works/npm-47").get_json()
     assert data["license"] == "CC BY 4.0"
     assert data["credit"]["en"].endswith("CC BY 4.0 @ www.npm.gov.tw")
-    assert data["editorial"]["status"] == "ai_draft_not_reviewed"
+    assert data["editorial"]["status"] == "ai_draft_checked_against_sources_not_reviewed"
+    assert data["editorial"]["checked"]["on"]
+    assert all(s["sources"] for s in data["editorial"]["intro"])
     assert data["museum_text"]["zh"]
 
 

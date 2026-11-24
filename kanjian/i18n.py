@@ -92,11 +92,27 @@ STRINGS: dict[str, dict[str, str]] = {
     "category_other": {"zh": "其他", "en": "Other"},
     # --- work page
     "intro_heading": {"zh": "导读", "en": "Introduction"},
-    "ai_badge": {"zh": "AI 协助撰写 · 未经审核", "en": "AI-drafted · not reviewed"},
-    "ai_note": {
-        "zh": "导读和“细看”由 AI 协助撰写，参考了馆方资料，但尚未经策展人审核，可能有错。",
-        "en": "The introduction and 'Look closer' were drafted with AI help from the museum's records, but have not been reviewed by a curator and may contain mistakes.",
+    "ai_badge": {
+        "zh": "AI 协助撰写 · 已核对出处 · 未经策展人审核",
+        "en": "AI-drafted · checked against sources · not reviewed by a curator",
     },
+    "ai_note": {
+        "zh": "导读、“细看”和“评论家怎么说”由 AI 协助撰写，每一句都注明了出处，并已对照出处核对过；但尚未经策展人审核，仍可能有错。点击句末的数字可查看出处。",
+        "en": "The introduction, 'Look closer' and 'What critics and historians say' were drafted with AI help. Every sentence cites its sources and has been checked against them, but none of it has been reviewed by a curator, so mistakes are still possible. Select a number to see the source.",
+    },
+    "checked_on": {"zh": "核对日期：{date}", "en": "Checked against sources on {date}"},
+    "views_heading": {"zh": "评论家怎么说", "en": "What critics and historians say"},
+    "sources_heading": {"zh": "出处", "en": "Sources"},
+    "cite_label": {"zh": "出处 {n}", "en": "Source {n}"},
+    "source_museum_record": {"zh": "{museum}的藏品记录", "en": "Collection record, {museum}"},
+    "source_image": {"zh": "本页的作品图像（可直接看到）", "en": "The image on this page (visible in the work itself)"},
+    "source_accessed": {"zh": "{date} 查阅", "en": "accessed {date}"},
+    "source_kind_museum": {"zh": "馆方", "en": "Museum"},
+    "source_kind_museum_essay": {"zh": "馆方文章", "en": "Museum essay"},
+    "source_kind_inscription": {"zh": "作品上的题字", "en": "Inscription on the work"},
+    "source_kind_scholarship": {"zh": "学术著作", "en": "Scholarship"},
+    "source_kind_encyclopedia": {"zh": "百科", "en": "Encyclopedia"},
+    "source_kind_image": {"zh": "图像", "en": "Image"},
     "look_heading": {"zh": "细看", "en": "Look closer"},
     "museum_heading": {"zh": "馆方说明", "en": "From the museum"},
     "museum_text_source": {"zh": "以下文字来自{museum}。", "en": "This text is from the museum's record ({museum})."},
@@ -169,8 +185,8 @@ STRINGS: dict[str, dict[str, str]] = {
     },
     "about_ai_heading": {"zh": "导读是谁写的", "en": "Who wrote the introductions"},
     "about_ai_text": {
-        "zh": "导读、“细看”和图像描述由 AI 协助撰写，参考了馆方资料和一般艺术史知识，在页面上标为“AI 协助撰写 · 未经审核”。馆方说明则原样引用，并注明出处。正式使用前，导读需要由策展人或研究者审核。",
-        "en": "The introductions, 'Look closer' notes and image descriptions were drafted with AI help, using the museums' records and general art-historical knowledge, and are labelled 'AI-drafted · not reviewed'. The museums' own texts are quoted as they are, with their source. Before real use, the introductions need review by a curator or scholar.",
+        "zh": "导读、“细看”、“评论家怎么说”和图像描述由 AI 协助撰写。每一句都注明出处：馆方的藏品记录和文章、作品上的题字、学术著作，或百科条目；找不到可靠出处的说法会被删去或改写。现代学者的观点以转述为主，只作简短引用；古代评论家的话可以直接引用。馆方说明原样引用。正式使用前，这些文字仍需由策展人或研究者审核。",
+        "en": "The introductions, 'Look closer' notes, 'What critics and historians say' and image descriptions were drafted with AI help. Every sentence cites its sources: the museum's record and essays, inscriptions on the work, scholarship, or encyclopedia entries. Claims without a reliable source are cut or rewritten. Modern scholars are mostly paraphrased, with only short quotations; traditional critics can be quoted directly. The museums' own texts are quoted as they are. Before real use, all of this still needs review by a curator or scholar.",
     },
     "about_add_heading": {"zh": "加入更多作品", "en": "Adding more works"},
     "about_add_text": {

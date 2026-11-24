@@ -44,26 +44,68 @@
     "thumb": "img/works/npm-33-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "高耸的山崖下，松林填满了深谷，溪水从岩石间流下。李唐在1124年画成此画，那时北宋即将灭亡；后来他到南方再入画院，成为南宋宫廷山水的开创者之一。与范宽的大山相比，这里的视线更近、更密，岩石用坚硬、方折的笔触“劈”出来。",
-      "en": "Pine forests fill a deep valley beneath a towering cliff, and streams tumble down through the rocks. Li Tang painted it in 1124, near the end of the Northern Song dynasty; he later rejoined the court painting academy in the south and helped shape the Southern Song court style. Compared with Fan Kuan's mountain, the view is closer and denser, and the rocks are cut with hard, angular strokes."
-    },
+    "intro": [
+      {
+        "zh": "李唐在宣和甲辰年（1124）春天画成此画，那时北宋即将结束。",
+        "en": "Li Tang dated this painting to the spring of 1124, in the Xuanhe reign, near the end of the Northern Song.",
+        "sources": [
+          "fun",
+          "museum"
+        ]
+      },
+      {
+        "zh": "他在宋徽宗的画院任职，约三十年后宋室南渡，他又在高宗时再入画院。",
+        "en": "He served in Emperor Huizong's painting academy, and about thirty years later re-entered it after the Song court re-established itself in the south under Gaozong.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "馆方指出，这幅山水上追范宽，但重点已不是大山的雄伟，而是风吹松林、流水奔腾的深谷。",
+        "en": "The museum notes that the landscape looks back to Fan Kuan, but its focus is no longer the mountain's grandeur: it is a deep valley of wind-blown pines and rushing water.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "科学摄影显示，松针原本敷有浓重的深绿色，后面的山原来更偏赭色。",
+        "en": "Scientific photography shows the pine needles were once covered in thick dark green, and the mountains behind were more ochre.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
     "look_for": [
       {
-        "zh": "左侧远处一座细高的山峰上，有画家很小的题款和年份。",
-        "en": "The artist's tiny signature and date, written on a slender distant peak on the left."
+        "zh": "主峰左边一座山峰上的题款和年份。",
+        "en": "The signature and date, on one of the peaks to the left of the main mountain.",
+        "sources": [
+          "fun",
+          "museum"
+        ]
       },
       {
-        "zh": "岩石表面平直、像斧头劈过一样的笔触，称为“斧劈皴”，与李唐的名字联系在一起。",
-        "en": "The flat, chopping strokes on the rock faces, called 'axe-cut' texture strokes, a technique linked with Li Tang."
+        "zh": "岩面像被斧头砍凿过一样的纹理，称为“斧劈皴”；馆方说李唐发展的这种笔法深深影响了后来的职业画家。",
+        "en": "Rock faces textured as if cut with an axe ('axe-cut' strokes); the museum says the technique he developed strongly influenced later professional painters.",
+        "sources": [
+          "museum",
+          "fun"
+        ]
       },
       {
-        "zh": "从山谷中间落下的溪流和底部的水潭，水花画得十分细密。",
-        "en": "The stream falling through the middle of the valley and the pools at the bottom, with finely drawn spray."
+        "zh": "居中的主峰，两旁是高低不齐、插入云中的尖峰。",
+        "en": "The main peak in the centre, flanked by uneven, cloud-piercing spires.",
+        "sources": [
+          "museum",
+          "image"
+        ]
       },
       {
-        "zh": "大山崖后面停在山谷里的白云。",
-        "en": "The white cloud resting in the valley behind the great cliff."
+        "zh": "流水和水花交织，充满动感。",
+        "en": "Flowing water and spray woven together, full of energy.",
+        "sources": [
+          "museum"
+        ]
       }
     ],
     "alt": {
@@ -83,6 +125,43 @@
       "note": "Cropped to the painting; the museum photograph includes the mounting and a colour chart."
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [
+      {
+        "who": {
+          "zh": "台北故宫的研究人员",
+          "en": "Researchers at the National Palace Museum"
+        },
+        "about": {
+          "zh": "最新科学研究",
+          "en": "latest scientific study"
+        },
+        "zh": "他们发现左边山峰上的题款位于青绿色颜料之下，说明墨迹是原有的，从而确认了1124年的年代。",
+        "en": "They found the signature on the left peak lies beneath the blue-green wash, suggesting the ink is original and confirming the date of 1124.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "fun": {
+        "kind": "museum_essay",
+        "title": "Wind in Pines Among a Myriad Valleys",
+        "url": "https://theme.npm.edu.tw/exh104/npmforfun/en/Selection/Selection4.html",
+        "publisher": "National Palace Museum, Taipei",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }

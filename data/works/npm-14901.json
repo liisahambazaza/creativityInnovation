@@ -44,26 +44,66 @@
     "thumb": "img/works/npm-14901-thumb.jpg"
   },
   "editorial": {
-    "intro": {
-      "zh": "唐代僧人怀素在777年、52岁时写下这卷“狂草”，这是中国书法中最自由的一种字体。字与字连绵不断，笔一快，字就忽大忽小。内容讲他怎样学习书法，并引用名人对他书法的赞誉。这里展示的是全长七米多的手卷中的一段。",
-      "en": "The Buddhist monk Huaisu wrote this scroll in 777, at the age of 52, in 'wild cursive', the freest form of Chinese calligraphy. Characters run into one another and swell and shrink as the brush speeds up. The text tells how he came to calligraphy and quotes famous men's praise of his writing. This is one section of a scroll more than seven metres long."
-    },
+    "intro": [
+      {
+        "zh": "僧人怀素是湖南长沙人，以草书闻名乡里，后来北上长安，当时的名流纷纷赠诗赞美他。",
+        "en": "The Buddhist monk Huaisu, from Changsha in Hunan, became famous at home for his cursive script and then went north to the capital, Chang'an, where well-known men wrote poems in his praise.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "777年，五十二岁的他摘录这些赠诗和颜真卿的序，写成了这一卷。",
+        "en": "In 777, at the age of 52, he copied out those poems and a preface by Yan Zhenqing to make this scroll.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "有些诗推崇他继承了张旭的“颠狂”草书。",
+        "en": "Some of the poems praise him as an heir to the 'wild' cursive of Zhang Xu.",
+        "sources": [
+          "museum",
+          "kmfa"
+        ]
+      },
+      {
+        "zh": "馆方把此卷归于怀素，但有研究认为，台北这一卷可能是北宋时据原作摹写的本子。",
+        "en": "The museum attributes the scroll to Huaisu, but some recent studies suggest the Taipei scroll may be a Northern Song tracing copy of his original.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      }
+    ],
     "look_for": [
       {
         "zh": "字的大小变化：有的小而快，有的几乎占满整张纸的高度。",
-        "en": "How the size changes: some characters are small and quick, others fill almost the whole height of the paper."
+        "en": "How the size changes: some characters are small and quick, others fill almost the whole height of the paper.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "笔不离纸的连笔：一笔直接流进下一个字。",
-        "en": "Strokes that never seem to lift: one flows straight into the next character."
+        "zh": "笔画写得极快，字与字几乎全部连在一起。",
+        "en": "Strokes written at great speed, with the characters almost all connected to one another.",
+        "sources": [
+          "museum"
+        ]
       },
       {
-        "zh": "笔快没墨时留下的细细白痕，称为“飞白”。",
-        "en": "Thin pale streaks where the brush ran almost dry, known as 'flying white'."
+        "zh": "笔快没墨时留下的细细白痕。",
+        "en": "Thin pale streaks where the brush ran almost dry.",
+        "sources": [
+          "image"
+        ]
       },
       {
-        "zh": "后世收藏者盖的红色印章，表示这卷书法曾经过他们之手。",
-        "en": "Red seals stamped by later owners, to show that the scroll had passed through their hands."
+        "zh": "整卷长7.55米，这里只是其中一段。",
+        "en": "The whole scroll is 7.55 metres long; this is one section.",
+        "sources": [
+          "museum"
+        ]
       }
     ],
     "alt": {
@@ -74,7 +114,7 @@
       "year": 777,
       "date": {
         "zh": "777年",
-        "en": "dated 777"
+        "en": "777"
       }
     },
     "image_choice": {
@@ -83,6 +123,31 @@
       "note": "One section of the scroll, with some of its largest characters."
     },
     "status": "ai_draft",
-    "drafted": "2026-11-24"
+    "views": [],
+    "sources": {
+      "kmfa": {
+        "kind": "museum_essay",
+        "title": "Euphoria of Sight and Spirit (exhibition page)",
+        "url": "https://theme.npm.edu.tw/exh108/NPMxKMFA/en/page-4.html",
+        "publisher": "National Palace Museum, Taipei",
+        "author": "",
+        "accessed": "2026-11-24"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Huaisu's Autobiography",
+        "url": "https://en.wikipedia.org/wiki/Huaisu%27s_Autobiography",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-24"
+      }
+    },
+    "checked": {
+      "on": "2026-11-24",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
   }
 }
