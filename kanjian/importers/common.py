@@ -143,12 +143,20 @@ def limits_for(fmt: str) -> dict:
 
 
 def save_image(
-    raw: bytes, work_id: str, image_dir: Path = IMAGE_DIR, *, fmt: str = "other", crop: tuple | None = None
+    raw: bytes,
+    work_id: str,
+    image_dir: Path = IMAGE_DIR,
+    *,
+    fmt: str = "other",
+    crop: tuple | None = None,
+    thumb_at: float | None = None,
 ) -> dict:
     """Save the main image and a gallery thumbnail; return their paths and sizes.
 
     A handscroll is read from right to left, so its thumbnail shows the right-hand end.
     ``crop`` is an optional (x, y, w, h) box in percent, to trim mounting or colour charts.
+    ``thumb_at`` centres a wide image's thumbnail on that point (percent from the left),
+    for a scroll whose right-hand end is only mounting.
     """
     try:
         from PIL import Image
@@ -180,7 +188,10 @@ def save_image(
     tw, th = thumb.size
     if tw > th * THUMB_MAX_RATIO:
         keep = th * THUMB_MAX_RATIO
-        left = tw - keep if fmt == "handscroll" else (tw - keep) // 2
+        if thumb_at is not None:
+            left = min(max(tw * thumb_at / 100 - keep / 2, 0), tw - keep)
+        else:
+            left = tw - keep if fmt == "handscroll" else (tw - keep) // 2
         thumb = thumb.crop((left, 0, left + keep, th))
     elif th > tw * THUMB_MAX_RATIO:
         keep = tw * THUMB_MAX_RATIO

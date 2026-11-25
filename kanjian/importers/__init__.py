@@ -36,6 +36,7 @@ def import_one(
 ) -> Path:
     """Import one work. Its editorial ``image_choice`` can pick or crop the museum image:
     ``canvas`` and ``region`` (Taipei IIIF), ``crop`` [x, y, w, h] in percent (any museum),
+    ``thumb_at`` (where a wide thumbnail is centred, in percent from the left),
     or ``keep: true`` to keep the image file already in the project."""
     choice = _existing_editorial(source, ident, data_dir).get("image_choice") or {}
     if source == "npm":
@@ -43,7 +44,14 @@ def import_one(
     else:
         record, raw = SOURCES[source].fetch(fetcher, ident)
     if not choice.get("keep"):
-        record["image"] = save_image(raw, record["id"], image_dir, fmt=record["format"], crop=choice.get("crop"))
+        record["image"] = save_image(
+            raw,
+            record["id"],
+            image_dir,
+            fmt=record["format"],
+            crop=choice.get("crop"),
+            thumb_at=choice.get("thumb_at"),
+        )
     return write_work(record, data_dir)
 
 

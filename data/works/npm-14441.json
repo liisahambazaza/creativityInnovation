@@ -1,0 +1,149 @@
+{
+  "id": "npm-14441",
+  "museum": "npm",
+  "record": {
+    "id": "14441",
+    "dep": "P",
+    "object_number": "故畫000023N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/14441?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A000023N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "five_dynasties",
+  "year": 907,
+  "title": {
+    "zh": "南唐巨然層巖叢樹圖",
+    "en": "Storied Mountains and Dense Forests"
+  },
+  "artist": {
+    "zh": "巨然",
+    "en": "Juran"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹；下方：綾；詩塘：綾",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 144.1 × 55.4 公分；詩塘 15.2 × 55.4 公分；下方 12 × 55.4 公分",
+    "en": "Image 144.1 × 55.4 cm; Poem panel 15.2 × 55.4 cm; 下方 12 × 55.4 cm"
+  },
+  "museum_text": {
+    "zh": "巨然（活動於10世紀後半），鍾陵（今南京）人。南唐滅亡，隨李後主降宋至汴京。工畫山水，師事董源，與師齊名，並稱董巨。\n此軸表現江南林木挺勁、煙嵐繚繞的氣象，景物虛實變化巧妙。描繪鬆軟土石的披麻皴與山頭卵石的礬頭，皆為「董巨畫派」典型特徵。「之」字形路徑蜿蜒縈迴深入山中，增添了畫面的縱深感。詩塘上方明代董其昌將此圖定為「僧巨然真蹟神品」。",
+    "en": "Chu-jan, a native of Chiang-ning (modern Nanking), was a monk at the K'ai-yuan Temple who painted Kiangnan scenery. A student of Tung Yuan, after the fall of the Southern T'ang, he followed the vanquished Li Hou-chu to the Sung capital K'ai-feng. Since Chu-jan came under the influence of the northern landscape style, his horizontal \"level-distance\" manner of Tung Yuan was adapted to become a vertical \"high distance\" one. Yet he still retained the Tung style of \"alum heads\" for mountaintops and \"hemp-fiber strokes\" to texture the hills. He also continued to use light ink to capture the atmosphere of cloudy hills to suggest Kiangnan shrouded in mist and rain, thus retaining aspects of the southern landscape tradition."
+  },
+  "image": {
+    "src": "img/works/npm-14441.jpg",
+    "width": 998,
+    "height": 3005,
+    "thumb": "img/works/npm-14441-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "巨然活动于十世纪后半，是钟陵（今南京）人，师从董源，与老师并称“董巨”。",
+        "en": "Juran, active in the later tenth century and from the Nanjing area, studied under Dong Yuan, and the two are named together as Dong–Ju.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "南唐灭亡后，他随李后主降宋，到了汴京。",
+        "en": "When the Southern Tang fell, he followed its last ruler to the Song capital at Kaifeng.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "受北方山水影响，他把董源横向的“平远”改成竖向的“高远”，但保留了董派的“矾头”和“披麻皴”。",
+        "en": "Under the influence of northern landscape, he turned Dong Yuan's horizontal 'level distance' into a vertical 'high distance', while keeping the Dong school's 'alum-head' boulders and 'hemp-fibre' strokes.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他用淡墨画出云雾笼罩的山，保留了江南烟雨的气息。",
+        "en": "He used light ink for cloud-wrapped hills, keeping the misty, rainy feel of the south.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "山头圆圆的卵石，即“矾头”。",
+        "en": "The rounded boulders on the peaks, the 'alum heads'.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "像麻丝一样的“披麻皴”。",
+        "en": "The 'hemp-fibre' texture strokes on the hills.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "“之”字形小路蜿蜒深入山中。",
+        "en": "The zigzag path winding into the mountains.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "上方诗塘里董其昌的题字。",
+        "en": "Dong Qichang's inscription in the panel above.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "董其昌",
+          "en": "Dong Qichang"
+        },
+        "about": {
+          "zh": "诗塘题字",
+          "en": "inscription above the painting"
+        },
+        "zh": "董其昌把此图定为“僧巨然真迹神品”。",
+        "en": "Dong Qichang judged it a genuine work by the monk Juran, of the highest, 'divine' class.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "僧巨然真蹟神品",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {},
+    "alt": {
+      "zh": "一幅高窄的立轴：层层叠叠的山峰隐在雾中，山间树木茂密，一条小路蜿蜒入山；上方诗塘有大字题字。",
+      "en": "A tall, narrow hanging scroll: layered peaks in mist, dense woods on the slopes and a path winding in; large characters in the panel above."
+    },
+    "overrides": {
+      "date": {
+        "zh": "10世纪后半",
+        "en": "later 10th century"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

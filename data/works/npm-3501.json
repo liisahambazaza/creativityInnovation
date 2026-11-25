@@ -1,0 +1,158 @@
+{
+  "id": "npm-3501",
+  "museum": "npm",
+  "record": {
+    "id": "3501",
+    "dep": "P",
+    "object_number": "故畫000723N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3501?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A000723N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "qing",
+  "year": 1644,
+  "title": {
+    "zh": "畫溪山紅樹",
+    "en": "Red Trees Among Mountains and Streams"
+  },
+  "artist": {
+    "zh": "王翬",
+    "en": "Wang Hui"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "紙；詩塘：紙",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "本幅 112.4 × 39.5 公分；詩塘 27.6 × 39.5 公分",
+    "en": "Image 112.4 × 39.5 cm; Poem panel 27.6 × 39.5 cm"
+  },
+  "museum_text": {
+    "zh": "王翬（1632–1717），字石谷，號耕煙散人、劍門樵客等。江蘇常熟人，少即善畫，得王鑑、王時敏指授，遊歷各地，揣摩名蹟而筆參古今。\n此幀為石谷三十八歲之作，擬王蒙筆意，描繪秋日山林景色，主體山勢圓轉重疊，高聳突兀，山溪逶迤，漣漪陣起。佈局構景繁密，山勢深奇，植披濃密厚重，林木紅翠相間，秋光熠熠。惲南田評：「山樵幾無餘蘊」。翬從學弟子眾，世稱「虞山派」，畫風影響後世深遠。",
+    "en": "Wang Hui (style name Shih-ku; sobriquets Keng-yen San-jen, Wu-mu Shan-jen, Chien-men ch’iao-k’o, Ching-hui Chu-jen) was a native of Ch’ang-shu, Kiangsu. As a youth he excelled in painting, and he received instruction from Wang Chien and Wang Shih-min. He also had the opportunity to see the two Wangs’ collection of ancient masterpieces which he copied. He was thus skilled in both ancient and modern brush styles, and his painting style comprised the tradition of both northern and southern schools. He is one of the most skilled painters of the Ch’img dynasty. Wang Hui painted this highly-accomplished scroll when he was thirty-seven years old. Both Wang Shih-min and Yun Shou-p’ing saw this work and wanted to obtain it, but Wang Hui declined. The painting was after Wang Meng and has more than captured the Yuan master’s spirit. The inscription by Yun Shou-p’ing states that after eliminating all the stale tendencies from paintings in the Wang Meng style, Wang Hui expressed a new meaning. The brush moves as free and confidently as a bird, leaving little more for the master to add."
+  },
+  "image": {
+    "src": "img/works/npm-3501.jpg",
+    "width": 969,
+    "height": 3094,
+    "thumb": "img/works/npm-3501-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "王翚（1632–1717），江苏常熟人，少年即善画，得到王鉴、王时敏指点，并临摹过他们收藏的古代名迹。",
+        "en": "Wang Hui (1632–1717), from Changshu in Jiangsu, painted well from his youth, was taught by Wang Jian and Wang Shimin, and copied the old masterpieces in their collections.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他兼擅南北两派画风，是清代技艺最高的画家之一。",
+        "en": "He drew on both the northern and southern traditions and was one of the most skilled painters of the Qing.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "此图仿元代王蒙的笔意，画秋日山林。",
+        "en": "This scroll, after the Yuan master Wang Meng, shows mountain forests in autumn.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "台北故宫的中文说明说这是他三十八岁时的作品，英文说明则作三十七岁。",
+        "en": "Taipei's Chinese text says he painted it at thirty-eight; its English text says thirty-seven.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "王时敏和恽寿平都想要这幅画，王翚没有答应。",
+        "en": "Both Wang Shimin and Yun Shouping wanted the painting, but Wang Hui declined.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的弟子众多，世称“虞山派”，影响深远。",
+        "en": "He had many pupils, known as the Yushan school, and his influence lasted long after him.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "圆转重叠、高耸突兀的山势。",
+        "en": "The rounded, stacked mountains rising abruptly.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "红绿相间的秋树。",
+        "en": "The autumn trees, red mixed with green.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      },
+      {
+        "zh": "蜿蜒的山溪。",
+        "en": "The winding mountain stream.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "画上方密密的题字。",
+        "en": "The inscriptions crowded along the top.",
+        "sources": [
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "恽寿平",
+          "en": "Yun Shouping"
+        },
+        "about": {
+          "zh": "题字",
+          "en": "inscription on the painting"
+        },
+        "zh": "恽寿平题道，王翚扫除了仿王蒙者的陈腐习气，别出新意，王蒙的笔意几乎被他发挥尽了。",
+        "en": "Yun Shouping wrote that Wang Hui swept away the stale habits of painters in Wang Meng's manner and found a new meaning, leaving little more for the master to add.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "山樵幾無餘蘊",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {},
+    "alt": {
+      "zh": "一幅立轴：高耸重叠的山峰，山间瀑布和溪水，红绿相间的秋树，中间有楼阁；上方有多段题字。",
+      "en": "A hanging scroll: tall, stacked peaks with waterfalls and a stream, autumn trees in red and green, a pavilion among them, and several inscriptions above."
+    },
+    "overrides": {},
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

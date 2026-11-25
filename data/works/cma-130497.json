@@ -1,0 +1,167 @@
+{
+  "id": "cma-130497",
+  "museum": "cma",
+  "record": {
+    "id": "130497",
+    "object_number": "1953.247",
+    "url": "https://clevelandart.org/art/1953.247",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "qing",
+  "year": 1650,
+  "title": {
+    "zh": "魚石圖",
+    "en": "Fish and Rocks"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Bada Shanren (Chinese, 1626–1705)"
+  },
+  "date": {
+    "zh": "",
+    "en": "mid- to late 1600s"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Handscroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Painting: 29.6 x 158.4 cm (11 5/8 x 62 3/8 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Bada Shanren, also called Zhu Da, a 17th-century painter who rejected conventions in favor of an individual, personal expression, is known for his unorthodox compositions of fish, flowers, birds, and rocks. Fish in his paintings are often looking upward toward heaven, swimming in a pond of undefined space.\n\nAs a member of the Ming imperial family, Zhu Da lost his princely status and hid in a monastery when the Manchus, foreigners from the north, established the Qing dynasty in 1644. This scroll may have some autobiographical meaning, representing fish as leftover subjects (yimin) who lived in a void, having lost their roles in life after the fall of the dynasty.\n\nAfter each poem, Bada Shanren used his so-called jixingyin seal 屐形印, which resembles the impression of a shoe on soft mud."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "John L. Severance Fund"
+  },
+  "image": {
+    "src": "img/works/cma-130497.jpg",
+    "width": 3400,
+    "height": 447,
+    "thumb": "img/works/cma-130497-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "八大山人又名朱耷，是明朝宗室。",
+        "en": "Bada Shanren, also called Zhu Da, was a member of the Ming imperial family.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      },
+      {
+        "zh": "1644年清朝建立后，他失去宗室身份，躲进寺院。",
+        "en": "After the Qing dynasty was founded in 1644 he lost his princely status and hid in a monastery.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他不守成规，以鱼、花、鸟、石的奇特构图著称；画中的鱼常常向上望，游在没有边际的空白里。",
+        "en": "He rejected convention and is known for unusual compositions of fish, flowers, birds and rocks; his fish often look upward, swimming in undefined space.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "三首题诗之后，他各钤一方“个山”印，并用了一方形似鞋印的“屐形印”。",
+        "en": "After each of the three poems he stamped a seal reading Ge shan, and he used a seal shaped like a shoe print in soft mud.",
+        "sources": [
+          "museum",
+          "insc"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "空白中游动的小鱼。",
+        "en": "The small fish swimming in the empty paper.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      },
+      {
+        "zh": "石下零星的菊花，呼应诗中的“金城”。",
+        "en": "The scattered chrysanthemums at the foot of the rock, echoing the poem's City of Gold.",
+        "sources": [
+          "insc"
+        ]
+      },
+      {
+        "zh": "第三首诗提到“黄颊”鱼，馆方据此推测原画更长，还画了另一条鱼。",
+        "en": "The third poem mentions a yellowcheek fish, which suggests to the museum that the painting was once longer, with another fish.",
+        "sources": [
+          "insc"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "克利夫兰艺术博物馆",
+          "en": "The Cleveland Museum of Art"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方认为此卷可能带有自传意味：鱼就像改朝换代后失去人生位置、生活在虚空中的“遗民”。",
+        "en": "The museum suggests the scroll may be autobiographical: the fish are like the 'leftover subjects' who lost their place in life after the dynasty fell.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "insc": {
+        "kind": "inscription",
+        "title": "Inscriptions, colophons and seals, as transcribed and translated by the museum (1953.247)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1953.247",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-25"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Bada Shanren",
+        "url": "https://en.wikipedia.org/wiki/Bada_Shanren",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅横卷水墨画：大片空白的纸上有几块形状奇特的石头和一枝花，两条小鱼游在中间，旁边有几段题诗和印章。",
+      "en": "An ink handscroll: on mostly empty paper, a few oddly shaped rocks and a flowering branch, two small fish swimming between them, and poems and seals beside."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "八大山人（朱耷）",
+        "en": ""
+      },
+      "date": {
+        "zh": "17世纪中晚期",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

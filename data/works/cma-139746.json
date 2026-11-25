@@ -1,0 +1,164 @@
+{
+  "id": "cma-139746",
+  "museum": "cma",
+  "record": {
+    "id": "139746",
+    "object_number": "1963.515",
+    "url": "https://clevelandart.org/art/1963.515",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "yuan",
+  "year": 1271,
+  "title": {
+    "zh": "竹石幽蘭圖",
+    "en": "Bamboo, Rocks, and Lonely Orchids"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Zhao Mengfu (Chinese, 1254–1322)"
+  },
+  "date": {
+    "zh": "",
+    "en": "1271–1368"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Handscroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Mounted: 52.4 x 1337.7 cm (20 5/8 x 526 5/8 in.); Image: 50.9 x 147.8 cm (20 1/16 x 58 3/16 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Bamboo and orchids are motifs associated with the virtues of the scholar-official. Bamboo that bends but does not break stands for moral integrity, endurance, and loyalty. Wild, fragrant orchids that bloom in the shadow symbolize modesty and the aura of learnedness. Rocks are often considered to be miniature versions of mountains that form the universe. This monochrome ink painting is brushed on paper in a masterfully calligraphic manner. While the rocks are delineated in chalky, dry strokes showing the effect of flying white (feibai), the bamboo and orchids are drawn with a swift brush demonstrating the virtuosity of the artist.\n\nOne of the many inscriptions records that the handscroll was last remounted by Xu Shudong 徐曙東 of Jiaxing 嘉興 in 1802."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "John L. Severance Fund by exchange"
+  },
+  "image": {
+    "src": "img/works/cma-139746.jpg",
+    "width": 3400,
+    "height": 226,
+    "thumb": "img/works/cma-139746-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "竹和兰象征士大夫的品德：竹弯而不折，代表气节、坚忍和忠诚；生在幽处的兰代表谦逊和学养。",
+        "en": "Bamboo and orchid stand for the scholar-official's virtues: bamboo that bends but does not break means integrity, endurance and loyalty; orchids blooming in shade mean modesty and learning.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "石头常被看作构成宇宙的山岳的缩影。",
+        "en": "Rocks were often seen as miniature mountains of the kind that make up the universe.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "石头用干涩的“飞白”笔画勾出，竹和兰则用迅疾的笔法画成，像书法一样。",
+        "en": "The rocks are outlined in chalky, dry 'flying white' strokes and the bamboo and orchids drawn with a swift brush, in a calligraphic manner.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "赵孟頫的题字说，这是为“善夫”（顾信）画的。",
+        "en": "Zhao's inscription says he painted it for Shanfu, that is, Gu Xin.",
+        "sources": [
+          "insc"
+        ]
+      },
+      {
+        "zh": "画后有一长串元代以来的题跋，其中一段记载此卷于1802年由嘉兴的徐曙东重新装裱。",
+        "en": "A long run of colophons from the Yuan onward follows; one records that the scroll was last remounted by Xu Shudong of Jiaxing in 1802.",
+        "sources": [
+          "museum",
+          "insc"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "石头上干涩的飞白笔触。",
+        "en": "The dry 'flying white' strokes on the rocks.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "长度对比：整卷装裱长13米多，画本身不到1.5米。",
+        "en": "The proportions: the mounted scroll is over 13 metres long, the painting itself under 1.5 metres.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "赵孟頫的署名和三方印。",
+        "en": "Zhao Mengfu's inscription and three seals.",
+        "sources": [
+          "insc"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "韩性",
+          "en": "Han Xing"
+        },
+        "about": {
+          "zh": "题跋",
+          "en": "colophon"
+        },
+        "zh": "元代学者韩性在题跋中说，古代善书者必定能画；赵孟頫这幅兰石兼具草书和飞白的笔法，值得珍藏。",
+        "en": "In his colophon the scholar Han Xing wrote that the ancients who excelled at calligraphy could always paint, and that these orchids and rocks combine running-script and flying-white brushwork and should be treasured.",
+        "sources": [
+          "insc"
+        ],
+        "quote": {
+          "zh": "松雪翁蘭石草聖飛帛筆法皆具，可寶也",
+          "en": "Indeed, it should be treasured."
+        }
+      }
+    ],
+    "sources": {
+      "insc": {
+        "kind": "inscription",
+        "title": "Inscriptions, colophons and seals, as transcribed and translated by the museum (1963.515)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1963.515",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅很长的手卷：卷尾一段水墨画着石头、竹子和兰草，前面接着一长串题跋。",
+      "en": "A very long handscroll: at its end an ink painting of rocks, bamboo and orchids, preceded by a long series of written colophons."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "趙孟頫",
+        "en": ""
+      },
+      "date": {
+        "zh": "元代",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

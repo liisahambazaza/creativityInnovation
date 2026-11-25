@@ -1,0 +1,154 @@
+{
+  "id": "npm-37",
+  "museum": "npm",
+  "record": {
+    "id": "37",
+    "dep": "P",
+    "object_number": "故畫000119N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/37?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A000119N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "靜聽松風圖",
+    "en": "Quietly Listening to Soughing Pines"
+  },
+  "artist": {
+    "zh": "馬麟",
+    "en": ""
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 226.6 × 110.3 公分",
+    "en": "Image 226.6 × 110.3 cm"
+  },
+  "museum_text": {
+    "zh": "馬麟（西元十三世紀），河中（今山西省）人，後遷居浙江錢塘，馬遠之子。由於家學淵源，擅長山水、人物、花鳥。寫生作品，自具風格，與父風並不相混，在畫史上保有獨立地位。 畫高士憩息松間，松枝受風偏向一方，旁侍一童子。晉朝大畫家顧愷之曾云：「手揮五弦易，目送飛鴻難」。這幅畫生動地表現出眼睛凝神傾聽松風之神情，真更勝一籌矣。",
+    "en": "Ma Lin, from a family of painters, specialized in landscapes, birds-and-flowers, and figures-being just as accomplished as his father, Ma Yuan. Deep in the mountains beside a flowing stream, a lofty gentleman sits on the trunk of a large pine as he stares and listens with intent to the wind blowing through the pine needles and vines. The twisting old pines and large rocks rendered in axe-cut strokes reveal the Ma-school style. The title written by Emperor Li-tsung is in the upper right. In the lower left is Ma Lin’s signature. In the Northern Sung, figures appeared as insignificant elements of the landscape, while in the Southern Sung, the relationship between man and nature became an even more important aspect in painting."
+  },
+  "image": {
+    "src": "img/works/npm-37.jpg",
+    "width": 1205,
+    "height": 2489,
+    "thumb": "img/works/npm-37-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "马麟是马远之子，出身绘画世家，擅长山水、人物和花鸟，风格自成一家。",
+        "en": "Ma Lin, son of Ma Yuan and from a family of painters, worked in landscapes, figures and birds-and-flowers, with a style of his own.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "画中一位高士坐在大松树干上，凝神倾听风吹松针和藤蔓的声音，旁边侍立一个童子。",
+        "en": "A gentleman sits on the trunk of a great pine, listening intently to the wind in the needles and vines, with a boy attending him.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "扭曲的老松和用斧劈皴画成的大石，都是马派的风格。",
+        "en": "The twisting old pines and the rocks in axe-cut strokes are in the style of the Ma school.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "右上角的题字出自宋理宗，左下角是马麟的署名。",
+        "en": "The title at upper right was written by Emperor Lizong; Ma Lin's signature is at lower left.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "馆方指出，北宋画中的人物只是山水的点缀，南宋则更重视人与自然的关系。",
+        "en": "The museum notes that Northern Song painters made figures minor parts of the landscape, while in the Southern Song the relation between people and nature mattered more.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "被风吹向一边的松枝。",
+        "en": "The pine branches blown to one side by the wind.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "高士的眼神：他在凝神倾听。",
+        "en": "The gentleman's eyes: he is listening.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "右上角理宗题的“静听松风”。",
+        "en": "Emperor Lizong's title, 靜聽松風, at upper right.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "台北故宫博物院",
+          "en": "National Palace Museum, Taipei"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方引晋代顾恺之的话说，画手弹琴容易，画眼睛目送飞鸿难；而这幅画生动地表现了凝神倾听的眼神，更胜一筹。",
+        "en": "The museum recalls Gu Kaizhi's saying that a hand plucking strings is easy to paint but eyes following a flying goose are hard, and judges that this painting, showing eyes intent on listening, goes further still.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "手揮五弦易，目送飛鴻難",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {},
+    "alt": {
+      "zh": "一幅立轴：山间溪边，一位白衣高士坐在弯曲的老松树干上，下方站着一个童子，远处有山，右上有题字。",
+      "en": "A hanging scroll: by a mountain stream a man in white sits on the trunk of a crooked old pine, a boy stands below, mountains rise behind, and there is an inscription at upper right."
+    },
+    "overrides": {
+      "period": "southern_song",
+      "artist": {
+        "zh": "馬麟",
+        "en": "Ma Lin"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    },
+    "image_choice": {
+      "region": "pct:8,12.5,84,84.5",
+      "note": "the painting without the mounting and colour chart"
+    }
+  }
+}

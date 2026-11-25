@@ -1,0 +1,165 @@
+{
+  "id": "cma-136295",
+  "museum": "cma",
+  "record": {
+    "id": "136295",
+    "object_number": "1960.181",
+    "url": "https://clevelandart.org/art/1960.181",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "yuan",
+  "year": 1310,
+  "title": {
+    "zh": "三駿圖",
+    "en": "Three Horses and Four Grooms"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Ren Renfa (Chinese, 1254–1328)"
+  },
+  "date": {
+    "zh": "",
+    "en": "c. 1320s"
+  },
+  "medium": {
+    "zh": "",
+    "en": "handscroll; ink and color on silk"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Painting: 28.5 x 137.5 cm (11 1/4 x 54 1/8 in.); Overall: 29.2 x 556.4 cm (11 1/2 x 219 1/16 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Ren Renfa's horse images are elegant in appearance and vigorous in spirit. His work attracted not only Chinese scholars but also the Mongols at the imperial court. Inspired by the contemporary scholarly interest in restoring a sense of antiquity in art—an artistic direction led by Zhao Mengfu that exerted a great impact in the Yuan art scene—Ren Renfa, like Zhao Mengfu, modeled his depictions of horses after the Song master Li Gonglin. Another key style component that Ren introduced to this genre was a revival of the Tang classical tradition. The refined color treatment of the horses as seen here was derived from the Tang master Han Gan.\n\nOnly the elegant first horse with a white blaze is accompanied by two grooms, as if its lightning speed required extra supervision."
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Leonard C. Hanna Jr. Fund"
+  },
+  "image": {
+    "src": "img/works/cma-136295.jpg",
+    "width": 3400,
+    "height": 417,
+    "thumb": "img/works/cma-136295-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "任仁发是元代官员和画家，也是治水专家。",
+        "en": "Ren Renfa was a Yuan official and painter, and also an expert in waterworks.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "他画的马外形优雅、精神雄健，不仅吸引汉族文人，也受到蒙古宫廷的喜爱。",
+        "en": "His horses are elegant in look and vigorous in spirit, and they appealed both to Chinese scholars and to the Mongol court.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "与赵孟頫一样，他以北宋的李公麟为师，又复兴唐代传统；马的精致设色来自唐代的韩幹。",
+        "en": "Like Zhao Mengfu, he modelled his horses on the Song master Li Gonglin and revived the Tang tradition; the refined colouring of the horses comes from the Tang master Han Gan.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的卒年说法不一：克利夫兰艺术博物馆作1328年，维基百科作1327年。",
+        "en": "Sources differ on when he died: the Cleveland Museum of Art gives 1328, Wikipedia 1327.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "第一匹带白色额斑的马有两个马夫照看，好像它的速度需要格外看管。",
+        "en": "The first horse, with a white blaze, has two grooms, as if its speed needed extra watching.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "三匹马不同的毛色。",
+        "en": "The three horses' different coats.",
+        "sources": [
+          "image"
+        ]
+      },
+      {
+        "zh": "画家的署名“月山道人”。",
+        "en": "The artist's signature, Yueshan Daoren.",
+        "sources": [
+          "insc"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "王一瀛",
+          "en": "Wang Yiying"
+        },
+        "about": {
+          "zh": "题跋（1552年或1612年）",
+          "en": "colophon (1552 or 1612)"
+        },
+        "zh": "王一瀛在题跋中说，元代任月山画马最好；这三匹骏马神采飞扬，确实得到了韩幹的笔意。",
+        "en": "In his colophon Wang Yiying wrote that Ren Yueshan was the best horse painter of the Yuan, and that these three steeds, dashing and vigorous, have truly grasped something of Han Gan's 'brush-idea'.",
+        "sources": [
+          "insc"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "so dashing, so vigorous in spirit that they have indeed grasped some of the \"brush-idea\" of Han Gan"
+        }
+      }
+    ],
+    "sources": {
+      "insc": {
+        "kind": "inscription",
+        "title": "Inscriptions, colophons and seals, as transcribed and translated by the museum (1960.181)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1960.181",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-25"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Ren Renfa",
+        "url": "https://en.wikipedia.org/wiki/Ren_Renfa",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅手卷：三匹马（灰白、浅黄、栗色）向右行走，各由马夫牵着，最右边的一匹有两个马夫；前面接一段题跋。",
+      "en": "A handscroll: three horses, grey-white, pale yellow and chestnut, walk to the right led by grooms, the rightmost with two; a written colophon comes before them."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "任仁發",
+        "en": ""
+      },
+      "date": {
+        "zh": "约1320年代",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

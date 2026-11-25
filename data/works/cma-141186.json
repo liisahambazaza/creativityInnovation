@@ -1,0 +1,172 @@
+{
+  "id": "cma-141186",
+  "museum": "cma",
+  "record": {
+    "id": "141186",
+    "object_number": "1964.43",
+    "url": "https://clevelandart.org/art/1964.43",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "ming",
+  "year": 1535,
+  "title": {
+    "zh": "畫松圖",
+    "en": "Old Pine Tree"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Wen Zhengming (Chinese, 1470–1559)"
+  },
+  "date": {
+    "zh": "",
+    "en": "late 1530s"
+  },
+  "medium": {
+    "zh": "",
+    "en": "handscroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Painting: 28 x 139.3 cm (11 x 54 13/16 in.); Overall: 29.3 x 596.9 cm (11 9/16 x 235 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": "Here the natural appearance of a gnarled and vine-entangled pine has been transformed into a rhythmic abstraction of brushstrokes and ink tonalities, with unifying opposites—opening and closing, rising and falling—that provide the design across the horizontal scroll. The artist's inscription reads: \"The force of change beyond restraint; / The dragon's whiskers are likened to a forest of spears.\""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Andrew R. and Martha Holden Jennings Fund"
+  },
+  "image": {
+    "src": "img/works/cma-141186.jpg",
+    "width": 3400,
+    "height": 709,
+    "thumb": "img/works/cma-141186-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "文征明（1470–1559）是明代画家、书法家和诗人，被列为“明四家”之一。",
+        "en": "Wen Zhengming (1470–1559) was a Ming painter, calligrapher and poet, counted among the Four Masters of Ming painting.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "他把一棵盘曲、缠着藤蔓的老松，化成笔触和墨色浓淡的有节奏的抽象组合。",
+        "en": "He turned a gnarled, vine-tangled pine into a rhythmic abstraction of brushstrokes and ink tones.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "开与合、起与伏等相反的力量，构成了整幅横卷的设计。",
+        "en": "Opposites such as opening and closing, rising and falling give the horizontal scroll its design.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的题诗写道：“变化势难缚，虬髯似戟森。”",
+        "en": "His inscription reads: 'The force of change is beyond restraint; the dragon's whiskers are likened to a forest of spears.'",
+        "sources": [
+          "insc"
+        ]
+      },
+      {
+        "zh": "卷上有乾隆、嘉庆、宣统三位皇帝的印，此画也著录于1745年的清宫书画目录《石渠宝笈》。",
+        "en": "It bears seals of the Qianlong, Jiaqing and Xuantong emperors, and it is listed in the Shiqu baoji, the 1745 catalogue of the Qing imperial collection.",
+        "sources": [
+          "insc"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "缠绕树干的藤蔓。",
+        "en": "The vines wrapped around the trunk.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "一簇簇像针刺一样的松针。",
+        "en": "The pine needles in bristling clusters.",
+        "sources": [
+          "image"
+        ]
+      },
+      {
+        "zh": "左端的两行大字题诗和两方印。",
+        "en": "The two lines of large characters at the left end, with two seals.",
+        "sources": [
+          "insc",
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "Ju-hsi Chou",
+          "en": "Ju-hsi Chou"
+        },
+        "about": {
+          "zh": "2015年图录《Silent Poetry》",
+          "en": "the 2015 catalogue Silent Poetry"
+        },
+        "zh": "Ju-hsi Chou 提出，卷上两方残印应读作“魏塘遗老”和“魏塘钱氏赐余堂收藏印”，即收藏家钱士升的印。",
+        "en": "Ju-hsi Chou proposed that two partial seals should read 'An old survivor in Weitang' and the collection seal of the Qian family's Ciyu Hall, that is, of the collector Qian Shisheng.",
+        "sources": [
+          "insc"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "insc": {
+        "kind": "inscription",
+        "title": "Inscriptions, colophons and seals, as transcribed and translated by the museum (1964.43)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1964.43",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-25"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Wen Zhengming",
+        "url": "https://en.wikipedia.org/wiki/Wen_Zhengming",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅横卷水墨画：一棵粗大的老松斜向伸展，枝干扭曲，松针成簇，左端有两行大字题诗。",
+      "en": "An ink handscroll: a massive old pine stretching sideways, its trunk twisting and its needles in clusters, with two lines of large characters at the left end."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "文徵明",
+        "en": ""
+      },
+      "date": {
+        "zh": "1530年代后期",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

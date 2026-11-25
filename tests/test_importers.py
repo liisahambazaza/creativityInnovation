@@ -250,6 +250,19 @@ def test_handscroll_thumbnail_shows_the_right_hand_end(tmp_path):
     assert thumb.getpixel((thumb.size[0] - 5, 10))[0] > 150 and thumb.getpixel((thumb.size[0] - 5, 10))[1] < 80
 
 
+def test_thumbnail_can_be_centred_elsewhere(tmp_path):
+    image = Image.new("RGB", (6000, 300), (255, 255, 255))
+    image.paste((0, 0, 200), (2700, 0, 3300, 300))  # the part worth showing is blue, in the middle
+    buffer = io.BytesIO()
+    image.save(buffer, "PNG")
+    image_dir = tmp_path / "static" / "img" / "works"
+    save_image(buffer.getvalue(), "scroll", image_dir, fmt="handscroll", thumb_at=50)
+    thumb = Image.open(image_dir / "scroll-thumb.jpg")
+    assert thumb.getpixel((thumb.size[0] // 2, 10))[2] > 150
+    save_image(buffer.getvalue(), "edge", image_dir, fmt="handscroll", thumb_at=100)  # stays inside the image
+    assert Image.open(image_dir / "edge-thumb.jpg").size == thumb.size
+
+
 def test_save_image_crops(tmp_path):
     saved = save_image(jpeg(1000, 1000), "c", tmp_path / "static" / "img" / "works", crop=(0, 0, 50, 100))
     assert (saved["width"], saved["height"]) == (500, 1000)

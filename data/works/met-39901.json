@@ -1,0 +1,169 @@
+{
+  "id": "met-39901",
+  "museum": "met",
+  "record": {
+    "id": "39901",
+    "object_number": "1977.78",
+    "url": "https://www.metmuseum.org/art/collection/search/39901",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "tang",
+  "year": 740,
+  "title": {
+    "zh": "",
+    "en": "Night-Shining White"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Han Gan (Chinese, active ca. 742–756)"
+  },
+  "date": {
+    "zh": "",
+    "en": "ca. 750"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Handscroll; ink on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Image: 12 1/8 x 13 3/8 in. (30.8 x 34 cm); Overall with mounting: 14 in. x 37 ft. 5 1/8 in. (35.4 cm x 11.4 m)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "Purchase, The Dillon Fund Gift, 1977"
+  },
+  "image": {
+    "src": "img/works/met-39901.jpg",
+    "width": 2000,
+    "height": 1501,
+    "thumb": "img/works/met-39901-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "韩幹是唐代一流的画马名家，以画出马的神采而不只是外形著称。",
+        "en": "Han Gan was a leading horse painter of the Tang, known for capturing a horse's spirit as well as its likeness.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这是归于他名下最著名的作品，画的是唐玄宗的一匹战马。",
+        "en": "This is the most famous work attributed to him: a portrait of a charger belonging to Emperor Xuanzong.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "它是“白画”：只用墨线和简单的晕染，不施颜色。",
+        "en": "It is a 'white painting', done in ink line with simple shading and no colour.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "马眼如火、鼻孔张开、四蹄腾跃，体现了中国人对西域“天马”的想象：传说它们汗出如血，其实是龙的化身。",
+        "en": "With its burning eye, flaring nostrils and dancing hoofs, the horse embodies Chinese myths of Central Asian 'celestial steeds' that sweated blood and were really dragons in disguise.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "后世藏家在画上和裱边加盖的印章和题字，记录了它一千多年来的流传。",
+        "en": "The seals and inscriptions later owners added to the painting and its mounting record more than a thousand years of its passing from hand to hand.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "拴马的木桩：马被拴住，却在挣扎腾跃。",
+        "en": "The post the horse is tied to, as it rears and strains.",
+        "sources": [
+          "wiki",
+          "image"
+        ]
+      },
+      {
+        "zh": "马的眼睛和张开的鼻孔。",
+        "en": "The horse's eye and flaring nostrils.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "四周密布的红色收藏印。",
+        "en": "The red collectors' seals crowding all around.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "大都会艺术博物馆",
+          "en": "The Metropolitan Museum of Art"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方称它或许是中国绘画中最伟大的马的肖像。",
+        "en": "The museum calls it arguably the greatest portrait of a horse in Chinese painting.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "arguably the greatest equine portrait in Chinese painting"
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Night-Shining White",
+        "url": "https://en.wikipedia.org/wiki/Night-Shining_White",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅水墨画：一匹白马拴在黑色木桩上，扬头张口，四蹄腾跃，四周盖满了大小不一的红色印章和题字。",
+      "en": "An ink painting: a white horse tied to a black post rears with its head up and mouth open, surrounded by red seals and inscriptions of every size."
+    },
+    "overrides": {
+      "title": {
+        "zh": "照夜白圖",
+        "en": ""
+      },
+      "artist": {
+        "zh": "韓幹",
+        "en": ""
+      },
+      "date": {
+        "zh": "约750年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

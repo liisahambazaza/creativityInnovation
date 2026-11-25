@@ -61,7 +61,7 @@ ours and is never overwritten by an import:
 | `checked` | `on`: the date every statement was last checked against its sources |
 | `alt` | the image description (`zh` and `en`) |
 | `overrides` | corrections or translations of museum fields (`title`, `artist`, `date`, `period`, `year`, …) |
-| `image_choice` | which image to use: `canvas` (a Taipei image label), `region` (`pct:x,y,w,h`), `crop`, or `keep: true` |
+| `image_choice` | which image to use: `canvas` (a Taipei image label), `region` (`pct:x,y,w,h`), `crop`, or `keep: true`; `thumb_at` centres a wide thumbnail (percent from the left) |
 | `status` | `ai_draft` until a person has reviewed the text |
 
 **Every statement must cite a source, and the text must be marked as checked.**

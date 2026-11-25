@@ -1,0 +1,152 @@
+{
+  "id": "npm-43",
+  "museum": "npm",
+  "record": {
+    "id": "43",
+    "dep": "P",
+    "object_number": "故書000069N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/43?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2B000069N000000000SDAAA"
+  },
+  "category": "calligraphy",
+  "format": "handscroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "自書松風閣詩",
+    "en": "Poem on the Hall of Wind and Pines"
+  },
+  "artist": {
+    "zh": "黃庭堅",
+    "en": "Huang Tingjian"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "紙；拖尾：紙；隔水一：絹；隔水二：絹",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "本幅 32.8 × 219.2 公分；隔水一 33.6 × 13 公分；隔水二 33.6 × 13 公分；拖尾 32.1 × 408.3 公分",
+    "en": "Image 32.8 × 219.2 cm; Mounting strip 1 33.6 × 13 cm; Mounting strip 2 33.6 × 13 cm; Colophons 32.1 × 408.3 cm"
+  },
+  "museum_text": {
+    "zh": "黃庭堅（1045－1105），字魯直，號山谷道人，洪州分寧（今江西修水）人。父祖均長於詩文，重視儒學修養，治平四年進士及第後步入宦途，得有機緣與張耒等人遊學蘇軾門下。哲宗紹聖年間，卻因朝中新舊黨派失和，蘇軾遭遇排擠，黃庭堅不幸牽連在內，面臨貶謫的命運。崇寧元年（1102）行經武昌時，完成「松風閣」詩作，書法以柳公權為基底，行筆澀勁，蒼老有如長松伸展，世推為黃氏行楷書代表作。",
+    "en": "Huang T'ing-chien, a native of Kiangsi province, was a great poet of the period and ranked along with su Shih, Mi Fu, and Ts'ai Hsiang as one of the Four Northern Sung Masters of Calligraphy.\n\nNorthern Sung scholar-officials advocated purity and naturalness in the arts of poetry, prose, calligraphy, and painting. Calligraphers reiected the strict, formal qualities of T'ang standard script and searched for freedom in individual expression and creativity. Huang was one of the most outstanding among them. His semi-standard script clearly reveals the beauty of slanting strokes. His lines are exaggerated yet harmonious,while the brushwork is rounded and strong, especially where the strokes stop and start in his unique \"trembling\" style."
+  },
+  "image": {
+    "src": "img/works/npm-43.jpg",
+    "width": 7119,
+    "height": 983,
+    "thumb": "img/works/npm-43-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "黄庭坚是北宋的大诗人，与苏轼、米芾、蔡襄并称北宋四大书家。",
+        "en": "Huang Tingjian was a major poet of the Northern Song and, with Su Shi, Mi Fu and Cai Xiang, one of its Four Masters of calligraphy.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他曾与张耒等人游学苏轼门下，后来因朝中新旧党争受到牵连而被贬。",
+        "en": "He studied under Su Shi with Zhang Lei and others, and was later caught up in the court's factional quarrels and sent into exile.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "1102年途经武昌时，他写下了这首《松风阁》诗。",
+        "en": "In 1102, passing through Wuchang, he wrote this poem on the Hall of Wind and Pines.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      },
+      {
+        "zh": "书法以柳公权为基础，行笔涩劲，苍老有如长松伸展，世人推为他行楷书的代表作。",
+        "en": "The writing builds on Liu Gongquan; the strokes are rough and strong, old and sprawling like long pine branches, and it is regarded as his representative work in running-standard script.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "向左右斜伸的长笔画。",
+        "en": "The long, slanting strokes reaching out from each character.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "起笔、收笔处独特的“颤笔”。",
+        "en": "His trembling brushwork where strokes start and stop.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "卷首的标题“松风阁”三字。",
+        "en": "The title, 松風閣, at the right-hand start.",
+        "sources": [
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "台北故宫博物院",
+          "en": "National Palace Museum, Taipei"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方说，北宋文人摆脱唐代楷书的严格法度，追求个人的自由表现，黄庭坚是其中最杰出的书家之一。",
+        "en": "The museum says Northern Song scholars turned from the strict forms of Tang standard script toward free personal expression, and counts Huang among the most outstanding of them.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Huang Tingjian",
+        "url": "https://en.wikipedia.org/wiki/Huang_Tingjian",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅手卷：深褐色的绢上，每行三四个浓墨大字，笔画向外舒展。",
+      "en": "A handscroll: large characters in black ink on dark brown silk, three or four to a column, their strokes stretching outward."
+    },
+    "overrides": {
+      "period": "northern_song",
+      "date": {
+        "zh": "1102年",
+        "en": "1102"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

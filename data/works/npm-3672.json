@@ -1,0 +1,169 @@
+{
+  "id": "npm-3672",
+  "museum": "npm",
+  "record": {
+    "id": "3672",
+    "dep": "P",
+    "object_number": "故畫001038N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3672?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A001038N000000000SDAAA"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "ming",
+  "year": 1368,
+  "title": {
+    "zh": "漢宮春曉",
+    "en": "Spring Dawn in the Han Palace"
+  },
+  "artist": {
+    "zh": "仇英",
+    "en": "Qiu Ying"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹；隔水一：綾；隔水二：綾",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 30.6 × 574.1 公分；隔水一 30.6 × 11.5 公分；隔水二 30.6 × 11.6 公分",
+    "en": "Image 30.6 × 574.1 cm; Mounting strip 1 30.6 × 11.5 cm; Mounting strip 2 30.6 × 11.6 cm"
+  },
+  "museum_text": {
+    "zh": "仇英（約西元一四九四－一五五二年），字實父，號十洲。所作有畫院之精能而饒士氣，為明四大家之一。本幅以春日晨曦中的漢代宮廷為題，描繪後宮佳麗百態。通幅構景繁複，用筆清勁而賦色妍雅，林木奇石與華麗的宮闕穿插掩映，舖陳出宛如仙境般的瑰麗景象，為仇英歷史故事畫中的精彩力作。此畫係為項元汴所作，卷首有千字文第七四二「慮」字編號，卷末有項氏「價值兩百金」語。",
+    "en": "This work represents various activities in a Han dynasty (206 BC-AD 220) palace on a spring morning. Among them is the famous story of Mao Yen-shou painting the portrait of Wang Chao-chun. The intricate composition is rendered with crisp and strong brushwork and beautiful colors. The lavish palace scenes are punctuated by trees and decorative rocks, creating marvelous scenery similar to that of the immortals. In addition to the groups of beauties, leisure activities of the literati, such as the zither, chess, calligraphy, and painting as well as appreciating antiquities and planting folwers are shown. This masterpiece of historical narrative painting by ch'iu Ying was done for Hsiang Yuan-pien and completed after 1542."
+  },
+  "image": {
+    "src": "img/works/npm-3672.jpg",
+    "width": 11212,
+    "height": 536,
+    "thumb": "img/works/npm-3672-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "仇英出身农家，早年在苏州做漆器画工，后来跟周臣学画。",
+        "en": "Qiu Ying was born to a peasant family, worked in Suzhou as a painter of lacquerware, and later learned painting from Zhou Chen.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "他的画兼有画院的精工和文人的气息，被列为明四大家之一。",
+        "en": "His paintings combine the polish of the court academy with the spirit of the scholar, and he is counted among the Four Great Masters of the Ming.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这幅长卷描绘汉代宫廷春日早晨后宫女子的种种活动，其中有毛延寿为王昭君画像的故事。",
+        "en": "This long scroll shows life in a Han palace on a spring morning, including the story of Mao Yanshou painting the portrait of Wang Zhaojun.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "此卷是为收藏家项元汴画的，据馆方英文说明完成于1542年以后。",
+        "en": "It was painted for the collector Xiang Yuanbian and, according to the museum's English text, finished after 1542.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "毛延寿为王昭君画像的场面。",
+        "en": "The scene of Mao Yanshou painting Wang Zhaojun.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "弹琴、下棋、写字、作画、赏古、种花等文人雅事。",
+        "en": "Scholarly pastimes: the zither, chess, calligraphy, painting, looking at antiques and planting flowers.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "宫殿之间穿插的树木和奇石。",
+        "en": "The trees and ornamental rocks set among the palace buildings.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "项元汴",
+          "en": "Xiang Yuanbian"
+        },
+        "about": {
+          "zh": "卷末题记",
+          "en": "note at the end of the scroll"
+        },
+        "zh": "为他作画的项元汴在卷末记下此画“价值两百金”。",
+        "en": "Xiang Yuanbian, for whom it was painted, noted at the end of the scroll that it was worth two hundred in gold.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "價值兩百金",
+          "en": ""
+        }
+      },
+      {
+        "who": {
+          "zh": "台北故宫博物院",
+          "en": "National Palace Museum, Taipei"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方称它是仇英历史故事画中的精彩力作。",
+        "en": "The museum calls it a masterpiece among Qiu Ying's paintings of historical stories.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Qiu Ying",
+        "url": "https://en.wikipedia.org/wiki/Qiu_Ying",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅很长的彩色手卷：华丽的宫殿、回廊和庭院里有许多宫中女子，其间点缀着树木和假山，卷尾是河岸和柳树。",
+      "en": "A very long handscroll in colour: ornate palace halls, galleries and courtyards full of women, with trees and garden rocks between them and a riverbank with willows at the end."
+    },
+    "overrides": {
+      "date": {
+        "zh": "1542年以后",
+        "en": "after 1542"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

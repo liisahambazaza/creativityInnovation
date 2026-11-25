@@ -1,0 +1,153 @@
+{
+  "id": "npm-1183",
+  "museum": "npm",
+  "record": {
+    "id": "1183",
+    "dep": "P",
+    "object_number": "故畫000068N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1183?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A000068N000000000PAA"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "song",
+  "year": 960,
+  "title": {
+    "zh": "徽宗蠟梅山禽",
+    "en": "Chimonanthus and Birds"
+  },
+  "artist": {
+    "zh": "宋徽宗",
+    "en": "Huizong"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 83.3 × 53.3 公分",
+    "en": "Image 83.3 × 53.3 cm"
+  },
+  "museum_text": {
+    "zh": "徽宗（西元1082-1135年），名佶。性好書畫，不但擅長花鳥、山水、人物，也喜好收藏法書名畫，遂使內府珍藏的名蹟，百倍於前朝。\n本幅描繪兩隻白頭棲息梅枝上，花枝間則有隻黃蜂來回飛繞。用筆秀瘦而內含勁力，極富精勁清雅的風韻。畫中的題字，即徽宗有名之「瘦金書」。",
+    "en": "The Sung dynasty emperor Hui-tsung also had the common name Chao Chi. Excelling at painting and calligraphy, he was also an astute collector of works of art, gradually amassing a collection of precious masterpieces at the court that far exceeded the scope and quality of those of previous dynasties. This work shows a pair of Chinese bulbuls perched on the branch of a plum tree in blossom with a wasp flying about. Below are two stalks of blossoming sweetleaf sprouting up from below, and to the left is a poem and the right a signature, both done in Hui-tsung’s distinctive “slender gold script”. The composition is simple yet extremely effective, and the brushwork is elegantly precise yet very strong, expressing the pure and crisp atmosphere of a cold winter’s day. With regards to the detailed observation of the physical forms, lines and strokes closely follow and change with variations in the shapes and textures. In addition, the attention of the artist in composing the scene is reflected in the “S”-shape of the trunk of the plum tree that rhythmically expands into the upper portion of the scroll to express the idealized beauty of a supra-natural scene."
+  },
+  "image": {
+    "src": "img/works/npm-1183.jpg",
+    "width": 1363,
+    "height": 2200,
+    "thumb": "img/works/npm-1183-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "宋徽宗爱好书画，擅长花鸟、山水、人物，又大力收藏法书名画，使宫中藏品百倍于前朝。",
+        "en": "Emperor Huizong loved painting and calligraphy, painted birds and flowers, landscapes and figures, and collected so keenly that the palace holdings far exceeded those of earlier dynasties.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "画中两只白头鹎栖在梅枝上，一只黄蜂在花间飞绕。",
+        "en": "Two Chinese bulbuls perch on a blossoming plum branch while a wasp flies about.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "左边的诗和右边的署名，都用徽宗所创的“瘦金体”写成。",
+        "en": "The poem at left and the signature at right are in the slender gold script that Huizong invented.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      },
+      {
+        "zh": "梅树的枝干呈“S”形，有节奏地伸向画面上方。",
+        "en": "The plum trunk rises in an S-curve, rhythmically opening into the upper part of the scroll.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "枝上的一对鸟。",
+        "en": "The pair of birds on the branch.",
+        "sources": [
+          "museum",
+          "image"
+        ]
+      },
+      {
+        "zh": "瘦金体诗句：笔画细瘦而有力。",
+        "en": "The poem in slender gold script: thin strokes that are still strong.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "从下方长出的两株开花植物。",
+        "en": "The two flowering stalks rising from below.",
+        "sources": [
+          "museum"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "台北故宫博物院",
+          "en": "National Palace Museum, Taipei"
+        },
+        "about": {
+          "zh": "馆方说明",
+          "en": "gallery text"
+        },
+        "zh": "馆方认为，构图简洁而极有效果，表现出冬日清冷的气氛和一种理想化的超自然之美。",
+        "en": "The museum finds the composition simple yet very effective, conveying the crisp air of a winter day and an idealized, more-than-natural beauty.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "",
+          "en": "idealized beauty of a supra-natural scene"
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Emperor Huizong of Song",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Huizong_of_Song",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅立轴：绢上一枝弯曲的梅枝，枝上栖着两只鸟，下方有两株开花植物，左下是四行瘦金体诗句。",
+      "en": "A hanging scroll: a curving plum branch on silk with two birds perched on it, two flowering stalks below, and four lines of slender gold script at lower left."
+    },
+    "overrides": {
+      "period": "northern_song",
+      "artist": {
+        "zh": "宋徽宗",
+        "en": "Emperor Huizong"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

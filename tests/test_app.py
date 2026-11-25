@@ -5,7 +5,8 @@ from __future__ import annotations
 import pytest
 
 from app import LEGACY_CODES, create_app, mark_chinese
-from tests.conftest import DATA
+from kanjian.works import load_collection
+from tests.conftest import DATA, STATIC
 
 ZH, EN = {"Accept-Language": "zh-CN"}, {"Accept-Language": "en-US"}
 WORK_IDS = sorted(p.stem for p in DATA.glob("*.json"))
@@ -115,8 +116,12 @@ def test_image_choice_note_is_shown(client):
 
 
 def test_previous_and_next_links(client):
-    page = html(client.get("/w/npm-14901?lang=en"))  # the oldest work: no previous
+    works = load_collection(DATA, STATIC).works
+    oldest, newest = works[0]["id"], works[-1]["id"]
+    page = html(client.get(f"/w/{oldest}?lang=en"))
     assert 'rel="next"' in page and 'rel="prev"' not in page
+    page = html(client.get(f"/w/{newest}?lang=en"))
+    assert 'rel="prev"' in page and 'rel="next"' not in page
 
 
 @pytest.mark.parametrize("code, work_id", sorted(LEGACY_CODES.items()))

@@ -1,0 +1,169 @@
+{
+  "id": "npm-3",
+  "museum": "npm",
+  "record": {
+    "id": "3",
+    "dep": "P",
+    "object_number": "故書000060N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2B000060N000000000SDAAA"
+  },
+  "category": "calligraphy",
+  "format": "handscroll",
+  "period": "tang",
+  "year": 618,
+  "title": {
+    "zh": "祭姪文稿",
+    "en": "Draft of a Requiem for My Nephew"
+  },
+  "artist": {
+    "zh": "顏真卿",
+    "en": "Yan Zhenqing"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "引首：紙；紙；拖尾：紙；前隔水：綾；後隔水：綾",
+    "en": "paper"
+  },
+  "dimensions": {
+    "zh": "引首 29.2 × 59.6 公分；前隔水 29.2 × 11.8 公分；本幅 28.2 × 77 公分；後隔水 28.8 × 12.1 公分；拖尾 28.8 × 368.3 公分",
+    "en": "Frontispiece 29.2 × 59.6 cm; Front mounting strip 29.2 × 11.8 cm; Image 28.2 × 77 cm; Back mounting strip 28.8 × 12.1 cm; Colophons 28.8 × 368.3 cm"
+  },
+  "museum_text": {
+    "zh": "顏真卿（709－785），字清臣，山東臨沂人。為人清剛正直，任事不顧個人安危，為一代忠臣的典型。由於書法素養深厚，端凝厚實正如其人，復為書史尊為德藝兼修的典範。〈祭姪文稿〉作於乾元元年（758），為唐代「安史之亂」留下第一手親筆史料，文中述及堂兄顏杲卿、姪子顏季明力戰殉難，可以輔證新舊唐書的記載。文稿雖見增刪塗改，卻筆筆真情流露，而為鮮于樞推許「天下行書第二」。",
+    "en": "Yen Chen-ch'ing was a native of Shantung and a chin-shih degree holder who was a loyal official and defender of the T'ang. In his effort against the Li Hsi-lieh rebels, he was captured and executed.\n\nThis work represents a heartfelt requiem written by Yen for his nephew. Despite its serious and formal content, Yen's calligraphy reveals his inner feelings. Elements of standard, running, and cursive script appear, but all are based on Yen's round and heavy strokes in standard script. The ink ranges from thick to dry, and the corrections to the contents reveal the emotional spontaneity of the draft. The final exclamation to the content of the text correlates to the wild cursiveness of the calligraphy found at the end."
+  },
+  "image": {
+    "src": "img/works/npm-3.jpg",
+    "width": 10076,
+    "height": 597,
+    "thumb": "img/works/npm-3-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "颜真卿为人清刚正直，是唐代忠臣的典型；书史尊他为德艺兼修的典范。",
+        "en": "Yan Zhenqing was a model of the loyal Tang official, and the history of calligraphy holds him up as an example of character and art together.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他在758年写下这篇文稿，祭奠在安史之乱中力战殉难的侄子颜季明。",
+        "en": "He wrote this draft in 758 to mourn his nephew Yan Jiming, who died fighting in the An Lushan rebellion.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "文稿是这场叛乱的第一手亲笔史料，可以印证新旧唐书的记载。",
+        "en": "It is a first-hand record of the rebellion in his own hand, and it supports the accounts in the two official Tang histories.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "楷、行、草的成分都有，但都以他圆厚的楷书笔画为基础；墨色由浓到枯，涂改之处流露出当时的情感。",
+        "en": "Standard, running and cursive script all appear, built on his round, heavy standard-script strokes; the ink runs from thick to dry, and the corrections show the feeling of the moment.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他的卒年说法不一：台北故宫作785年；维基百科说他于784年被叛将李希烈扣押期间缢杀，785年获追谥。",
+        "en": "Sources differ on when he died: Taipei gives 785, while Wikipedia says he was strangled in 784 while held by the rebel Li Xilie, and honoured with a posthumous title in 785.",
+        "sources": [
+          "museum",
+          "wiki"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "划掉、改写的字句。",
+        "en": "The crossed-out and rewritten words.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "墨色由浓变枯的变化。",
+        "en": "How the ink runs from thick to dry.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "文末的字越写越狂放，与结尾的悲叹相应。",
+        "en": "Toward the end the writing turns wildly cursive, matching the final cry of grief.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "卷上前后众多的题跋和红色印章。",
+        "en": "The many later colophons and red seals along the scroll.",
+        "sources": [
+          "image"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "鲜于枢",
+          "en": "Xianyu Shu"
+        },
+        "about": {
+          "zh": "品评",
+          "en": "ranking"
+        },
+        "zh": "鲜于枢推许此稿为“天下行书第二”。",
+        "en": "Xianyu Shu ranked it the second-greatest running script under heaven.",
+        "sources": [
+          "museum"
+        ],
+        "quote": {
+          "zh": "天下行書第二",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Yan Zhenqing",
+        "url": "https://en.wikipedia.org/wiki/Yan_Zhenqing",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅很长的手卷：其中一段是浓淡不一、多处涂改的行草文稿，前后接着许多题跋和红色印章。",
+      "en": "A long handscroll: one section is a draft in running and cursive script, its ink heavy and light with many corrections, joined before and after by colophons and red seals."
+    },
+    "overrides": {
+      "date": {
+        "zh": "758年",
+        "en": "758"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    },
+    "image_choice": {
+      "thumb_at": 74,
+      "note": ""
+    }
+  }
+}

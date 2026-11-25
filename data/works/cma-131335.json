@@ -1,0 +1,166 @@
+{
+  "id": "cma-131335",
+  "museum": "cma",
+  "record": {
+    "id": "131335",
+    "object_number": "1954.126",
+    "url": "https://clevelandart.org/art/1954.126",
+    "accessed": "2026-11-25"
+  },
+  "category": "painting",
+  "format": "hanging_scroll",
+  "period": "qing",
+  "year": 1697,
+  "title": {
+    "zh": "江南春靄圖",
+    "en": "Spring Mist over Jiangnan"
+  },
+  "artist": {
+    "zh": "",
+    "en": "Shitao (Chinese, 1642–1707)"
+  },
+  "date": {
+    "zh": "",
+    "en": "1697"
+  },
+  "medium": {
+    "zh": "",
+    "en": "Hanging scroll; ink and light color on paper"
+  },
+  "dimensions": {
+    "zh": "",
+    "en": "Painting: 39 x 52 cm (15 3/8 x 20 1/2 in.); Overall with knobs: 167 x 76 cm (65 3/4 x 29 15/16 in.)"
+  },
+  "museum_text": {
+    "zh": "",
+    "en": ""
+  },
+  "credit_line": {
+    "zh": "",
+    "en": "John L. Severance Fund"
+  },
+  "image": {
+    "src": "img/works/cma-131335.jpg",
+    "width": 1549,
+    "height": 1935,
+    "thumb": "img/works/cma-131335-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "石涛生于明朝宗室，明亡后出家为僧，1693年改信道教，回到扬州，直到1707年去世。",
+        "en": "Shitao was born into the Ming imperial clan, became a Buddhist monk after the dynasty fell, turned to Daoism in 1693 and returned to Yangzhou, where he died in 1707.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "1697年春天，他画了这幅画，送给即将远赴福建海边的汪牧庭。",
+        "en": "In spring 1697 he painted this for Wang Muting, who was about to leave for the coast of Fujian.",
+        "sources": [
+          "insc"
+        ]
+      },
+      {
+        "zh": "题诗从扬子桥边的江水和柳丝写起，感叹自己老去、朋友星散。",
+        "en": "His poem begins with the river and willows by the Yangzi Bridge and laments growing old as friends scatter.",
+        "sources": [
+          "insc"
+        ]
+      },
+      {
+        "zh": "落款还向学使思白致意。",
+        "en": "His inscription also sends greetings to Sibai, the education commissioner.",
+        "sources": [
+          "insc"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "画上方石涛自题的长诗。",
+        "en": "Shitao's long poem written across the top of the painting.",
+        "sources": [
+          "insc",
+          "image"
+        ]
+      },
+      {
+        "zh": "雾中的江岸、松树和房屋。",
+        "en": "The misty riverbank with pines and houses.",
+        "sources": [
+          "image"
+        ]
+      },
+      {
+        "zh": "下方另裱的后人题跋；馆方记录有何瑗玉和李心慧的题跋。",
+        "en": "The later colophon mounted below; the museum records colophons by He Yuanyu and Li Xinhui.",
+        "sources": [
+          "image",
+          "insc"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "石涛",
+          "en": "Shitao"
+        },
+        "about": {
+          "zh": "自题",
+          "en": "his own inscription"
+        },
+        "zh": "石涛在题诗中说，千里万里的山水都在笔端显现，那不是墨也不是烟，只是寄托自己的傲气。",
+        "en": "In his poem Shitao says that however vast the scene, it appears at the tip of his brush: not ink, not mist, but a way to lodge his pride.",
+        "sources": [
+          "insc"
+        ],
+        "quote": {
+          "zh": "非墨非煙聊寄傲",
+          "en": "not ink, nor mist, but rather a way to lodge my pride"
+        }
+      }
+    ],
+    "sources": {
+      "insc": {
+        "kind": "inscription",
+        "title": "Inscriptions, colophons and seals, as transcribed and translated by the museum (1954.126)",
+        "url": "https://openaccess-api.clevelandart.org/api/artworks/1954.126",
+        "publisher": "The Cleveland Museum of Art",
+        "author": "",
+        "accessed": "2026-11-25"
+      },
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "Shitao",
+        "url": "https://en.wikipedia.org/wiki/Shitao",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅立轴：画心是雾蒙蒙的江岸，有松树、房屋和远山，上方写满题诗；下方另裱一段题跋。",
+      "en": "A hanging scroll: a misty riverbank with pines, houses and distant hills, a poem filling the top, and a separate colophon mounted below."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "石濤",
+        "en": ""
+      },
+      "date": {
+        "zh": "1697年",
+        "en": ""
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}

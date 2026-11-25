@@ -1,0 +1,163 @@
+{
+  "id": "npm-3614",
+  "museum": "npm",
+  "record": {
+    "id": "3614",
+    "dep": "P",
+    "object_number": "故畫000916N000000000",
+    "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3614?dep=P",
+    "accessed": "2026-11-25",
+    "image": "K2A000916N000000000SDAAA"
+  },
+  "category": "painting",
+  "format": "handscroll",
+  "period": "qing",
+  "year": 1644,
+  "title": {
+    "zh": "百駿圖",
+    "en": "A Hundred Steeds"
+  },
+  "artist": {
+    "zh": "郎世寧",
+    "en": "Lang Shining,Giuseppe Castiglione"
+  },
+  "date": {
+    "zh": "",
+    "en": ""
+  },
+  "medium": {
+    "zh": "絹",
+    "en": "silk"
+  },
+  "dimensions": {
+    "zh": "本幅 94.5 × 776.2 公分",
+    "en": "Image 94.5 × 776.2 cm"
+  },
+  "museum_text": {
+    "zh": "郎世寧（西元一六八八－一七六六年）是意大利來華傳教的耶穌會教士，他以精湛的繪畫技藝而供奉朝廷，歷仕康熙、雍正、乾隆三朝。善繪人物、花鳥、禽獸。 本幅畫姿勢各異的駿馬百匹，遊憩於草原之間，樹石、山水、人物無不寫實精緻。全幅色彩濃麗，構圖繁複，形象逼肖；又以中國傳統畫技法加入西洋光影透視法及西畫顏料，使畫面顯得中西趣味兼容併蓄，為郎氏早期典型代表作品之一。",
+    "en": "This is an early painting by Giuseppe Castiglione, one of the most famous Europeans in the service of the Ch’ing dynasty court. This handscroll more than seven meters long depicts a scene of taking a herd of horses out to pasture in autumn. The hundred steeds are shown in a variety of poses and activities as they leisurely make their way around the pastures and trees. Castiglione, using refined gradations of light and shadow, has rendered an exceptionally realistic scene. Although the painting compositionally represents a continuation of traditional arrangements of herding horses in Chinese art, the placement and depiction of the trees and landscape elements clearly reveal the deep atmospheric effect often found in Western art. Even the sizes of the horses vary with the distance and are shown in relative proportion. Likewise, the painting method for the distant mountain rocks is distinct from that seen in traditional Chinese brushwork, with layered pigments also seen among the trees."
+  },
+  "image": {
+    "src": "img/works/npm-3614.jpg",
+    "width": 7719,
+    "height": 907,
+    "thumb": "img/works/npm-3614-thumb.jpg"
+  },
+  "editorial": {
+    "intro": [
+      {
+        "zh": "郎世宁（1688–1766）是来华传教的意大利耶稣会士，以画艺供奉清廷，历仕康熙、雍正、乾隆三朝。",
+        "en": "Giuseppe Castiglione (1688–1766), an Italian Jesuit missionary, served the Qing court as a painter under the Kangxi, Yongzheng and Qianlong emperors.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "这幅七米多长的手卷，画秋天牧场上姿态各异的上百匹马。",
+        "en": "This handscroll, more than seven metres long, shows a hundred horses in every kind of pose at autumn pasture.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "他以中国传统画法结合西洋的光影、透视和颜料，使画面中西兼容。",
+        "en": "He joined Chinese painting methods with Western light and shade, perspective and pigments.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "马的大小随远近变化，远山的画法也不同于传统中国笔墨。",
+        "en": "The horses shrink with distance, and the far mountains are painted unlike traditional Chinese brushwork.",
+        "sources": [
+          "museum"
+        ]
+      },
+      {
+        "zh": "维基百科说此卷作于1728年，是为雍正皇帝画的；馆方称它是郎世宁早期的代表作。",
+        "en": "Wikipedia dates it to 1728, painted for the Yongzheng emperor; the museum calls it one of Castiglione's typical early works.",
+        "sources": [
+          "wiki",
+          "museum"
+        ]
+      }
+    ],
+    "look_for": [
+      {
+        "zh": "马群从右向左移动：右端是一棵老松，左端三匹马已经过了河。",
+        "en": "The herd moves from right to left: an old pine at the right end, and at the left three horses already across the river.",
+        "sources": [
+          "wiki",
+          "image"
+        ]
+      },
+      {
+        "zh": "马身上的深浅色调：有立体感，却没有强烈的阴影。",
+        "en": "The light and dark tones on the horses, giving volume without strong shadows.",
+        "sources": [
+          "wiki"
+        ]
+      },
+      {
+        "zh": "远处几乎透明的淡色景物。",
+        "en": "The far distance in pale, almost transparent tones.",
+        "sources": [
+          "wiki"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "who": {
+          "zh": "乾隆皇帝",
+          "en": "The Qianlong emperor"
+        },
+        "about": {
+          "zh": "评定",
+          "en": "judgement"
+        },
+        "zh": "据维基百科，雍正没有看到完成的画，是乾隆在1735年称它为杰作。",
+        "en": "According to Wikipedia, the Yongzheng emperor never saw it finished; it was the Qianlong emperor who declared it a masterpiece in 1735.",
+        "sources": [
+          "wiki"
+        ],
+        "quote": {
+          "zh": "",
+          "en": ""
+        }
+      }
+    ],
+    "sources": {
+      "wiki": {
+        "kind": "encyclopedia",
+        "title": "One Hundred Horses",
+        "url": "https://en.wikipedia.org/wiki/One_Hundred_Horses",
+        "publisher": "Wikipedia",
+        "author": "",
+        "accessed": "2026-11-25"
+      }
+    },
+    "alt": {
+      "zh": "一幅长手卷：开阔的草原和河边，上百匹各色马或吃草、或休息、或在水中，其间有老树和牧马人，远处是淡淡的山。",
+      "en": "A long handscroll: open grassland by a river with about a hundred horses of many colours grazing, resting and wading, old trees and herders among them, and pale mountains beyond."
+    },
+    "overrides": {
+      "artist": {
+        "zh": "郎世寧",
+        "en": "Giuseppe Castiglione (Lang Shining)"
+      },
+      "date": {
+        "zh": "1728年",
+        "en": "1728"
+      }
+    },
+    "status": "ai_draft",
+    "checked": {
+      "on": "2026-11-25",
+      "note": {
+        "zh": "每一句都对照所注出处核对过；找不到可靠出处的说法已删去或改写。",
+        "en": "Every sentence was checked against the sources it cites; claims without a reliable source were cut or rewritten."
+      }
+    }
+  }
+}
